@@ -1,16 +1,61 @@
 {
-  "posts":[
+  "users": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "id": "6fbb1102-253b-43b0-12131cxzx1241564789c",
+      "email": "admin@gmail.com",
+      "password": "$2b$10$12MY5qHKGhSuzkKlgoOUueafkuWiH2WZxac4FrmvBMWiSXPtJJna6",
+      "otp": 875796,
+      "verified": true,
+      "role": "admin",
+      "name": "Admin"
     }
   ],
-  "comments" : [
+  "employees": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "id": "emp1",
+      "code": "E001",
+      "name": "John Doe",
+      "phone": "1234567890",
+      "dob": "1990-01-01",
+      "avatar": "https://example.com/avatar1.jpg",
+      "identity": "111222333",
+      "gender": "male",
+      "status": "active",
+      "skills": [
+        {
+          "name": "programming",
+          "year": 5
+        },
+        {
+          "name": "management",
+          "year": 2
+        }
+      ],
+      "position": "Software Engineer",
+      "line_manager": "emp2",
+      "is_manager": false,
+      "description": "A dedicated software engineer"
+    },
+    {
+      "id": "emp2",
+      "code": "E002",
+      "name": "Jane Smith",
+      "phone": "0987654321",
+      "dob": "1985-01-01",
+      "avatar": "https://example.com/avatar2.jpg",
+      "identity": "444555666",
+      "gender": "female",
+      "status": "active",
+      "skills": [
+        {
+          "name": "management",
+          "year": 7
+        }
+      ],
+      "position": "Manager",
+      "line_manager": null,
+      "is_manager": true,
+      "description": "An experienced manager"
     }
   ]
 }
