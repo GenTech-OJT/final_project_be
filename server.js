@@ -140,7 +140,7 @@ server.get("/users", authenticateToken, requireAdminRole, (req, res) => {
   });
 });
 
-server.get("/employees", authenticateToken, requireAdminRole, (req, res) => {
+server.get("/employees", (req, res) => {
   let db = router.db; // lowdb instance
 
   let employees = db.get("employees").value(); // convert to array
@@ -152,7 +152,11 @@ server.get("/employees", authenticateToken, requireAdminRole, (req, res) => {
 
   // Search
   if (req.query.q) {
-    employees = employees.filter((user) => user.name.includes(req.query.q));
+    const searchTerm = req.query.q.toLowerCase();
+
+    employees = employees.filter((user) =>
+      user.name.toLowerCase().includes(searchTerm)
+    );
   }
 
   // Sort
@@ -183,25 +187,17 @@ server.get("/employees", authenticateToken, requireAdminRole, (req, res) => {
 });
 
 // Lấy thông tin chi tiết nhaan vieen
-server.get(
-  "/employees/:id",
-  authenticateToken,
-  requireAdminRole,
-  (req, res) => {
-    const employeeId = req.params.id;
+server.get("/employees/:id", (req, res) => {
+  const employeeId = req.params.id;
 
-    const employee = router.db
-      .get("employees")
-      .find({ id: employeeId })
-      .value();
+  const employee = router.db.get("employees").find({ id: employeeId }).value();
 
-    if (!employee) {
-      return res.status(404).json({ error: "Nhân viên không tồn tại" });
-    }
-
-    res.status(200).json(employee);
+  if (!employee) {
+    return res.status(404).json({ error: "Nhân viên không tồn tại" });
   }
-);
+
+  res.status(200).json(employee);
+});
 
 // Tạo mới một nhaan vieen
 server.post(
