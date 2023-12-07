@@ -205,8 +205,8 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp12",
-      "code": "E0012",
+      "id": "emp6",
+      "code": "E006",
       "name": "Hau Hoang",
       "phone": "0987654344",
       "dob": "1985-01-01",
@@ -226,8 +226,8 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp14",
-      "code": "E0014",
+      "id": "emp7",
+      "code": "E007",
       "name": "Hau Nguyen",
       "phone": "09112654344",
       "dob": "1985-01-01",
