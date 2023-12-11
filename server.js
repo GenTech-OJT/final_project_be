@@ -219,32 +219,24 @@ server.post(
 );
 
 // Cập nhật thông tin của nhaan vieen
-server.put(
-  "/employees/:id",
-  authenticateToken,
-  requireAdminRole,
-  async (req, res) => {
-    const employeeId = req.params.id;
-    const updatedEmploy = req.body;
+server.put("/employees/:id", async (req, res) => {
+  const employeeId = req.params.id;
+  const updatedEmploy = req.body;
 
-    const employee = router.db
-      .get("employees")
-      .find({ id: employeeId })
-      .value();
+  const employee = router.db.get("employees").find({ id: employeeId }).value();
 
-    if (!employee) {
-      return res.status(404).json({ error: "Nhân viên không tồn tại" });
-    }
-
-    const updatedEmployInDb = router.db
-      .get("employees")
-      .find({ id: employeeId })
-      .assign(updatedEmploy)
-      .write();
-
-    res.status(200).json(updatedEmployInDb);
+  if (!employee) {
+    return res.status(404).json({ error: "Nhân viên không tồn tại" });
   }
-);
+
+  const updatedEmployInDb = router.db
+    .get("employees")
+    .find({ id: employeeId })
+    .assign(updatedEmploy)
+    .write();
+
+  res.status(200).json(updatedEmployInDb);
+});
 
 // Xóa một sản phẩm
 server.delete(

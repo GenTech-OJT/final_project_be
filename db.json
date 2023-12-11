@@ -20,7 +20,7 @@
       "avatar": "https://example.com/avatar1.jpg",
       "identity": "111222333",
       "gender": "male",
-      "status": "active",
+      "status": "inactive",
       "skills": [
         {
           "name": "programming",
@@ -50,6 +50,10 @@
         {
           "name": "management",
           "year": 7
+        },
+        {
+          "name": "communicate",
+          "year": 2
         }
       ],
       "position": "Manager",
@@ -70,10 +74,10 @@
       "skills": [
         {
           "name": "programming",
-          "year": 7
+          "year": 8
         }
       ],
-      "position": "Manager",
+      "position": "Back-End Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
@@ -112,10 +116,14 @@
       "skills": [
         {
           "name": "developer",
-          "year": 7
+          "year": 6
+        },
+        {
+          "name": "programming",
+          "year": 4
         }
       ],
-      "position": "Manager",
+      "position": "Front-End Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
@@ -125,7 +133,7 @@
       "code": "E006",
       "name": "Hau Hoang",
       "phone": "0987654344",
-      "dob": "1985-01-01",
+      "dob": "1995-08-06",
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "111555666",
       "gender": "female",
@@ -133,10 +141,10 @@
       "skills": [
         {
           "name": "Front-End",
-          "year": 7
+          "year": 5
         }
       ],
-      "position": "Manager",
+      "position": "Front-End Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
@@ -146,7 +154,7 @@
       "code": "E008",
       "name": "Khoa Ngo",
       "phone": "0123654321",
-      "dob": "1985-01-01",
+      "dob": "1999-07-01",
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "444555777",
       "gender": "female",
@@ -154,7 +162,7 @@
       "skills": [
         {
           "name": "PO",
-          "year": 7
+          "year": 8
         }
       ],
       "position": "Manager",
@@ -167,7 +175,7 @@
       "code": "E009",
       "name": "Nguyen Ba",
       "phone": "0987654112",
-      "dob": "1985-01-01",
+      "dob": "2001-05-02",
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "444555999",
       "gender": "male",
@@ -175,31 +183,35 @@
       "skills": [
         {
           "name": "back-end",
-          "year": 7
+          "year": 4
         }
       ],
-      "position": "Manager",
+      "position": "Back-End Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
     },
     {
-      "id": "emp10",
-      "code": "E0010",
+      "id": "emp6",
+      "code": "E006",
       "name": "Nguyen Hoang",
       "phone": "0123654221",
-      "dob": "1985-01-01",
+      "dob": "1999-01-06",
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "444555777",
       "gender": "female",
-      "status": "active",
+      "status": "inactive",
       "skills": [
         {
           "name": "Developer",
           "year": 7
+        },
+        {
+          "name": "programming",
+          "year": 7
         }
       ],
-      "position": "Manager",
+      "position": "Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
@@ -209,7 +221,7 @@
       "code": "E006",
       "name": "Hau Hoang",
       "phone": "0987654344",
-      "dob": "1985-01-01",
+      "dob": "2001-09-02",
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "111555666",
       "gender": "female",
@@ -220,7 +232,7 @@
           "year": 7
         }
       ],
-      "position": "Manager",
+      "position": "Leader Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
@@ -230,7 +242,7 @@
       "code": "E007",
       "name": "Hau Nguyen",
       "phone": "09112654344",
-      "dob": "1985-01-01",
+      "dob": "1985-04-05",
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "111555666",
       "gender": "female",
@@ -241,7 +253,107 @@
           "year": 7
         }
       ],
-      "position": "Manager",
+      "position": "Front-End Developer",
+      "line_manager": null,
+      "is_manager": true,
+      "description": "An experienced manager"
+    },
+    {
+      "id": "emp8",
+      "code": "E008",
+      "name": "Nguyen Ba Hoang",
+      "phone": "0123654221",
+      "dob": "1985-08-02",
+      "avatar": "https://example.com/avatar2.jpg",
+      "identity": "444555777",
+      "gender": "female",
+      "status": "inactive",
+      "skills": [
+        {
+          "name": "developer",
+          "year": 7
+        },
+        {
+          "name": "programming",
+          "year": 5
+        }
+      ],
+      "position": "Developer",
+      "line_manager": null,
+      "is_manager": true,
+      "description": "An experienced manager"
+    },
+    {
+      "id": "emp9",
+      "code": "E009",
+      "name": "Van Hoang",
+      "phone": "0123654221",
+      "dob": "1985-05-01",
+      "avatar": "https://example.com/avatar2.jpg",
+      "identity": "444555777",
+      "gender": "female",
+      "status": "inactive",
+      "skills": [
+        {
+          "name": "Developer",
+          "year": 7
+        },
+        {
+          "name": "programming",
+          "year": 7
+        }
+      ],
+      "position": "Developer",
+      "line_manager": null,
+      "is_manager": true,
+      "description": "An experienced manager"
+    },
+    {
+      "id": "emp8",
+      "code": "E008",
+      "name": "Van Hoa",
+      "phone": "0123654221",
+      "dob": "1985-05-01",
+      "avatar": "https://example.com/avatar2.jpg",
+      "identity": "444555777",
+      "gender": "female",
+      "status": "inactive",
+      "skills": [
+        {
+          "name": "back-end",
+          "year": 7
+        },
+        {
+          "name": "programming",
+          "year": 7
+        }
+      ],
+      "position": "Back-End Developer",
+      "line_manager": null,
+      "is_manager": true,
+      "description": "An experienced manager"
+    },
+    {
+      "id": "emp5",
+      "code": "E005",
+      "name": "Van Tien",
+      "phone": "0123654221",
+      "dob": "1985-05-01",
+      "avatar": "https://example.com/avatar2.jpg",
+      "identity": "444555777",
+      "gender": "female",
+      "status": "inactive",
+      "skills": [
+        {
+          "name": "back-end",
+          "year": 7
+        },
+        {
+          "name": "programming",
+          "year": 7
+        }
+      ],
+      "position": "Back-End Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
