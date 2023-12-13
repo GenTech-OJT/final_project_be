@@ -8,6 +8,8 @@ const jwt = require("jsonwebtoken");
 const { v4: uuidv4 } = require("uuid");
 const cors = require("cors");
 const _ = require("lodash");
+const cloudinary = require("cloudinary").v2;
+const multer = require("multer");
 
 const SECRET_KEY = "your-secret-key";
 
@@ -199,16 +201,27 @@ server.get("/employees/:id", (req, res) => {
   res.status(200).json(employee);
 });
 
+cloudinary.config({
+  cloud_name: "dadt9qw4k",
+  api_key: "218768144543215",
+  api_secret: "iMFvVcGooOnqSfFyA-eTAnMq_zU",
+});
+const upload = multer({ dest: "/tmp/" });
+
 // Tạo mới một nhaan vieen
 server.post(
   "/employees",
   authenticateToken,
   requireAdminRole,
+  upload.single("avatar"),
   async (req, res) => {
     try {
+      const result = await cloudinary.uploader.upload(req.file.path);
+
       const newEmploy = {
         id: uuidv4(),
         ...req.body,
+        avatar: result.secure_url,
       };
       router.db.get("employees").push(newEmploy).write();
       res.status(201).json(newEmploy);
