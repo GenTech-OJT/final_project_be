@@ -8,8 +8,8 @@
       "verified": true,
       "role": "admin",
       "name": "Admin",
-      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU2Nzk5NCwiZXhwIjoxNzAyNTcxNTk0fQ.udJCuh0hOTe14MLlLfOhx8aNRi9pmrrUObRd7BX80Lg",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU2Nzk5NH0.fIgk_JOiMie2QkSpm5UqgVP0MDa_8gey3_Ga2l98LdE"
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU3NDYyMywiZXhwIjoxNzAyNTc4MjIzfQ.w8WENIGNEOqJoR8sEJU71k5zGXZKJ8H58Ms2h_HCKkQ",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU3NDYyM30.FXTr-XTCiw8HT9ain1insD4E8vQ-GcYvxGPVDD1wsZE"
     }
   ],
   "employees": [
@@ -393,6 +393,78 @@
     {
       "id": "8",
       "name": "Software Tester"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Project 1",
+      "manager": "Manager 1",
+      "description": "This is project 1",
+      "start_date": "2022-01-01",
+      "end_date": "2022-12-31",
+      "status": "In progress",
+      "technical": "JavaScript",
+      "employees": [
+        "Employee 1",
+        "Employee 2"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Project 2",
+      "manager": "Manager 2",
+      "description": "This is project 2",
+      "start_date": "2022-02-01",
+      "end_date": "2022-12-31",
+      "status": "In progress",
+      "technical": "Python",
+      "employees": [
+        "Employee 3",
+        "Employee 4"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Project 3",
+      "manager": "Manager 3",
+      "description": "This is project 3",
+      "start_date": "2022-03-01",
+      "end_date": "2022-12-31",
+      "status": "In progress",
+      "technical": "Java",
+      "employees": [
+        "Employee 5",
+        "Employee 6"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Project 4",
+      "manager": "Manager 4",
+      "description": "This is project 4",
+      "start_date": "2022-04-01",
+      "end_date": "2022-12-31",
+      "status": "In progress",
+      "technical": "C#",
+      "employees": [
+        "Employee 7",
+        "Employee 8"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Project 5",
+      "manager": "Manager 5",
+      "description": "This is project 5",
+      "start_date": "2022-05-01",
+      "end_date": "2022-12-31",
+      "status": "In progress",
+      "technical": "Ruby",
+      "employees": [
+        "Employee 9",
+        "Employee 10"
+      ]
     }
   ]
 }

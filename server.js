@@ -167,12 +167,31 @@ server.get("/dashboard", authenticateToken, requireAdminRole, (req, res) => {
     const projectCount = router.db.get("projects").size().value();
     const positionCount = router.db.get("positions").size().value();
 
+    const skillCounts = {};
+    const employees = router.db.get("employees").value();
+
+    employees.forEach((employee) => {
+      employee.skills.forEach((skill) => {
+        if (!skillCounts[skill.name]) {
+          skillCounts[skill.name] = 0;
+        }
+        skillCounts[skill.name]++;
+      });
+    });
+  
+    const skillsArray = Object.keys(skillCounts).map((skill) => ({
+      name: skill,
+      count: skillCounts[skill],
+    }));
+
     res.status(200).json({
       employeeCount,
       projectCount,
       positionCount,
+      skillsArray
     });
   } catch (err) {
+    console.log(err);
     res.status(500).send(err);
   }
 });
