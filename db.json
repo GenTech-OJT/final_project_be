@@ -7,7 +7,9 @@
       "otp": 875796,
       "verified": true,
       "role": "admin",
-      "name": "Admin"
+      "name": "Admin",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU2Nzk5NCwiZXhwIjoxNzAyNTcxNTk0fQ.udJCuh0hOTe14MLlLfOhx8aNRi9pmrrUObRd7BX80Lg",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU2Nzk5NH0.fIgk_JOiMie2QkSpm5UqgVP0MDa_8gey3_Ga2l98LdE"
     }
   ],
   "employees": [

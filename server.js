@@ -11,7 +11,8 @@ const _ = require("lodash");
 const cloudinary = require("cloudinary").v2;
 const multer = require("multer");
 
-const SECRET_KEY = "your-secret-key";
+const SECRET_KEY = "gentech-secret-key";
+const REFRESH_SECRET_KEY = "gentech-refresh-secret-key";
 
 const port = process.env.PORT || 3000;
 
@@ -93,10 +94,15 @@ server.post("/login", (req, res) => {
     }
 
     // Tạo token JWT
-    const token = jwt.sign({ id: user.id }, SECRET_KEY);
+    const accessToken = jwt.sign({ id: user.id }, SECRET_KEY, { expiresIn: '1h' });
+    const refreshToken = jwt.sign({ id: user.id }, REFRESH_SECRET_KEY);
+
+    router.db.get("users").find({ email }).assign({ accessToken, refreshToken }).write();
 
     // Trả về thông tin người dùng và token
-    res.status(200).json({ user, token });
+    const { password, accessToken: userAccessToken, refreshToken: userRefreshToken, ...userWithoutSensitiveInfo } = user;
+
+    res.status(200).json({ user: userWithoutSensitiveInfo, accessToken, refreshToken });
   });
 });
 
