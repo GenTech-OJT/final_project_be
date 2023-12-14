@@ -358,5 +358,15 @@
       "is_manager": true,
       "description": "An experienced manager"
     }
+  ],
+  "positions": [
+    "Front-End Developer",
+    "Back-End Developer",
+    "Full Stack Developer",
+    "Project Manager",
+    "Data Analyst",
+    "UI/UX Designer",
+    "DevOps Engineer",
+    "Software Tester"
   ]
 }

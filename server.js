@@ -247,6 +247,16 @@ server.get("/managers", (req, res) => {
   }
 });
 
+// API để lấy danh sách các vị trí
+server.get("/positions", (req, res) => {
+  try {
+    const positions = router.db.get("positions").value();
+    res.status(200).json(positions);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 // Cập nhật thông tin của nhaan vieen
 server.put("/employees/:id", upload.single("avatar"), async (req, res) => {
   try {
