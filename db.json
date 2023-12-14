@@ -20,7 +20,7 @@
       "avatar": "https://example.com/avatar1.jpg",
       "identity": "111222333",
       "gender": "male",
-      "status": "inactive",
+      "status": "active",
       "skills": [
         {
           "name": "programming",
@@ -45,7 +45,7 @@
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "444555666",
       "gender": "female",
-      "status": "active",
+      "status": "inactive",
       "skills": [
         {
           "name": "management",
@@ -360,13 +360,37 @@
     }
   ],
   "positions": [
-    "Front-End Developer",
-    "Back-End Developer",
-    "Full Stack Developer",
-    "Project Manager",
-    "Data Analyst",
-    "UI/UX Designer",
-    "DevOps Engineer",
-    "Software Tester"
+    {
+      "id": "1",
+      "name": "Front-End Developer"
+    },
+    {
+      "id": "2",
+      "name": "Back-End Developer"
+    },
+    {
+      "id": "3",
+      "name": "Full Stack Developer"
+    },
+    {
+      "id": "4",
+      "name": "Project Manager"
+    },
+    {
+      "id": "5",
+      "name": "Data Analyst"
+    },
+    {
+      "id": "6",
+      "name": "UI/UX Designer"
+    },
+    {
+      "id": "7",
+      "name": "DevOps Engineer"
+    },
+    {
+      "id": "8",
+      "name": "Software Tester"
+    }
   ]
 }
