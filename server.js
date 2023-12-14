@@ -142,6 +142,22 @@ server.get("/users", authenticateToken, requireAdminRole, (req, res) => {
   });
 });
 
+server.get("/dashboard", (req, res) => {
+  try {
+    const employeeCount = router.db.get("employees").size().value();
+    const projectCount = router.db.get("projects").size().value();
+    const positionCount = router.db.get("positions").size().value();
+
+    res.status(200).json({
+      employeeCount,
+      projectCount,
+      positionCount,
+    });
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 server.get("/employees", (req, res) => {
   let db = router.db; // lowdb instance
 
