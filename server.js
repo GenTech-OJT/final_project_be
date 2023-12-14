@@ -208,7 +208,7 @@ cloudinary.config({
 });
 const upload = multer({ dest: "/tmp/" });
 
-// Tạo mới một nhaan vieen
+// Tạo mới một nhân viên
 server.post(
   "/employees",
   authenticateToken,
@@ -216,12 +216,16 @@ server.post(
   upload.single("avatar"),
   async (req, res) => {
     try {
-      const result = await cloudinary.uploader.upload(req.file.path);
+      let avatarUrl = ""; // URL mặc định hoặc trống
+      if (req.file) {
+        const result = await cloudinary.uploader.upload(req.file.path);
+        avatarUrl = result.secure_url;
+      }
 
       const newEmploy = {
         id: uuidv4(),
         ...req.body,
-        avatar: result.secure_url,
+        avatar: avatarUrl,
       };
       router.db.get("employees").push(newEmploy).write();
       res.status(201).json(newEmploy);
