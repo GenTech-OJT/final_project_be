@@ -235,6 +235,18 @@ server.post(
   }
 );
 
+server.get("/managers", (req, res) => {
+  try {
+    const managers = router.db
+      .get("employees")
+      .filter({ is_manager: true })
+      .value();
+    res.status(200).json(managers);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 // Cập nhật thông tin của nhaan vieen
 server.put("/employees/:id", upload.single("avatar"), async (req, res) => {
   try {
