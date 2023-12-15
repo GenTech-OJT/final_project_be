@@ -160,7 +160,7 @@ server.post("/refresh-token", (req, res) => {
   });
 });
 
-server.get("/users", authenticateToken, requireAdminRole, (req, res) => {
+server.get("/users", (req, res) => {
   let db = router.db; // lowdb instance
 
   let users = db.get("users").value(); // convert to array
