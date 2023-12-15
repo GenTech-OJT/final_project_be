@@ -16,138 +16,110 @@
       "code": "E001",
       "name": "John Doe",
       "phone": "1234567890",
-      "dob": "1990-01-01",
-      "avatar": "https://example.com/avatar1.jpg",
+      "dob": "2023-12-02",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702616091/nqxeyb82hlun7rsyxint.jpg",
       "identity": "111222333",
-      "gender": "male",
-      "status": "inactive",
+      "gender": "female",
+      "status": "Kích Hoạt",
       "skills": [
         {
-          "name": "programming",
-          "year": 5
+          "name": "reading",
+          "year": "5"
         },
         {
           "name": "management",
-          "year": 2
+          "year": "2"
         }
       ],
-      "position": "Software Engineer",
+      "position": "UI/UX Designer",
       "line_manager": "emp2",
-      "is_manager": false,
-      "description": "A dedicated software engineer"
+      "is_manager": "false",
+      "description": "A dedicated software engineer",
+      "email": "khoa.ngo-ojt07@devplus.edu.vn",
+      "manager": "Nguyen Ba Hoang"
     },
     {
       "id": "emp2",
-      "code": "E002",
-      "name": "Jane Smith",
+      "code": "E007",
+      "name": "hanhhh nguyennn",
       "phone": "0987654321",
       "dob": "1985-01-01",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702616784/sinjmzpd6h3zxjszd2ff.jpg",
       "identity": "444555666",
       "gender": "female",
       "status": "active",
       "skills": [
         {
           "name": "management",
-          "year": 7
+          "year": "7"
         },
         {
           "name": "communicate",
-          "year": 2
+          "year": "2"
+        },
+        {
+          "name": "coding",
+          "year": "4"
         }
       ],
-      "position": "Manager",
+      "position": "Front-End Developer",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "true",
+      "description": "An experienced manager.......",
+      "createdAt": "2023-12-14T06:46:22.833Z",
+      "updatedAt": "2023-12-14T06:46:22.833Z",
+      "email": "nguyenminhtoan451999@gmail.com",
+      "manager": "Khoa Ngo"
     },
     {
       "id": "emp3",
       "code": "E003",
-      "name": "Hau Smith",
-      "phone": "09876543431",
+      "name": "Hau Smit",
+      "phone": "909237719",
       "dob": "1985-05-02",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702613888/xpgu8jeumf33oofd5796.jpg",
       "identity": "444555666",
-      "gender": "male",
-      "status": "inactive",
+      "gender": "female",
+      "status": "Kích Hoạt",
       "skills": [
         {
-          "name": "programming",
-          "year": 8
+          "name": "coding",
+          "year": "8"
+        },
+        {
+          "name": "BE",
+          "year": "5"
         }
       ],
-      "position": "Back-End Developer",
+      "position": "Front-End Developer",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "true",
+      "description": "An experienced manager",
+      "email": "kakashi21042001@gmail.com",
+      "manager": "Nguyen Hoang"
     },
     {
       "id": "emp4",
       "code": "E004",
-      "name": "Vy Nguyen",
+      "name": "Vy Nguyennn",
       "phone": "0983254321",
       "dob": "2001-06-01",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702562451/ifqtpexc1azcyib1n9d0.jpg",
       "identity": "444555999",
       "gender": "male",
-      "status": "active",
+      "status": "Vô Hiệu Hóa",
       "skills": [
         {
-          "name": "Scrum Master",
-          "year": 7
+          "name": "cscsc",
+          "year": "4"
         }
       ],
       "position": "Manager",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
-    },
-    {
-      "id": "emp5",
-      "code": "E005",
-      "name": "Nguyen Vinh",
-      "phone": "0921654321",
-      "dob": "2001-01-07",
-      "avatar": "https://example.com/avatar2.jpg",
-      "identity": "444111666",
-      "gender": "female",
-      "status": "active",
-      "skills": [
-        {
-          "name": "developer",
-          "year": 6
-        },
-        {
-          "name": "programming",
-          "year": 4
-        }
-      ],
-      "position": "Front-End Developer",
-      "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
-    },
-    {
-      "id": "emp6",
-      "code": "E006",
-      "name": "Hau Hoang",
-      "phone": "0987654344",
-      "dob": "1995-08-06",
-      "avatar": "https://example.com/avatar2.jpg",
-      "identity": "111555666",
-      "gender": "female",
-      "status": "active",
-      "skills": [
-        {
-          "name": "Front-End",
-          "year": 5
-        }
-      ],
-      "position": "Front-End Developer",
-      "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "true",
+      "description": "An experienced manager",
+      "email": "nhatnhatnhat192001@gmail.com",
+      "manager": "Nguyen Ba Hoang"
     },
     {
       "id": "emp8",
@@ -155,20 +127,22 @@
       "name": "Khoa Ngo",
       "phone": "0123654321",
       "dob": "1999-07-01",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702606633/lz5utsild6ifn7ibhjoa.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "active",
       "skills": [
         {
           "name": "PO",
-          "year": 8
+          "year": "8"
         }
       ],
       "position": "Manager",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "true",
+      "description": "An experienced manager",
+      "email": "kakashi21042002@gmail.com",
+      "manager": "Van Hoa"
     },
     {
       "id": "emp9",
@@ -176,45 +150,49 @@
       "name": "Nguyen Ba",
       "phone": "0987654112",
       "dob": "2001-05-02",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702606090/kqpstmdne2r1dizslss3.jpg",
       "identity": "444555999",
       "gender": "male",
       "status": "active",
       "skills": [
         {
           "name": "back-end",
-          "year": 4
+          "year": "4"
         }
       ],
       "position": "Back-End Developer",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "true",
+      "description": "An experienced manager",
+      "email": "khoa.ngo-ojt08@devplus.edu.vn",
+      "manager": "Hau Nguyen"
     },
     {
       "id": "emp6",
       "code": "E006",
-      "name": "Nguyen Hoang",
+      "name": "Nguyen Hoa",
       "phone": "0123654221",
-      "dob": "1999-01-06",
-      "avatar": "https://example.com/avatar2.jpg",
+      "dob": "2023-12-15",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702563366/flnjaz55375xfvufov0l.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "inactive",
       "skills": [
         {
           "name": "Developer",
-          "year": 7
+          "year": "7"
         },
         {
           "name": "programming",
-          "year": 7
+          "year": "7"
         }
       ],
       "position": "Developer",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "true",
+      "description": "An experienced manager",
+      "email": "nguyenminhtoan49@gmail.com",
+      "manager": "Vy Nguyen"
     },
     {
       "id": "emp6",
@@ -243,7 +221,7 @@
       "name": "Hau Nguyen",
       "phone": "09112654344",
       "dob": "1985-04-05",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702606051/dbbzxdf2sy9sl7yvr0rq.jpg",
       "identity": "111555666",
       "gender": "female",
       "status": "active",
@@ -339,24 +317,26 @@
       "name": "Van Tien",
       "phone": "0123654221",
       "dob": "1985-05-01",
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702562524/dxgd06kpg7pqviyehgqd.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "inactive",
       "skills": [
         {
-          "name": "back-end",
-          "year": 7
+          "name": "backend",
+          "year": "7"
         },
         {
           "name": "programming",
-          "year": 7
+          "year": "7"
         }
       ],
       "position": "Back-End Developer",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "true",
+      "description": "An experienced manager",
+      "email": "nhatnhat192001@gmail.com",
+      "manager": "Van Hoang"
     }
   ],
   "positions": [
