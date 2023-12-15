@@ -11,7 +11,8 @@ const _ = require("lodash");
 const cloudinary = require("cloudinary").v2;
 const multer = require("multer");
 
-const SECRET_KEY = "your-secret-key";
+const SECRET_KEY = "gentech-secret-key";
+const REFRESH_SECRET_KEY = "gentech-refresh-secret-key";
 
 const port = process.env.PORT || 3000;
 
@@ -93,10 +94,28 @@ server.post("/login", (req, res) => {
     }
 
     // Tạo token JWT
-    const token = jwt.sign({ id: user.id }, SECRET_KEY);
+    const accessToken = jwt.sign({ id: user.id }, SECRET_KEY, {
+      expiresIn: "1h",
+    });
+    const refreshToken = jwt.sign({ id: user.id }, REFRESH_SECRET_KEY);
+
+    router.db
+      .get("users")
+      .find({ email })
+      .assign({ accessToken, refreshToken })
+      .write();
 
     // Trả về thông tin người dùng và token
-    res.status(200).json({ user, token });
+    const {
+      password,
+      accessToken: userAccessToken,
+      refreshToken: userRefreshToken,
+      ...userWithoutSensitiveInfo
+    } = user;
+
+    res
+      .status(200)
+      .json({ user: userWithoutSensitiveInfo, accessToken, refreshToken });
   });
 });
 
@@ -142,23 +161,42 @@ server.get("/users", authenticateToken, requireAdminRole, (req, res) => {
   });
 });
 
-server.get("/dashboard", (req, res) => {
+server.get("/dashboard", authenticateToken, requireAdminRole, (req, res) => {
   try {
     const employeeCount = router.db.get("employees").size().value();
     const projectCount = router.db.get("projects").size().value();
     const positionCount = router.db.get("positions").size().value();
 
+    const skillCounts = {};
+    const employees = router.db.get("employees").value();
+
+    employees.forEach((employee) => {
+      employee.skills.forEach((skill) => {
+        if (!skillCounts[skill.name]) {
+          skillCounts[skill.name] = 0;
+        }
+        skillCounts[skill.name]++;
+      });
+    });
+  
+    const skillsArray = Object.keys(skillCounts).map((skill) => ({
+      name: skill,
+      count: skillCounts[skill],
+    }));
+
     res.status(200).json({
       employeeCount,
       projectCount,
       positionCount,
+      skillsArray
     });
   } catch (err) {
+    console.log(err);
     res.status(500).send(err);
   }
 });
 
-server.get("/employees", (req, res) => {
+server.get("/employees", authenticateToken, requireAdminRole, (req, res) => {
   let db = router.db; // lowdb instance
 
   let employees = db.get("employees").value(); // convert to array
@@ -205,17 +243,25 @@ server.get("/employees", (req, res) => {
 });
 
 // Lấy thông tin chi tiết nhaan vieen
-server.get("/employees/:id", (req, res) => {
-  const employeeId = req.params.id;
+server.get(
+  "/employees/:id",
+  authenticateToken,
+  requireAdminRole,
+  (req, res) => {
+    const employeeId = req.params.id;
 
-  const employee = router.db.get("employees").find({ id: employeeId }).value();
+    const employee = router.db
+      .get("employees")
+      .find({ id: employeeId })
+      .value();
 
-  if (!employee) {
-    return res.status(404).json({ error: "Nhân viên không tồn tại" });
+    if (!employee) {
+      return res.status(404).json({ error: "Nhân viên không tồn tại" });
+    }
+
+    res.status(200).json(employee);
   }
-
-  res.status(200).json(employee);
-});
+);
 
 cloudinary.config({
   cloud_name: "dadt9qw4k",
@@ -274,38 +320,44 @@ server.get("/positions", (req, res) => {
 });
 
 // Cập nhật thông tin của nhaan vieen
-server.put("/employees/:id", upload.single("avatar"), async (req, res) => {
-  try {
-    const employeeId = req.params.id;
-    const updatedEmploy = req.body;
+server.put(
+  "/employees/:id",
+  authenticateToken,
+  requireAdminRole,
+  upload.single("avatar"),
+  async (req, res) => {
+    try {
+      const employeeId = req.params.id;
+      const updatedEmploy = req.body;
 
-    const employee = router.db
-      .get("employees")
-      .find({ id: employeeId })
-      .value();
+      const employee = router.db
+        .get("employees")
+        .find({ id: employeeId })
+        .value();
 
-    if (!employee) {
-      return res.status(404).json({ error: "Nhân viên không tồn tại" });
+      if (!employee) {
+        return res.status(404).json({ error: "Nhân viên không tồn tại" });
+      }
+
+      if (req.file) {
+        const result = await cloudinary.uploader.upload(req.file.path);
+        updatedEmploy.avatar = result.secure_url; // Cập nhật URL avatar
+      }
+
+      const updatedEmployInDb = router.db
+        .get("employees")
+        .find({ id: employeeId })
+        .assign(updatedEmploy)
+        .write();
+
+      res.status(200).json(updatedEmployInDb);
+    } catch (err) {
+      res.status(500).send(err);
     }
-
-    if (req.file) {
-      const result = await cloudinary.uploader.upload(req.file.path);
-      updatedEmploy.avatar = result.secure_url; // Cập nhật URL avatar
-    }
-
-    const updatedEmployInDb = router.db
-      .get("employees")
-      .find({ id: employeeId })
-      .assign(updatedEmploy)
-      .write();
-
-    res.status(200).json(updatedEmployInDb);
-  } catch (err) {
-    res.status(500).send(err);
   }
-});
+);
 
-// Xóa một sản phẩm
+// Xóa một nhaan vien
 server.delete(
   "/employees/:id",
   authenticateToken,

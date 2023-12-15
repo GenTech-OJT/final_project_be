@@ -7,7 +7,9 @@
       "otp": 875796,
       "verified": true,
       "role": "admin",
-      "name": "Admin"
+      "name": "Admin",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU3NDYyMywiZXhwIjoxNzAyNTc4MjIzfQ.w8WENIGNEOqJoR8sEJU71k5zGXZKJ8H58Ms2h_HCKkQ",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU3NDYyM30.FXTr-XTCiw8HT9ain1insD4E8vQ-GcYvxGPVDD1wsZE"
     }
   ],
   "employees": [
@@ -47,7 +49,7 @@
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702616784/sinjmzpd6h3zxjszd2ff.jpg",
       "identity": "444555666",
       "gender": "female",
-      "status": "active",
+      "status": "inactive",
       "skills": [
         {
           "name": "management",
