@@ -287,7 +287,7 @@ server.get("/employees", authenticateToken, requireAdminRole, (req, res) => {
 server.get(
   "/employees/:id",
   // authenticateToken,
-  requireAdminRole,
+  // requireAdminRole,
   (req, res) => {
     const employeeId = req.params.id;
 
