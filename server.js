@@ -44,6 +44,9 @@ const authenticateToken = (req, res, next) => {
 
   jwt.verify(token, SECRET_KEY, (err, user) => {
     if (err) {
+      if (err.name === "TokenExpiredError") {
+        return res.status(401).json({ error: "Token xác thực đã hết hạn" });
+      }
       return res.status(403).json({ error: "Token xác thực không hợp lệ" });
     }
 
