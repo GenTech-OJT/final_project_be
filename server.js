@@ -119,6 +119,44 @@ server.post("/login", (req, res) => {
   });
 });
 
+server.post("/refresh-token", (req, res) => {
+  // Lấy refresh token từ body yêu cầu
+  const { refreshToken } = req.body;
+
+  if (!refreshToken) {
+    return res.status(403).json({ error: "Refresh token is required" });
+  }
+
+  // Tìm refresh token trong cơ sở dữ liệu
+  const user = router.db.get("users").find({ refreshToken }).value();
+
+  if (!user) {
+    return res.status(403).json({ error: "Invalid refresh token" });
+  }
+
+  // Kiểm tra refresh token
+  jwt.verify(refreshToken, REFRESH_SECRET_KEY, (err, userData) => {
+    if (err) {
+      return res.status(403).json({ error: "Invalid refresh token" });
+    }
+
+    // Tạo access token mới
+    const accessToken = jwt.sign({ id: user.id }, SECRET_KEY, {
+      expiresIn: "1h",
+    });
+
+    // Cập nhật access token trong cơ sở dữ liệu
+    router.db
+      .get("users")
+      .find({ refreshToken })
+      .assign({ accessToken })
+      .write();
+
+    // Trả về access token mới
+    res.status(200).json({ accessToken });
+  });
+});
+
 server.get("/users", authenticateToken, requireAdminRole, (req, res) => {
   let db = router.db; // lowdb instance
 
@@ -178,7 +216,7 @@ server.get("/dashboard", authenticateToken, requireAdminRole, (req, res) => {
         skillCounts[skill.name]++;
       });
     });
-  
+
     const skillsArray = Object.keys(skillCounts).map((skill) => ({
       name: skill,
       count: skillCounts[skill],
@@ -188,7 +226,7 @@ server.get("/dashboard", authenticateToken, requireAdminRole, (req, res) => {
       employeeCount,
       projectCount,
       positionCount,
-      skillsArray
+      skillsArray,
     });
   } catch (err) {
     console.log(err);
@@ -339,6 +377,8 @@ server.put(
         return res.status(404).json({ error: "Nhân viên không tồn tại" });
       }
 
+      console.log(req.file, "file");
+
       if (req.file) {
         const result = await cloudinary.uploader.upload(req.file.path);
         updatedEmploy.avatar = result.secure_url; // Cập nhật URL avatar
@@ -352,6 +392,7 @@ server.put(
 
       res.status(200).json(updatedEmployInDb);
     } catch (err) {
+      console.log(err);
       res.status(500).send(err);
     }
   }

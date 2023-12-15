@@ -8,8 +8,8 @@
       "verified": true,
       "role": "admin",
       "name": "Admin",
-      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU3NDYyMywiZXhwIjoxNzAyNTc4MjIzfQ.w8WENIGNEOqJoR8sEJU71k5zGXZKJ8H58Ms2h_HCKkQ",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjU3NDYyM30.FXTr-XTCiw8HT9ain1insD4E8vQ-GcYvxGPVDD1wsZE"
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjYxNzMyMSwiZXhwIjoxNzAyNjIwOTIxfQ.c51XODlRbC0KpHsK2cR9hheUrkx5pOL6NwGp6D1oHeE",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjYxNzMyMX0.uugPQnPyYS_b2PzfIWCMrvk6354s-VWSmul62AJozkc"
     }
   ],
   "employees": [
@@ -51,23 +51,27 @@
       "skills": [
         {
           "name": "management",
-          "year": 7
+          "year": "7"
         },
         {
           "name": "communicate",
-          "year": 2
+          "year": "2"
         }
       ],
       "position": "Manager",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": false,
+      "description": "An experienced manager",
+      "email": "sadsad@gmail.com",
+      "createdAt": "2023-12-15T04:45:55.786Z",
+      "updatedAt": "2023-12-15T04:45:55.786Z",
+      "https://example.com/avatar2.jpg": ""
     },
     {
       "id": "emp3",
       "code": "E003",
       "name": "Hau Smith",
-      "phone": "09876543431",
+      "phone": "0965710419",
       "dob": "1985-05-02",
       "avatar": "https://example.com/avatar2.jpg",
       "identity": "444555666",
@@ -76,13 +80,14 @@
       "skills": [
         {
           "name": "programming",
-          "year": 8
+          "year": "8"
         }
       ],
       "position": "Back-End Developer",
       "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
+      "is_manager": "false",
+      "description": "An experienced manager",
+      "email": "mwin451999@gmail.com"
     },
     {
       "id": "emp4",
