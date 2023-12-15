@@ -423,6 +423,54 @@ server.delete(
   }
 );
 
+server.get("/projects", authenticateToken, requireAdminRole, (req, res) => {
+  let db = router.db; // lowdb instance
+
+  let projects = db.get("projects").value(); // convert to array
+
+  // Filter
+  if (req.query.name) {
+    projects = projects.filter((project) =>
+      project.name.includes(req.query.name)
+    );
+  }
+
+  // Search
+  if (req.query.q) {
+    const searchTerm = req.query.q.toLowerCase();
+
+    projects = projects.filter((project) =>
+      project.name.toLowerCase().includes(searchTerm)
+    );
+  }
+
+  // Sort
+  if (req.query._sort && req.query._order) {
+    projects = _.orderBy(projects, req.query._sort, req.query._order);
+  }
+
+  // Paginate
+  const _page = req.query._page || 1;
+  const _limit = req.query._limit || 10;
+  const start = (_page - 1) * _limit;
+  const end = _page * _limit;
+
+  const paginatedProjects = projects.slice(start, end);
+
+  res.json({
+    pagination: {
+      total: projects.length,
+      page: _page,
+      limit: _limit,
+    },
+    sort: {
+      field: req.query._sort || "id",
+      order: req.query._order || "asc",
+    },
+    data: paginatedProjects,
+  });
+});
+
 server.use(router);
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
