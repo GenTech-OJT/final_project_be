@@ -137,7 +137,7 @@
     {
       "id": "emp6",
       "code": "E006",
-      "name": "Hau Hoang",
+      "name": "Minh Hoang",
       "phone": "0987654344",
       "dob": "1995-08-06",
       "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
@@ -156,7 +156,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp8",
+      "id": "emp7",
       "code": "E008",
       "name": "Khoa Ngo",
       "phone": "0123654321",
@@ -177,7 +177,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp9",
+      "id": "emp8",
       "code": "E009",
       "name": "Nguyen Ba",
       "phone": "0987654112",
@@ -198,7 +198,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp6",
+      "id": "emp9",
       "code": "E006",
       "name": "Nguyen Hoang",
       "phone": "0123654221",
@@ -223,7 +223,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp6",
+      "id": "emp10",
       "code": "E006",
       "name": "Hau Hoang",
       "phone": "0987654344",
@@ -244,7 +244,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp7",
+      "id": "emp11",
       "code": "E007",
       "name": "Hau Nguyen",
       "phone": "09112654344",
@@ -265,7 +265,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp8",
+      "id": "emp12",
       "code": "E008",
       "name": "Nguyen Ba Hoang",
       "phone": "0123654221",
@@ -290,7 +290,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp9",
+      "id": "emp13",
       "code": "E009",
       "name": "Van Hoang",
       "phone": "0123654221",
@@ -315,7 +315,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp8",
+      "id": "emp14",
       "code": "E008",
       "name": "Van Hoa",
       "phone": "0123654221",
@@ -340,7 +340,7 @@
       "description": "An experienced manager"
     },
     {
-      "id": "emp5",
+      "id": "emp15",
       "code": "E005",
       "name": "Van Tien",
       "phone": "0123654221",
@@ -401,119 +401,266 @@
   ],
   "projects": [
     {
-      "id": "1",
       "name": "Project 1",
-      "manager": "Manager 1",
-      "description": "This is project 1",
-      "start_date": "2022-01-01",
-      "end_date": "2022-12-31",
-      "status": "In progress",
-      "technical": "JavaScript",
-      "employees": [
-        {
-          "id": "emp1",
-          "name": "Employee 1",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        },
-        {
-          "id": "emp2",
-          "name": "Employee 2",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Project 2",
-      "manager": "Manager 2",
-      "description": "This is project 2",
-      "start_date": "2022-02-01",
-      "end_date": "2022-12-31",
-      "status": "In progress",
-      "technical": "Python",
-      "employees": [
-        {
-          "id": "emp3",
-          "name": "Employee 3",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        },
-        {
-          "id": "emp4",
-          "name": "Employee 4",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "name": "Project 3",
-      "manager": "Manager 3",
-      "description": "This is project 3",
-      "start_date": "2022-03-01",
-      "end_date": "2022-12-31",
-      "status": "In progress",
-      "technical": "Java",
-      "employees": [
-        {
-          "id": "emp5",
-          "name": "Employee 5",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        },
-        {
-          "id": "emp6",
-          "name": "Employee 6",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "name": "Project 4",
-      "manager": "Manager 4",
-      "description": "This is project 4",
-      "start_date": "2022-04-01",
-      "end_date": "2022-12-31",
-      "status": "In progress",
-      "technical": "C#",
-      "employees": [
-        {
-          "id": "emp7",
-          "name": "Employee 7",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        },
-        {
-          "id": "emp8",
-          "name": "Employee 8",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        },
-        {
-          "id": "emp5",
-          "name": "Employee 5",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        },
-        {
-          "id": "emp6",
-          "name": "Employee 6",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "name": "Project 5",
-      "manager": "Manager 5",
-      "description": "This is project 5",
-      "start_date": "2022-05-01",
-      "end_date": "2022-12-31",
-      "status": "In progress",
-      "technical": "Ruby",
+      "manager": "Nguyen Vinh",
       "employees": [
         {
           "id": "emp10",
-          "name": "Employee 10",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
+          "name": "Hau Hoang",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:39:18",
+          "leaving_time": null
+        },
+        {
+          "id": "emp12",
+          "name": "Nguyen Ba Hoang",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:39:18",
+          "leaving_time": null
+        },
+        {
+          "id": "emp14",
+          "name": "Van Hoa",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:39:18",
+          "leaving_time": null
+        },
+        {
+          "id": "emp2",
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:39:18",
+          "leaving_time": null
+        },
+        {
+          "id": "emp4",
+          "name": "Vy Nguyen",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:39:18",
+          "leaving_time": null
+        },
+        {
+          "id": "emp5",
+          "name": "Nguyen Vinh",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:39:18",
+          "leaving_time": null
         }
-      ]
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-21 00:31:57",
+      "end_date": "2024-01-03 00:31:59",
+      "description": "Description of project 1",
+      "technical": [
+        {
+          "id": "1",
+          "name": "C#"
+        },
+        {
+          "id": "2",
+          "name": "C++"
+        }
+      ],
+      "createdAt": "2023-12-16T17:39:18.642Z",
+      "updatedAt": "2023-12-16T17:39:18.642Z",
+      "id": "1"
+    },
+    {
+      "name": "Project 2",
+      "manager": "Vy Nguyen",
+      "employees": [
+        {
+          "id": "emp10",
+          "name": "Hau Hoang",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:41:25",
+          "leaving_time": null
+        },
+        {
+          "id": "emp4",
+          "name": "Vy Nguyen",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:41:25",
+          "leaving_time": null
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-25 00:31:57",
+      "end_date": "2024-01-26 00:31:59",
+      "description": "Description of project 2",
+      "technical": [
+        {
+          "id": "1",
+          "name": "C#"
+        },
+        {
+          "id": "3",
+          "name": "Python"
+        },
+        {
+          "id": "6",
+          "name": "JavaScript"
+        }
+      ],
+      "createdAt": "2023-12-16T17:41:25.084Z",
+      "updatedAt": "2023-12-16T17:41:25.084Z",
+      "id": "5bY7Dlo"
+    },
+    {
+      "name": "Project 3",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": "emp10",
+          "name": "Hau Hoang",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:42:30",
+          "leaving_time": null
+        },
+        {
+          "id": "emp4",
+          "name": "Vy Nguyen",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:42:30",
+          "leaving_time": null
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2024-01-01 00:31:57",
+      "end_date": "2024-08-12 00:31:59",
+      "description": "Description of project 3",
+      "technical": [
+        {
+          "id": "3",
+          "name": "Python"
+        },
+        {
+          "id": "5",
+          "name": "SQL Server"
+        }
+      ],
+      "createdAt": "2023-12-16T17:42:30.289Z",
+      "updatedAt": "2023-12-16T17:42:30.289Z",
+      "id": "lexCfWu"
+    },
+    {
+      "name": "Project 4",
+      "manager": "Vy Nguyen",
+      "employees": [
+        {
+          "id": "emp2",
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:46:54",
+          "leaving_time": null
+        },
+        {
+          "id": "emp3",
+          "name": "Hau Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:46:54",
+          "leaving_time": null
+        },
+        {
+          "id": "emp8",
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:46:54",
+          "leaving_time": null
+        }
+      ],
+      "status": "Cancelled",
+      "start_date": "2023-12-19 00:31:57",
+      "end_date": "2024-05-20 00:31:59",
+      "description": "Description of project 4",
+      "technical": [
+        {
+          "id": "emp14",
+          "name": "Van Hoa"
+        }
+      ],
+      "createdAt": "2023-12-16T17:46:54.265Z",
+      "updatedAt": "2023-12-16T17:46:54.265Z",
+      "id": "SIzxPqo"
+    },
+    {
+      "name": "Project 6",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": "emp2",
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:50:44",
+          "leaving_time": null
+        },
+        {
+          "id": "emp8",
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "joining_time": "2023-12-17 00:50:44",
+          "leaving_time": null
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": "2",
+          "name": "C++"
+        },
+        {
+          "id": "3",
+          "name": "Python"
+        },
+        {
+          "id": "4",
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": "jcYWAp3"
+    }
+  ],
+  "technicals": [
+    {
+      "id": "1",
+      "name": "C#"
+    },
+    {
+      "id": "2",
+      "name": "C++"
+    },
+    {
+      "id": "3",
+      "name": "Python"
+    },
+    {
+      "id": "4",
+      "name": "Ruby"
+    },
+    {
+      "id": "5",
+      "name": "SQL Server"
+    },
+    {
+      "id": "6",
+      "name": "JavaScript"
+    },
+    {
+      "id": "7",
+      "name": "PHP"
+    },
+    {
+      "id": "8",
+      "name": "Java"
+    },
+    {
+      "id": "9",
+      "name": "TypeScript"
     }
   ]
 }
