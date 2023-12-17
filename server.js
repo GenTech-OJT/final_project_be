@@ -337,7 +337,7 @@ server.get("/managers", (req, res) => {
   try {
     const managers = router.db
       .get("employees")
-      .filter({ is_manager: true })
+      .filter({ is_manager: true || is_manager === "true" })
       .value();
     res.status(200).json(managers);
   } catch (err) {
