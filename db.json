@@ -8,8 +8,8 @@
       "verified": true,
       "role": "admin",
       "name": "Admin",
-      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjc5MzU0MywiZXhwIjoxNzAyODI5NTQzfQ.xRdDpSarJql8bO7iaiqrCbjXzL8c_ezuLD-RmfpLVUM",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjc5MzU0M30.LAGKhVAa9beVtE30I6ZqLiek0UtpDWe-ZYFBLC5P_Ho"
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAyNzk0MjI5LCJleHAiOjE3MDI4MzAyMjl9.OfeqHLtJFRLwYbdNnf1SBeLb41JJH-477lWX-R7j07g",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAyNzk0MjI5fQ.xscwj0M5RXIjZ0B91dX2DdG64mUem9uk6WrHI9EFvlw"
     }
   ],
   "employees": [
@@ -525,7 +525,7 @@
           "leaving_time": null
         },
         {
-          "id":4,
+          "id": 4,
           "name": "Vy Nguyen",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "joining_time": "2023-12-17 00:41:25",
@@ -599,7 +599,7 @@
           "name": "Python"
         },
         {
-          "id":5,
+          "id": 5,
           "name": "SQL Server"
         }
       ],
@@ -672,7 +672,7 @@
       "id": 4
     },
     {
-      "name": "Project 6",
+      "name": "Project 5",
       "manager": "Nguyen Hoang",
       "employees": [
         {
@@ -727,6 +727,633 @@
       "createdAt": "2023-12-16T17:50:44.894Z",
       "updatedAt": "2023-12-16T17:50:44.894Z",
       "id": 5
+    },
+    {
+      "name": "Project 6",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 6
+    },
+    {
+      "name": "Project 7",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 7
+    },
+    {
+      "name": "Project 8",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 8
+    },
+    {
+      "name": "Project 9",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 9
+    },
+    {
+      "name": "Project 10",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 10
+    },
+    {
+      "name": "Project 11",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 11
+    },
+    {
+      "name": "Project 12",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 12
+    },
+    {
+      "name": "Project 6",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 13
+    },
+    {
+      "name": "Project 6",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 14
+    },
+    {
+      "name": "Project 6",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 15
+    },
+    {
+      "name": "Project 6",
+      "manager": "Nguyen Hoang",
+      "employees": [
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Nguyen Ba",
+          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "periods": [
+            {
+              "joining_time": "2023-12-17T00:39:18Z",
+              "leaving_time": "2023-12-18T00:39:18Z"
+            },
+            {
+              "joining_time": "2023-12-20T00:39:18Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2024-12-13 00:31:57",
+      "end_date": "2025-05-16 00:31:59",
+      "description": "Description of project 6",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-16T17:50:44.894Z",
+      "updatedAt": "2023-12-16T17:50:44.894Z",
+      "id": 16
     }
   ],
   "technicals": [
