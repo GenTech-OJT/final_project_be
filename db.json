@@ -1,15 +1,15 @@
 {
   "users": [
     {
-      "id": "6fbb1102-253b-43b0-12131cxzx1241564789c",
+      "id": 1,
       "email": "admin@gmail.com",
       "password": "$2b$10$12MY5qHKGhSuzkKlgoOUueafkuWiH2WZxac4FrmvBMWiSXPtJJna6",
       "otp": 875796,
       "verified": true,
       "role": "admin",
       "name": "Admin",
-      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjc5MjM0OSwiZXhwIjoxNzAyODI4MzQ5fQ.-hs7ZJt4LFKvibLLcOmP11ltm4j5ZFEk18N4RghG5hw",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjc5MjM0OX0.xS2VmgKNM2x-UOHrg4j8o1HrnSotpi6zGDyh9-0A0PQ"
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjc5MzU0MywiZXhwIjoxNzAyODI5NTQzfQ.xRdDpSarJql8bO7iaiqrCbjXzL8c_ezuLD-RmfpLVUM",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmYmIxMTAyLTI1M2ItNDNiMC0xMjEzMWN4engxMjQxNTY0Nzg5YyIsImlhdCI6MTcwMjc5MzU0M30.LAGKhVAa9beVtE30I6ZqLiek0UtpDWe-ZYFBLC5P_Ho"
     }
   ],
   "employees": [
@@ -363,44 +363,39 @@
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
-    },
-    {
-      "id": "d272c5bc-b04d-42e9-ab66-e40d5d96e873",
-      "name": "toan",
-      "avatar": ""
     }
   ],
   "positions": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Front-End Developer"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Back-End Developer"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Full Stack Developer"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Project Manager"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Data Analyst"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "UI/UX Designer"
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "DevOps Engineer"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Software Tester"
     }
   ],
@@ -410,7 +405,7 @@
       "manager": "Nguyen Vinh",
       "employees": [
         {
-          "id": "emp10",
+          "id": 10,
           "name": "Hau Hoang",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -425,7 +420,7 @@
           ]
         },
         {
-          "id": "emp12",
+          "id": 12,
           "name": "Nguyen Ba Hoang",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -440,7 +435,7 @@
           ]
         },
         {
-          "id": "emp14",
+          "id": 14,
           "name": "Van Hoa",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -455,7 +450,7 @@
           ]
         },
         {
-          "id": "emp2",
+          "id": 2,
           "name": "Jane Smith",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -470,7 +465,7 @@
           ]
         },
         {
-          "id": "emp4",
+          "id": 4,
           "name": "Vy Nguyen",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -485,7 +480,7 @@
           ]
         },
         {
-          "id": "emp5",
+          "id": 5,
           "name": "Nguyen Vinh",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -506,31 +501,31 @@
       "description": "Description of project 1",
       "technical": [
         {
-          "id": "1",
+          "id": 1,
           "name": "C#"
         },
         {
-          "id": "2",
+          "id": 2,
           "name": "C++"
         }
       ],
       "createdAt": "2023-12-16T17:39:18.642Z",
       "updatedAt": "2023-12-16T17:39:18.642Z",
-      "id": "1"
+      "id": 1
     },
     {
       "name": "Project 2",
       "manager": "Vy Nguyen",
       "employees": [
         {
-          "id": "emp10",
+          "id": 10,
           "name": "Hau Hoang",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "joining_time": "2023-12-17 00:41:25",
           "leaving_time": null
         },
         {
-          "id": "emp4",
+          "id":4,
           "name": "Vy Nguyen",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "joining_time": "2023-12-17 00:41:25",
@@ -543,28 +538,28 @@
       "description": "Description of project 2",
       "technical": [
         {
-          "id": "1",
+          "id": 1,
           "name": "C#"
         },
         {
-          "id": "3",
+          "id": 3,
           "name": "Python"
         },
         {
-          "id": "6",
+          "id": 6,
           "name": "JavaScript"
         }
       ],
       "createdAt": "2023-12-16T17:41:25.084Z",
       "updatedAt": "2023-12-16T17:41:25.084Z",
-      "id": "5bY7Dlo"
+      "id": 2
     },
     {
       "name": "Project 3",
       "manager": "Nguyen Hoang",
       "employees": [
         {
-          "id": "emp10",
+          "id": 10,
           "name": "Hau Hoang",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -579,7 +574,7 @@
           ]
         },
         {
-          "id": "emp4",
+          "id": 4,
           "name": "Vy Nguyen",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -600,24 +595,24 @@
       "description": "Description of project 3",
       "technical": [
         {
-          "id": "3",
+          "id": 3,
           "name": "Python"
         },
         {
-          "id": "5",
+          "id":5,
           "name": "SQL Server"
         }
       ],
       "createdAt": "2023-12-16T17:42:30.289Z",
       "updatedAt": "2023-12-16T17:42:30.289Z",
-      "id": "lexCfWu"
+      "id": 3
     },
     {
       "name": "Project 4",
       "manager": "Vy Nguyen",
       "employees": [
         {
-          "id": "emp2",
+          "id": 2,
           "name": "Jane Smith",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -632,7 +627,7 @@
           ]
         },
         {
-          "id": "emp3",
+          "id": 3,
           "name": "Hau Smith",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -647,7 +642,7 @@
           ]
         },
         {
-          "id": "emp8",
+          "id": 8,
           "name": "Nguyen Ba",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -668,20 +663,20 @@
       "description": "Description of project 4",
       "technical": [
         {
-          "id": "emp14",
+          "id": 14,
           "name": "Van Hoa"
         }
       ],
       "createdAt": "2023-12-16T17:46:54.265Z",
       "updatedAt": "2023-12-16T17:46:54.265Z",
-      "id": "SIzxPqo"
+      "id": 4
     },
     {
       "name": "Project 6",
       "manager": "Nguyen Hoang",
       "employees": [
         {
-          "id": "emp2",
+          "id": 2,
           "name": "Jane Smith",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -696,7 +691,7 @@
           ]
         },
         {
-          "id": "emp8",
+          "id": 8,
           "name": "Nguyen Ba",
           "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
@@ -717,58 +712,58 @@
       "description": "Description of project 6",
       "technical": [
         {
-          "id": "2",
+          "id": 2,
           "name": "C++"
         },
         {
-          "id": "3",
+          "id": 3,
           "name": "Python"
         },
         {
-          "id": "4",
+          "id": 4,
           "name": "Ruby"
         }
       ],
       "createdAt": "2023-12-16T17:50:44.894Z",
       "updatedAt": "2023-12-16T17:50:44.894Z",
-      "id": "jcYWAp3"
+      "id": 5
     }
   ],
   "technicals": [
     {
-      "id": "1",
+      "id": 1,
       "name": "C#"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "C++"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Python"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Ruby"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "SQL Server"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "JavaScript"
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "PHP"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Java"
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "TypeScript"
     }
   ]
