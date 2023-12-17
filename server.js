@@ -21,16 +21,6 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 server.use(cors());
 
-// Middleware để thêm createdAt và updatedAt
-server.use((req, res, next) => {
-  if (req.method === "POST" || req.method === "PUT") {
-    const timestamp = new Date().toISOString();
-    req.body.createdAt = req.body.createdAt || timestamp;
-    req.body.updatedAt = timestamp;
-  }
-  next();
-});
-
 //Middleware xác thực token
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers["authorization"];
@@ -98,7 +88,7 @@ server.post("/login", (req, res) => {
 
     // Tạo token JWT
     const accessToken = jwt.sign({ id: user.id }, SECRET_KEY, {
-      expiresIn: "1h",
+      expiresIn: "10h",
     });
     const refreshToken = jwt.sign({ id: user.id }, REFRESH_SECRET_KEY);
 
@@ -145,7 +135,7 @@ server.post("/refresh-token", (req, res) => {
 
     // Tạo access token mới
     const accessToken = jwt.sign({ id: user.id }, SECRET_KEY, {
-      expiresIn: "1h",
+      expiresIn: "10h",
     });
 
     // Cập nhật access token trong cơ sở dữ liệu
@@ -325,10 +315,15 @@ server.post(
         avatarUrl = result.secure_url;
       }
 
+       // Tìm ID lớn nhất hiện tại
+       const maxId = Math.max(...router.db.get("employees").value().map(employee => employee.id), 0);
+
       const newEmploy = {
-        id: uuidv4(),
+        id: maxId + 1,
         ...req.body,
         avatar: avatarUrl,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
       };
       router.db.get("employees").push(newEmploy).write();
       res.status(201).json(newEmploy);
@@ -380,12 +375,12 @@ server.put(
         return res.status(404).json({ error: "Nhân viên không tồn tại" });
       }
 
-      console.log(req.file, "file");
-
       if (req.file) {
         const result = await cloudinary.uploader.upload(req.file.path);
         updatedEmploy.avatar = result.secure_url; // Cập nhật URL avatar
       }
+
+      updatedEmploy.updatedAt = new Date().toISOString();
 
       const updatedEmployInDb = router.db
         .get("employees")
