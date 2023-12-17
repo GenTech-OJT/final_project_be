@@ -279,7 +279,7 @@ server.get(
   // authenticateToken,
   // requireAdminRole,
   (req, res) => {
-    const employeeId = req.params.id;
+    const employeeId = Number(req.params.id);
 
     const employee = router.db
       .get("employees")
@@ -363,7 +363,7 @@ server.put(
   upload.single("avatar"),
   async (req, res) => {
     try {
-      const employeeId = req.params.id;
+      const employeeId = Number(req.params.id);
       const updatedEmploy = req.body;
 
       const employee = router.db
@@ -402,7 +402,8 @@ server.delete(
   authenticateToken,
   requireAdminRole,
   (req, res) => {
-    const employeeId = req.params.id;
+    const employeeId = Number(req.params.id);
+    
     const employee = router.db
       .get("employees")
       .find({ id: employeeId })
