@@ -484,6 +484,39 @@ server.post("/projects", authenticateToken, requireAdminRole, (req, res) => {
   res.status(201).json(project);
 });
 
+server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
+  const project = router.db
+    .get("projects")
+    .find({ id: Number(req.params.id) })
+    .value();
+
+  if (!project) {
+    return res.status(404).json({ error: "Project not found" });
+  }
+
+  const updatedProject = {
+    ...project,
+    ...req.body,
+    manager: Number(req.body.manager), // convert to number
+    employees: req.body.employees.map((employee) => ({
+      id: Number(employee.id), // convert to number
+      periods: employee.periods.map((period) => ({
+        joinDate: period.joinDate,
+        leaveDate: period.leaveDate ? period.leaveDate : null,
+      })),
+    })),
+    updatedAt: new Date().toISOString(),
+  };
+
+  router.db
+    .get("projects")
+    .find({ id: Number(req.params.id) })
+    .assign(updatedProject)
+    .write();
+
+  res.json(updatedProject);
+});
+
 server.use(router);
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);

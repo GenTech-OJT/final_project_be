@@ -398,7 +398,6 @@
         },
         {
           "id": 14,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -412,7 +411,6 @@
         },
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -426,7 +424,6 @@
         },
         {
           "id": 4,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -440,7 +437,6 @@
         },
         {
           "id": 5,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -477,13 +473,11 @@
       "employees": [
         {
           "id": 10,
-
           "joining_time": "2023-12-17 00:41:25",
           "leaving_time": null
         },
         {
           "id": 4,
-
           "joining_time": "2023-12-17 00:41:25",
           "leaving_time": null
         }
@@ -516,7 +510,6 @@
       "employees": [
         {
           "id": 10,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -530,7 +523,6 @@
         },
         {
           "id": 4,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -567,7 +559,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -581,7 +572,6 @@
         },
         {
           "id": 3,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -595,7 +585,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -628,7 +617,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -642,7 +630,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -683,7 +670,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -739,7 +725,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -753,7 +738,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -794,7 +778,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -808,7 +791,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -849,7 +831,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -863,7 +844,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -904,7 +884,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -960,7 +939,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -974,7 +952,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1015,7 +992,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1029,7 +1005,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1070,7 +1045,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1084,7 +1058,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1125,7 +1098,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1139,7 +1111,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1180,7 +1151,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1194,7 +1164,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1235,7 +1204,6 @@
       "employees": [
         {
           "id": 2,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1249,7 +1217,6 @@
         },
         {
           "id": 8,
-
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1283,6 +1250,70 @@
       "createdAt": "2023-12-16T17:50:44.894Z",
       "updatedAt": "2023-12-16T17:50:44.894Z",
       "id": 16
+    },
+    {
+      "id": 17,
+      "name": "test 2",
+      "manager": "Hau Smith",
+      "employees": [
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:37:29.749Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "createdAt": "2023-12-17T16:37:29.749Z",
+      "updatedAt": "2023-12-17T16:37:29.749Z"
+    },
+    {
+      "id": 18,
+      "name": "test 3 ",
+      "manager": null,
+      "employees": [
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:39:04.668Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:39:04.668Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:39:04.668Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-17 23:38:52",
+      "end_date": "2023-12-22 23:38:54",
+      "description": "",
+      "technical": [
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-17T16:39:04.668Z",
+      "updatedAt": "2023-12-17T16:39:04.668Z"
     }
   ],
   "technicals": [
