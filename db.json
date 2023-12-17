@@ -51,11 +51,11 @@
       "skills": [
         {
           "name": "management",
-          "year": "7"
+          "year": 7
         },
         {
           "name": "communicate",
-          "year": "2"
+          "year": 2
         }
       ],
       "position": "Manager",
@@ -79,7 +79,7 @@
       "skills": [
         {
           "name": "programming",
-          "year": "8"
+          "year": 8
         }
       ],
       "position": "Back-End Developer",
