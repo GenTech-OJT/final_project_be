@@ -248,7 +248,20 @@ server.get(
       return res.status(404).json({ error: "Nhân viên không tồn tại" });
     }
 
-    res.status(200).json(employee);
+    const projects = router.db
+      .get("projects")
+      .filter(project => project.employees.some(e => e.id === employeeId))
+      .map(project => {
+        const { employees, ...projectWithoutEmployees } = project;
+        const employeeInProject = employees.find(e => e.id === employeeId);
+        const periods = employeeInProject ? employeeInProject.periods : [];
+        return { ...projectWithoutEmployees, periods };
+      })
+      .value();
+
+    const employeeWithProjects = { ...employee, projects };
+
+    res.status(200).json(employeeWithProjects);
   }
 );
 
@@ -549,7 +562,8 @@ server.get(
 
     // Lấy thông tin chi tiết của từng nhân viên trong dự án
     projects = projects.map((project) => {
-      project.employees = project.employees
+      const projectCopy = { ...project };
+      projectCopy.employees = project.employees
         .map((e) => {
           // Kiểm tra xem employee.id có tồn tại không
           if (e.id) {
@@ -562,9 +576,9 @@ server.get(
         .filter((e) => e !== null); // Loại bỏ nhân viên không có id
 
       // Thêm dữ liệu của nhân viên đang được truyền id vào
-      project.currentEmployee = employee;
+      projectCopy.currentEmployee = employee;
 
-      return project;
+      return projectCopy;
     });
 
     // Search
