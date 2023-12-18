@@ -192,7 +192,7 @@ server.get("/users", (req, res) => {
   });
 });
 
-server.get("/dashboard", authenticateToken, requireAdminRole, (req, res) => {
+server.get("/dashboard", (req, res) => {
   try {
     const employeeCount = router.db.get("employees").size().value();
     const projectCount = router.db.get("projects").size().value();
@@ -227,7 +227,7 @@ server.get("/dashboard", authenticateToken, requireAdminRole, (req, res) => {
   }
 });
 
-server.get("/employees", authenticateToken, requireAdminRole, (req, res) => {
+server.get("/employees", (req, res) => {
   let db = router.db; // lowdb instance
 
   let employees = db.get("employees").value(); // convert to array
@@ -304,8 +304,8 @@ const upload = multer({ dest: "/tmp/" });
 // Tạo mới một nhân viên
 server.post(
   "/employees",
-  authenticateToken,
-  requireAdminRole,
+  // authenticateToken,
+  // requireAdminRole,
   upload.single("avatar"),
   async (req, res) => {
     try {
@@ -315,15 +315,21 @@ server.post(
         avatarUrl = result.secure_url;
       }
 
-       // Tìm ID lớn nhất hiện tại
-       const maxId = Math.max(...router.db.get("employees").value().map(employee => employee.id), 0);
+      // Tìm ID lớn nhất hiện tại
+      const maxId = Math.max(
+        ...router.db
+          .get("employees")
+          .value()
+          .map((employee) => employee.id),
+        0
+      );
 
       const newEmploy = {
         id: maxId + 1,
         ...req.body,
         avatar: avatarUrl,
         createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString()
+        updatedAt: new Date().toISOString(),
       };
       router.db.get("employees").push(newEmploy).write();
       res.status(201).json(newEmploy);
@@ -358,8 +364,8 @@ server.get("/positions", (req, res) => {
 // Cập nhật thông tin của nhaan vieen
 server.put(
   "/employees/:id",
-  authenticateToken,
-  requireAdminRole,
+  // authenticateToken,
+  // requireAdminRole,
   upload.single("avatar"),
   async (req, res) => {
     try {
