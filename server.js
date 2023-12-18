@@ -528,6 +528,59 @@ server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
   res.json(updatedProject);
 });
 
+server.get(
+  "/employees/:id/projects",
+  authenticateToken,
+  requireAdminRole,
+  (req, res) => {
+    const db = router.db; // lowdb instance
+    const employeeId = Number(req.params.id);
+
+    // Lấy ra tất cả các dự án
+    let projects = db.get("projects").value();
+
+    // Lọc ra những dự án mà nhân viên đang tham gia
+    projects = projects.filter((project) =>
+      project.employees.some((e) => e.id === employeeId)
+    );
+
+    // Search
+    if (req.query.q) {
+      const searchTerm = req.query.q.toLowerCase();
+      projects = projects.filter((project) =>
+        project.name.toLowerCase().includes(searchTerm)
+      );
+    }
+
+    res.json({
+      projects,
+    });
+  }
+);
+
+server.delete(
+  "/projects/:id",
+  authenticateToken,
+  requireAdminRole,
+  (req, res) => {
+    const db = router.db; // lowdb instance
+    const projectId = Number(req.params.id);
+
+    // Tìm dự án cần xóa
+    const project = db.get("projects").find({ id: projectId }).value();
+
+    // Nếu không tìm thấy dự án, trả về lỗi
+    if (!project) {
+      return res.status(404).json({ error: "Dự án không tồn tại" });
+    }
+
+    // Xóa dự án
+    db.get("projects").remove({ id: projectId }).write();
+
+    res.json({ message: "Dự án đã được xóa thành công" });
+  }
+);
+
 server.use(router);
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
