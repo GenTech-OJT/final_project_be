@@ -544,6 +544,23 @@ server.get(
       project.employees.some((e) => e.id === employeeId)
     );
 
+    // Lấy thông tin chi tiết của từng nhân viên trong dự án
+    projects = projects.map((project) => {
+      project.employees = project.employees
+        .map((employee) => {
+          console.log("employee", employee);
+          // Kiểm tra xem employee.id có tồn tại không
+          if (employee.id) {
+            return db.get("employees").find({ id: employee.id }).value();
+          } else {
+            console.log("Employee without id found in project:", project);
+            return null;
+          }
+        })
+        .filter((employee) => employee !== null); // Loại bỏ nhân viên không có id
+      return project;
+    });
+
     // Search
     if (req.query.q) {
       const searchTerm = req.query.q.toLowerCase();
@@ -552,9 +569,7 @@ server.get(
       );
     }
 
-    res.json({
-      projects,
-    });
+    res.json(projects);
   }
 );
 
