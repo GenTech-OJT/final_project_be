@@ -596,6 +596,34 @@ server.delete(
   }
 );
 
+server.get("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
+  const db = router.db; // lowdb instance
+  const projectId = Number(req.params.id);
+
+  // Tìm dự án với id được truyền vào
+  let project = db.get("projects").find({ id: projectId }).value();
+
+  // Nếu không tìm thấy dự án, trả về lỗi
+  if (!project) {
+    return res.status(404).json({ error: "Dự án không tồn tại" });
+  }
+
+  // Lấy thông tin chi tiết của từng nhân viên trong dự án
+  project.employees = project.employees
+    .map((employee) => {
+      // Kiểm tra xem employee.id có tồn tại không
+      if (employee.id) {
+        return db.get("employees").find({ id: employee.id }).value();
+      } else {
+        console.log("Employee without id found in project:", project);
+        return null;
+      }
+    })
+    .filter((employee) => employee !== null); // Loại bỏ nhân viên không có id
+
+  res.json(project);
+});
+
 server.use(router);
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
