@@ -250,10 +250,10 @@ server.get(
 
     const projects = router.db
       .get("projects")
-      .filter(project => project.employees.some(e => e.id === employeeId))
-      .map(project => {
+      .filter((project) => project.employees.some((e) => e.id === employeeId))
+      .map((project) => {
         const { employees, ...projectWithoutEmployees } = project;
-        const employeeInProject = employees.find(e => e.id === employeeId);
+        const employeeInProject = employees.find((e) => e.id === employeeId);
         const periods = employeeInProject ? employeeInProject.periods : [];
         return { ...projectWithoutEmployees, periods };
       })
@@ -498,47 +498,66 @@ server.post("/projects", authenticateToken, requireAdminRole, (req, res) => {
 });
 
 server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
-  const project = router.db
-    .get("projects")
-    .find({ id: Number(req.params.id) })
-    .value();
+  const projectId = Number(req.params.id);
+  const updatedProject = req.body;
+
+  const project = router.db.get("projects").find({ id: projectId }).value();
 
   if (!project) {
-    return res.status(404).json({ error: "Project not found" });
+    return res.status(404).json({ error: "Dự án không tồn tại" });
   }
 
-  // Kiểm tra xem tất cả nhân viên có tồn tại không
-  const employees = router.db.get("employees").value();
-  const employeeIds = employees.map((employee) => employee.id);
-  for (let employee of req.body.employees) {
-    if (!employeeIds.includes(Number(employee.id))) {
-      return res
-        .status(400)
-        .json({ error: `Employee with id ${employee.id} does not exist` });
+  // Cập nhật leaving_time cho nhân viên không còn trong dự án
+  project.employees.forEach((employee) => {
+    const updatedEmployee = updatedProject.employees.find(
+      (e) => e.id === employee.id
+    );
+    if (!updatedEmployee) {
+      const leavingPeriod = employee.periods.find(
+        (period) => period.leaving_time === null
+      );
+      if (leavingPeriod) {
+        leavingPeriod.leaving_time = new Date().toISOString();
+      }
     }
-  }
+  });
 
-  const updatedProject = {
-    ...project,
-    ...req.body,
-    manager: Number(req.body.manager), // convert to number
-    employees: req.body.employees.map((employee) => ({
-      id: Number(employee.id), // convert to number
-      periods: employee.periods.map((period) => ({
-        joining_time: period.joining_time,
-        leaving_time: period.leaving_time ? period.leaving_time : null,
-      })),
-    })),
-    updatedAt: new Date().toISOString(),
-  };
+  // Thêm một đối tượng mới với joining_time và leaving_time là null cho nhân viên được thêm vào dự án
+  updatedProject.employees.forEach((updatedEmployee) => {
+    const employee = project.employees.find((e) => e.id === updatedEmployee.id);
+    if (!employee) {
+      const newEmployee = { ...updatedEmployee, periods: [] };
+      newEmployee.periods.push({
+        joining_time: new Date().toISOString(),
+        leaving_time: null,
+      });
+      project.employees.push(newEmployee);
+    } else {
+      // Nếu nhân viên đã từng là một phần của dự án, thêm một khoảng thời gian làm việc mới
+      const leavingPeriod = employee.periods.find(
+        (period) => period.leaving_time !== null
+      );
+      if (leavingPeriod) {
+        employee.periods.push({
+          joining_time: new Date().toISOString(),
+          leaving_time: null,
+        });
+      }
+    }
+  });
 
-  router.db
-    .get("projects")
-    .find({ id: Number(req.params.id) })
-    .assign(updatedProject)
-    .write();
+  // Cập nhật các trường khác của dự án
+  project.name = updatedProject.name;
+  project.manager = updatedProject.manager;
+  project.status = updatedProject.status;
+  project.start_date = updatedProject.start_date;
+  project.end_date = updatedProject.end_date;
+  project.description = updatedProject.description;
+  project.technical = updatedProject.technical;
 
-  res.json(updatedProject);
+  router.db.get("projects").find({ id: projectId }).assign(project).write();
+
+  res.status(200).json(project);
 });
 
 server.get(
