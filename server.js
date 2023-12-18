@@ -494,6 +494,17 @@ server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
     return res.status(404).json({ error: "Project not found" });
   }
 
+  // Kiểm tra xem tất cả nhân viên có tồn tại không
+  const employees = router.db.get("employees").value();
+  const employeeIds = employees.map((employee) => employee.id);
+  for (let employee of req.body.employees) {
+    if (!employeeIds.includes(Number(employee.id))) {
+      return res
+        .status(400)
+        .json({ error: `Employee with id ${employee.id} does not exist` });
+    }
+  }
+
   const updatedProject = {
     ...project,
     ...req.body,
@@ -501,8 +512,8 @@ server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
     employees: req.body.employees.map((employee) => ({
       id: Number(employee.id), // convert to number
       periods: employee.periods.map((period) => ({
-        joinDate: period.joinDate,
-        leaveDate: period.leaveDate ? period.leaveDate : null,
+        joining_time: period.joining_time,
+        leaving_time: period.leaving_time ? period.leaving_time : null,
       })),
     })),
     updatedAt: new Date().toISOString(),
