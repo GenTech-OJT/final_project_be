@@ -8,8 +8,8 @@
       "verified": true,
       "role": "admin",
       "name": "Admin",
-      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAyODIxNTg4LCJleHAiOjE3MDI4NTc1ODh9.kmV9dEKj4kZm3MQh9r0qlvY0Xqb8SJZdHndMnnWCg2c",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAyODIxNTg4fQ.J-vN5huUVJojNuFlp2MmMBW8YoGn4-jGEbSBMd7mC3c"
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAyODY2MzQ1LCJleHAiOjE3MDI5MDIzNDV9.oxSfIrQlQOKBJ6ACJGJEx8g8ssShiMcwF6Pqw84knx0",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAyODY2MzQ1fQ._Uy148TV2nqe-lMOjpbqT8cxl_CnXJ50J92jRzQ6nIU"
     }
   ],
   "employees": [
@@ -321,14 +321,6 @@
       "is_manager": true,
       "description": "An experienced manager",
       "updatedAt": "2023-12-17T13:48:03.742Z"
-    },
-    {
-      "id": 16,
-      "name": "toan",
-      "abc": "22",
-      "avatar": "",
-      "createdAt": "2023-12-17T16:08:37.852Z",
-      "updatedAt": "2023-12-17T16:08:37.852Z"
     }
   ],
   "positions": [
