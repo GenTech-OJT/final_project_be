@@ -36,7 +36,8 @@
       "position": "Software Engineer",
       "line_manager": "emp2",
       "is_manager": false,
-      "description": "A dedicated software engineer"
+      "description": "A dedicated software engineer",
+      "updatedAt": "2023-12-17T14:00:16.855Z"
     },
     {
       "id": 2,
@@ -47,7 +48,7 @@
       "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
       "identity": "444555666",
       "gender": "female",
-      "status": "inactive",
+      "status": "active",
       "skills": [
         {
           "name": "management",
@@ -64,7 +65,7 @@
       "description": "An experienced manager",
       "email": "sadsad@gmail.com",
       "createdAt": "2023-12-15T04:45:55.786Z",
-      "updatedAt": "2023-12-15T04:45:55.786Z"
+      "updatedAt": "2023-12-17T13:36:40.603Z"
     },
     {
       "id": 3,
@@ -84,9 +85,12 @@
       ],
       "position": "Back-End Developer",
       "line_manager": null,
-      "is_manager": "false",
+      "is_manager": true,
       "description": "An experienced manager",
-      "email": "mwin451999@gmail.com"
+      "email": "mwin451999@gmail.com",
+      "updatedAt": "2023-12-17T14:36:18.546Z",
+      "manager": "Khoa Ngo",
+      "https://xsgames.co/randomusers/avatar.php?g": "male"
     },
     {
       "id": 4,
@@ -105,31 +109,6 @@
         }
       ],
       "position": "Manager",
-      "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
-    },
-    {
-      "id": 5,
-      "code": "E005",
-      "name": "Nguyen Vinh",
-      "phone": "0921654321",
-      "dob": "2001-01-07",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "identity": "444111666",
-      "gender": "female",
-      "status": "active",
-      "skills": [
-        {
-          "name": "developer",
-          "year": 6
-        },
-        {
-          "name": "programming",
-          "year": 4
-        }
-      ],
-      "position": "Front-End Developer",
       "line_manager": null,
       "is_manager": true,
       "description": "An experienced manager"
@@ -198,31 +177,6 @@
       "description": "An experienced manager"
     },
     {
-      "id": 9,
-      "code": "E006",
-      "name": "Nguyen Hoang",
-      "phone": "0123654221",
-      "dob": "1999-01-06",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "identity": "444555777",
-      "gender": "female",
-      "status": "inactive",
-      "skills": [
-        {
-          "name": "Developer",
-          "year": 7
-        },
-        {
-          "name": "programming",
-          "year": 7
-        }
-      ],
-      "position": "Developer",
-      "line_manager": null,
-      "is_manager": true,
-      "description": "An experienced manager"
-    },
-    {
       "id": 10,
       "code": "E006",
       "name": "Hau Hoang",
@@ -273,7 +227,7 @@
       "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
       "identity": "444555777",
       "gender": "female",
-      "status": "inactive",
+      "status": "active",
       "skills": [
         {
           "name": "developer",
@@ -287,7 +241,8 @@
       "position": "Developer",
       "line_manager": null,
       "is_manager": true,
-      "description": "An experienced manager"
+      "description": "An experienced manager",
+      "updatedAt": "2023-12-17T13:59:21.129Z"
     },
     {
       "id": 13,
@@ -298,7 +253,7 @@
       "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
       "identity": "444555777",
       "gender": "female",
-      "status": "inactive",
+      "status": "active",
       "skills": [
         {
           "name": "Developer",
@@ -312,7 +267,8 @@
       "position": "Developer",
       "line_manager": null,
       "is_manager": true,
-      "description": "An experienced manager"
+      "description": "An experienced manager",
+      "updatedAt": "2023-12-17T13:59:04.552Z"
     },
     {
       "id": 14,
@@ -323,7 +279,7 @@
       "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
       "identity": "444555777",
       "gender": "female",
-      "status": "inactive",
+      "status": "active",
       "skills": [
         {
           "name": "back-end",
@@ -337,7 +293,8 @@
       "position": "Back-End Developer",
       "line_manager": null,
       "is_manager": true,
-      "description": "An experienced manager"
+      "description": "An experienced manager",
+      "updatedAt": "2023-12-17T13:59:06.780Z"
     },
     {
       "id": 15,
@@ -348,7 +305,7 @@
       "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
       "identity": "444555777",
       "gender": "female",
-      "status": "inactive",
+      "status": "active",
       "skills": [
         {
           "name": "back-end",
@@ -362,7 +319,16 @@
       "position": "Back-End Developer",
       "line_manager": null,
       "is_manager": true,
-      "description": "An experienced manager"
+      "description": "An experienced manager",
+      "updatedAt": "2023-12-17T13:48:03.742Z"
+    },
+    {
+      "id": 16,
+      "name": "toan",
+      "abc": "22",
+      "avatar": "",
+      "createdAt": "2023-12-17T16:08:37.852Z",
+      "updatedAt": "2023-12-17T16:08:37.852Z"
     }
   ],
   "positions": [
@@ -402,12 +368,10 @@
   "projects": [
     {
       "name": "Project 1",
-      "manager": "Nguyen Vinh",
+      "manager": 3,
       "employees": [
         {
           "id": 10,
-          "name": "Hau Hoang",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -421,8 +385,6 @@
         },
         {
           "id": 12,
-          "name": "Nguyen Ba Hoang",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -436,8 +398,6 @@
         },
         {
           "id": 14,
-          "name": "Van Hoa",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -451,8 +411,6 @@
         },
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -466,8 +424,6 @@
         },
         {
           "id": 4,
-          "name": "Vy Nguyen",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -481,8 +437,6 @@
         },
         {
           "id": 5,
-          "name": "Nguyen Vinh",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -515,19 +469,15 @@
     },
     {
       "name": "Project 2",
-      "manager": "Vy Nguyen",
+      "manager": 4,
       "employees": [
         {
           "id": 10,
-          "name": "Hau Hoang",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "joining_time": "2023-12-17 00:41:25",
           "leaving_time": null
         },
         {
           "id": 4,
-          "name": "Vy Nguyen",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "joining_time": "2023-12-17 00:41:25",
           "leaving_time": null
         }
@@ -556,12 +506,10 @@
     },
     {
       "name": "Project 3",
-      "manager": "Nguyen Hoang",
+      "manager": 3,
       "employees": [
         {
           "id": 10,
-          "name": "Hau Hoang",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -575,8 +523,6 @@
         },
         {
           "id": 4,
-          "name": "Vy Nguyen",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -609,12 +555,10 @@
     },
     {
       "name": "Project 4",
-      "manager": "Vy Nguyen",
+      "manager": 4,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -628,8 +572,6 @@
         },
         {
           "id": 3,
-          "name": "Hau Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -643,8 +585,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -673,12 +613,10 @@
     },
     {
       "name": "Project 5",
-      "manager": "Nguyen Hoang",
+      "manager": 6,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -692,8 +630,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -730,12 +666,10 @@
     },
     {
       "name": "Project 6",
-      "manager": "Nguyen Hoang",
+      "manager": 7,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -787,12 +721,10 @@
     },
     {
       "name": "Project 7",
-      "manager": "Nguyen Hoang",
+      "manager": 8,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -806,8 +738,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -844,12 +774,10 @@
     },
     {
       "name": "Project 8",
-      "manager": "Nguyen Hoang",
+      "manager": 3,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -863,8 +791,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -901,12 +827,10 @@
     },
     {
       "name": "Project 9",
-      "manager": "Nguyen Hoang",
+      "manager": 3,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -920,8 +844,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -958,12 +880,10 @@
     },
     {
       "name": "Project 10",
-      "manager": "Nguyen Hoang",
+      "manager": 7,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1015,12 +935,10 @@
     },
     {
       "name": "Project 11",
-      "manager": "Nguyen Hoang",
+      "manager": 8,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1034,8 +952,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1072,12 +988,10 @@
     },
     {
       "name": "Project 12",
-      "manager": "Nguyen Hoang",
+      "manager": 7,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1091,8 +1005,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1129,12 +1041,10 @@
     },
     {
       "name": "Project 6",
-      "manager": "Nguyen Hoang",
+      "manager": 8,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1148,8 +1058,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1186,12 +1094,10 @@
     },
     {
       "name": "Project 6",
-      "manager": "Nguyen Hoang",
+      "manager": 8,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1205,8 +1111,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1243,12 +1147,10 @@
     },
     {
       "name": "Project 6",
-      "manager": "Nguyen Hoang",
+      "manager": 8,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1262,8 +1164,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1300,12 +1200,10 @@
     },
     {
       "name": "Project 6",
-      "manager": "Nguyen Hoang",
+      "manager": 8,
       "employees": [
         {
           "id": 2,
-          "name": "Jane Smith",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1319,8 +1217,6 @@
         },
         {
           "id": 8,
-          "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -1354,6 +1250,70 @@
       "createdAt": "2023-12-16T17:50:44.894Z",
       "updatedAt": "2023-12-16T17:50:44.894Z",
       "id": 16
+    },
+    {
+      "id": 17,
+      "name": "test 2",
+      "manager": "Hau Smith",
+      "employees": [
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:37:29.749Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "createdAt": "2023-12-17T16:37:29.749Z",
+      "updatedAt": "2023-12-17T16:37:29.749Z"
+    },
+    {
+      "id": 18,
+      "name": "test 3 ",
+      "manager": null,
+      "employees": [
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:39:04.668Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:39:04.668Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-17T16:39:04.668Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-17 23:38:52",
+      "end_date": "2023-12-22 23:38:54",
+      "description": "",
+      "technical": [
+        {
+          "id": 4,
+          "name": "Ruby"
+        }
+      ],
+      "createdAt": "2023-12-17T16:39:04.668Z",
+      "updatedAt": "2023-12-17T16:39:04.668Z"
     }
   ],
   "technicals": [

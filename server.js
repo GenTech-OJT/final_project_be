@@ -150,48 +150,6 @@ server.post("/refresh-token", (req, res) => {
   });
 });
 
-server.get("/users", (req, res) => {
-  let db = router.db; // lowdb instance
-
-  let users = db.get("users").value(); // convert to array
-
-  // Filter
-  if (req.query.name) {
-    users = users.filter((user) => user.name.includes(req.query.name));
-  }
-
-  // Search
-  if (req.query.q) {
-    users = users.filter((user) => user.name.includes(req.query.q));
-  }
-
-  // Sort
-  if (req.query._sort && req.query._order) {
-    users = _.orderBy(users, req.query._sort, req.query._order);
-  }
-
-  // Paginate
-  const _page = req.query._page || 1;
-  const _limit = req.query._limit || 10;
-  const start = (_page - 1) * _limit;
-  const end = _page * _limit;
-
-  const paginatedUsers = users.slice(start, end);
-
-  res.json({
-    pagination: {
-      total: users.length,
-      page: _page,
-      limit: _limit,
-    },
-    sort: {
-      field: req.query._sort || "id",
-      order: req.query._order || "asc",
-    },
-    data: paginatedUsers,
-  });
-});
-
 server.get("/dashboard", (req, res) => {
   try {
     const employeeCount = router.db.get("employees").size().value();
@@ -279,7 +237,7 @@ server.get(
   // authenticateToken,
   // requireAdminRole,
   (req, res) => {
-    const employeeId = req.params.id;
+    const employeeId = Number(req.params.id);
 
     const employee = router.db
       .get("employees")
@@ -316,6 +274,7 @@ server.post(
       }
 
       // Tìm ID lớn nhất hiện tại
+      //  hiện tại
       const maxId = Math.max(
         ...router.db
           .get("employees")
@@ -343,7 +302,7 @@ server.get("/managers", (req, res) => {
   try {
     const managers = router.db
       .get("employees")
-      .filter({ is_manager: true })
+      .filter({ is_manager: true || is_manager === "true" })
       .value();
     res.status(200).json(managers);
   } catch (err) {
@@ -369,7 +328,7 @@ server.put(
   upload.single("avatar"),
   async (req, res) => {
     try {
-      const employeeId = req.params.id;
+      const employeeId = Number(req.params.id);
       const updatedEmploy = req.body;
 
       const employee = router.db
@@ -408,7 +367,8 @@ server.delete(
   authenticateToken,
   requireAdminRole,
   (req, res) => {
-    const employeeId = req.params.id;
+    const employeeId = Number(req.params.id);
+
     const employee = router.db
       .get("employees")
       .find({ id: employeeId })
@@ -428,6 +388,27 @@ server.get("/projects", authenticateToken, requireAdminRole, (req, res) => {
   let db = router.db; // lowdb instance
 
   let projects = db.get("projects").value(); // convert to array
+
+  // Get detailed information for manager and employees
+  projects = projects.map((project) => {
+    const manager = db.get("employees").find({ id: project.manager }).value();
+    const employees = project.employees.map((employee) => {
+      const employeeDetails = db
+        .get("employees")
+        .find({ id: employee.id })
+        .value();
+      return {
+        ...employeeDetails,
+        periods: employee.periods,
+      };
+    });
+
+    return {
+      ...project,
+      manager,
+      employees,
+    };
+  });
 
   // Filter
   if (req.query.name) {
@@ -470,6 +451,71 @@ server.get("/projects", authenticateToken, requireAdminRole, (req, res) => {
     },
     data: paginatedProjects,
   });
+});
+
+server.post("/projects", authenticateToken, requireAdminRole, (req, res) => {
+  // Tìm ID lớn nhất hiện tại
+  const maxId = Math.max(
+    ...router.db
+      .get("projects")
+      .value()
+      .map((project) => project.id),
+    0
+  );
+
+  const project = {
+    id: maxId + 1,
+    ...req.body,
+    manager: Number(req.body.manager),
+    employees: req.body.employees.map((employee) => ({
+      id: Number(employee.id),
+      periods: [
+        {
+          joining_time: new Date().toISOString(),
+          leaving_time: null,
+        },
+      ],
+    })),
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  };
+
+  router.db.get("projects").push(project).write();
+
+  res.status(201).json(project);
+});
+
+server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
+  const project = router.db
+    .get("projects")
+    .find({ id: Number(req.params.id) })
+    .value();
+
+  if (!project) {
+    return res.status(404).json({ error: "Project not found" });
+  }
+
+  const updatedProject = {
+    ...project,
+    ...req.body,
+    manager: Number(req.body.manager), // convert to number
+    employees: req.body.employees.map((employee) => ({
+      id: Number(employee.id), // convert to number
+      periods: employee.periods.map((period) => ({
+        joinDate: period.joinDate,
+        leaveDate: period.leaveDate ? period.leaveDate : null,
+      })),
+    })),
+    updatedAt: new Date().toISOString(),
+  };
+
+  router.db
+    .get("projects")
+    .find({ id: Number(req.params.id) })
+    .assign(updatedProject)
+    .write();
+
+  res.json(updatedProject);
 });
 
 server.use(router);
