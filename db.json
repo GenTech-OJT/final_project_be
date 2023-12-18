@@ -19,7 +19,7 @@
       "name": "John Doe",
       "phone": "1234567890",
       "dob": "1990-01-01",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/male/39.jpg",
       "identity": "111222333",
       "gender": "male",
       "status": "active",
@@ -45,7 +45,7 @@
       "name": "Jane Smith",
       "phone": "0987654321",
       "dob": "1985-01-01",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/15.jpg",
       "identity": "444555666",
       "gender": "female",
       "status": "active",
@@ -73,7 +73,7 @@
       "name": "Hau Smith",
       "phone": "0965710419",
       "dob": "1985-05-02",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/male/57.jpg",
       "identity": "444555666",
       "gender": "male",
       "status": "inactive",
@@ -98,7 +98,7 @@
       "name": "Vy Nguyen",
       "phone": "0983254321",
       "dob": "2001-06-01",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/male/24.jpg",
       "identity": "444555999",
       "gender": "male",
       "status": "active",
@@ -119,7 +119,7 @@
       "name": "Minh Hoang",
       "phone": "0987654344",
       "dob": "1995-08-06",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/7.jpg",
       "identity": "111555666",
       "gender": "female",
       "status": "active",
@@ -140,7 +140,7 @@
       "name": "Khoa Ngo",
       "phone": "0123654321",
       "dob": "1999-07-01",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/64.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "active",
@@ -161,7 +161,7 @@
       "name": "Nguyen Ba",
       "phone": "0987654112",
       "dob": "2001-05-02",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/male/57.jpg",
       "identity": "444555999",
       "gender": "male",
       "status": "active",
@@ -182,7 +182,7 @@
       "name": "Hau Hoang",
       "phone": "0987654344",
       "dob": "2001-09-02",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/72.jpg",
       "identity": "111555666",
       "gender": "female",
       "status": "active",
@@ -200,10 +200,10 @@
     {
       "id": 11,
       "code": "E007",
-      "name": "Hau Nguyen",
+      "name": "Linh Nguyen",
       "phone": "09112654344",
       "dob": "1985-04-05",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/26.jpg",
       "identity": "111555666",
       "gender": "female",
       "status": "active",
@@ -221,10 +221,10 @@
     {
       "id": 12,
       "code": "E008",
-      "name": "Nguyen Ba Hoang",
+      "name": "Nu Hoang",
       "phone": "0123654221",
       "dob": "1985-08-02",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/36.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "active",
@@ -247,10 +247,10 @@
     {
       "id": 13,
       "code": "E009",
-      "name": "Van Hoang",
+      "name": "Van Nguyen",
       "phone": "0123654221",
       "dob": "1985-05-01",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/69.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "active",
@@ -276,7 +276,7 @@
       "name": "Van Hoa",
       "phone": "0123654221",
       "dob": "1985-05-01",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/45.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "active",
@@ -302,7 +302,7 @@
       "name": "Van Tien",
       "phone": "0123654221",
       "dob": "1985-05-01",
-      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/44.jpg",
       "identity": "444555777",
       "gender": "female",
       "status": "active",
@@ -324,11 +324,164 @@
     },
     {
       "id": 16,
-      "name": "toan",
-      "abc": "22",
-      "avatar": "",
-      "createdAt": "2023-12-17T16:08:37.852Z",
-      "updatedAt": "2023-12-17T16:08:37.852Z"
+      "code": "E008",
+      "name": "Thu Tran",
+      "phone": "0987123456",
+      "dob": "1992-12-20",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/48.jpg",
+      "identity": "333666999",
+      "gender": "female",
+      "status": "active",
+      "skills": [
+        {
+          "name": "Back-End",
+          "year": 6
+        },
+        {
+          "name": "Database Management",
+          "year": 5
+        }
+      ],
+      "position": "Back-End Developer",
+      "line_manager": null,
+      "is_manager": false,
+      "description": "Passionate about backend technologies.",
+      "updatedAt": "2023-12-18T09:30:45.123Z"
+    },
+    {
+      "id": 17,
+      "code": "E010",
+      "name": "Nam Le",
+      "phone": "0912345678",
+      "dob": "1993-11-15",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/male/16.jpg",
+      "identity": "555666777",
+      "gender": "male",
+      "status": "active",
+      "skills": [
+        {
+          "name": "Front-End",
+          "year": 6
+        },
+        {
+          "name": "UI/UX Design",
+          "year": 4
+        }
+      ],
+      "position": "Front-End Developer",
+      "line_manager": 11,
+      "is_manager": false,
+      "description": "Passionate about creating user-friendly interfaces.",
+      "createdAt": "2023-12-18T15:20:30.123Z",
+      "updatedAt": "2023-12-18T15:20:30.123Z"
+    },
+    {
+      "id": 18,
+      "code": "E011",
+      "name": "Trang Nguyen",
+      "phone": "0987654321",
+      "dob": "1991-05-20",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/2.jpg",
+      "identity": "333444555",
+      "gender": "female",
+      "status": "active",
+      "skills": [
+        {
+          "name": "Back-End",
+          "year": 7
+        },
+        {
+          "name": "Database Management",
+          "year": 5
+        }
+      ],
+      "position": "Back-End Developer",
+      "line_manager": 11,
+      "is_manager": false,
+      "description": "Experienced in back-end development and database management.",
+      "createdAt": "2023-12-18T15:35:45.678Z",
+      "updatedAt": "2023-12-18T15:35:45.678Z"
+    },
+    {
+      "id": 19,
+      "code": "E012",
+      "name": "Quoc Vu",
+      "phone": "0978123456",
+      "dob": "1988-08-25",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/male/0.jpg",
+      "identity": "444555666",
+      "gender": "male",
+      "status": "active",
+      "skills": [
+        {
+          "name": "Full-Stack",
+          "year": 8
+        },
+        {
+          "name": "DevOps",
+          "year": 4
+        }
+      ],
+      "position": "Full-Stack Developer",
+      "line_manager": 11,
+      "is_manager": false,
+      "description": "Skilled in full-stack development and DevOps practices.",
+      "createdAt": "2023-12-18T15:50:00.987Z",
+      "updatedAt": "2023-12-18T15:50:00.987Z"
+    },
+    {
+      "id": 20,
+      "code": "E013",
+      "name": "Mai Anh",
+      "phone": "0987654321",
+      "dob": "1995-02-10",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/female/70.jpg",
+      "identity": "777888999",
+      "gender": "female",
+      "status": "active",
+      "skills": [
+        {
+          "name": "UI/UX Design",
+          "year": 5
+        },
+        {
+          "name": "Front-End",
+          "year": 3
+        }
+      ],
+      "position": "UI/UX Designer",
+      "line_manager": 6,
+      "is_manager": false,
+      "description": "Passionate about creating delightful user experiences.",
+      "createdAt": "2023-12-18T16:30:00.987Z",
+      "updatedAt": "2023-12-18T16:30:00.987Z"
+    },
+    {
+      "id": 21,
+      "code": "E014",
+      "name": "Trung Hoang",
+      "phone": "0912345678",
+      "dob": "1987-07-15",
+      "avatar": "https://xsgames.co/randomusers/assets/avatars/male/11.jpg",
+      "identity": "111222333",
+      "gender": "male",
+      "status": "active",
+      "skills": [
+        {
+          "name": "Back-End",
+          "year": 6
+        },
+        {
+          "name": "Database Management",
+          "year": 4
+        }
+      ],
+      "position": "Back-End Developer",
+      "line_manager": 8,
+      "is_manager": false,
+      "description": "Experienced in backend development and database management.",
+      "createdAt": "2023-12-18T17:15:00.987Z",
+      "updatedAt": "2023-12-18T17:15:00.987Z"
     }
   ],
   "positions": [
@@ -363,6 +516,10 @@
     {
       "id": 8,
       "name": "Software Tester"
+    },
+    {
+      "id": 9,
+      "name": "Back-End Developer"
     }
   ],
   "projects": [
@@ -645,7 +802,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 5",
       "technical": [
         {
           "id": 2,
@@ -665,7 +822,7 @@
       "id": 5
     },
     {
-      "name": "Project 6",
+      "name": "Project 13",
       "manager": 7,
       "employees": [
         {
@@ -684,7 +841,7 @@
         {
           "id": 8,
           "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "avatar": "https://xsgames.co/randomusers/assets/avatars/male/64.jpg",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -753,7 +910,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 7",
       "technical": [
         {
           "id": 2,
@@ -806,7 +963,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 8",
       "technical": [
         {
           "id": 2,
@@ -859,7 +1016,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 9",
       "technical": [
         {
           "id": 2,
@@ -898,7 +1055,7 @@
         {
           "id": 8,
           "name": "Nguyen Ba",
-          "avatar": "https://xsgames.co/randomusers/avatar.php?g=male",
+          "avatar": "https://xsgames.co/randomusers/assets/avatars/male/19.jpg",
           "periods": [
             {
               "joining_time": "2023-12-17T00:39:18Z",
@@ -914,7 +1071,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 10",
       "technical": [
         {
           "id": 2,
@@ -967,7 +1124,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 11",
       "technical": [
         {
           "id": 2,
@@ -1020,7 +1177,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 13",
       "technical": [
         {
           "id": 2,
@@ -1040,7 +1197,7 @@
       "id": 12
     },
     {
-      "name": "Project 6",
+      "name": "Project 13",
       "manager": 8,
       "employees": [
         {
@@ -1073,7 +1230,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 14",
       "technical": [
         {
           "id": 2,
@@ -1093,7 +1250,7 @@
       "id": 13
     },
     {
-      "name": "Project 6",
+      "name": "Project 14",
       "manager": 8,
       "employees": [
         {
@@ -1126,7 +1283,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 15",
       "technical": [
         {
           "id": 2,
@@ -1146,7 +1303,7 @@
       "id": 14
     },
     {
-      "name": "Project 6",
+      "name": "Project 15",
       "manager": 8,
       "employees": [
         {
@@ -1179,7 +1336,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 16",
       "technical": [
         {
           "id": 2,
@@ -1199,7 +1356,7 @@
       "id": 15
     },
     {
-      "name": "Project 6",
+      "name": "Project 16",
       "manager": 8,
       "employees": [
         {
@@ -1232,7 +1389,7 @@
       "status": "Done",
       "start_date": "2024-12-13 00:31:57",
       "end_date": "2025-05-16 00:31:59",
-      "description": "Description of project 6",
+      "description": "Description of project 17",
       "technical": [
         {
           "id": 2,
@@ -1250,7 +1407,7 @@
       "createdAt": "2023-12-16T17:50:44.894Z",
       "updatedAt": "2023-12-16T17:50:44.894Z",
       "id": 16
-    },
+},
     {
       "id": 17,
       "name": "test 2",
