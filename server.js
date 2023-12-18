@@ -536,6 +536,9 @@ server.get(
     const db = router.db; // lowdb instance
     const employeeId = Number(req.params.id);
 
+    // Tìm nhân viên với id được truyền vào
+    const employee = db.get("employees").find({ id: employeeId }).value();
+
     // Lấy ra tất cả các dự án
     let projects = db.get("projects").value();
 
@@ -547,17 +550,20 @@ server.get(
     // Lấy thông tin chi tiết của từng nhân viên trong dự án
     projects = projects.map((project) => {
       project.employees = project.employees
-        .map((employee) => {
-          console.log("employee", employee);
+        .map((e) => {
           // Kiểm tra xem employee.id có tồn tại không
-          if (employee.id) {
-            return db.get("employees").find({ id: employee.id }).value();
+          if (e.id) {
+            return db.get("employees").find({ id: e.id }).value();
           } else {
             console.log("Employee without id found in project:", project);
             return null;
           }
         })
-        .filter((employee) => employee !== null); // Loại bỏ nhân viên không có id
+        .filter((e) => e !== null); // Loại bỏ nhân viên không có id
+
+      // Thêm dữ liệu của nhân viên đang được truyền id vào
+      project.currentEmployee = employee;
+
       return project;
     });
 
@@ -609,19 +615,21 @@ server.get("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
   }
 
   // Lấy thông tin chi tiết của từng nhân viên trong dự án
-  project.employees = project.employees
+  const detailedEmployees = project.employees
     .map((employee) => {
-      // Kiểm tra xem employee.id có tồn tại không
-      if (employee.id) {
-        return db.get("employees").find({ id: employee.id }).value();
-      } else {
-        console.log("Employee without id found in project:", project);
-        return null;
-      }
+      const employeeDetails = db
+        .get("employees")
+        .find({ id: employee.id })
+        .value();
+      return {
+        ...employeeDetails,
+        periods: employee.periods,
+      };
     })
     .filter((employee) => employee !== null); // Loại bỏ nhân viên không có id
 
-  res.json(project);
+  // Trả về dự án với thông tin chi tiết của nhân viên và giữ lại periods
+  res.json({ ...project, employees: detailedEmployees });
 });
 
 server.use(router);
