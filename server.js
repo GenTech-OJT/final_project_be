@@ -534,10 +534,8 @@ server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
       project.employees.push(newEmployee);
     } else {
       // Nếu nhân viên đã từng là một phần của dự án, thêm một khoảng thời gian làm việc mới
-      const leavingPeriod = employee.periods.find(
-        (period) => period.leaving_time !== null
-      );
-      if (leavingPeriod) {
+      const lastPeriod = employee.periods[employee.periods.length - 1];
+      if (lastPeriod && lastPeriod.leaving_time !== null) {
         employee.periods.push({
           joining_time: new Date().toISOString(),
           leaving_time: null,
