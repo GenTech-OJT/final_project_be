@@ -252,7 +252,7 @@ server.get(
     const manager = router.db
       .get("employees")
       .find({ id: employee.manager })
-      .value();
+      .value() ?? null;
 
     const projects = router.db
       .get("projects")
