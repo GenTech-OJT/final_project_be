@@ -248,6 +248,12 @@ server.get(
       return res.status(404).json({ error: "Nhân viên không tồn tại" });
     }
 
+    // Tìm thông tin chi tiết của manager
+    const manager = router.db
+      .get("employees")
+      .find({ id: employee.manager })
+      .value();
+
     const projects = router.db
       .get("projects")
       .filter((project) => project.employees.some((e) => e.id === employeeId))
@@ -259,7 +265,7 @@ server.get(
       })
       .value();
 
-    const employeeWithProjects = { ...employee, projects };
+    const employeeWithProjects = { ...employee, projects, manager };
 
     res.status(200).json(employeeWithProjects);
   }
@@ -360,7 +366,7 @@ server.put(
         const result = await cloudinary.uploader.upload(req.file.path);
         updatedEmploy.avatar = result.secure_url; // Cập nhật URL avatar
       }
-      
+
       updatedEmploy.manager = Number(updatedEmploy.manager);
       updatedEmploy.updatedAt = new Date().toISOString();
 
