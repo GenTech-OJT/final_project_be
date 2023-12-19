@@ -314,7 +314,10 @@ server.get("/managers", (req, res) => {
   try {
     const managers = router.db
       .get("employees")
-      .filter({ is_manager: true || is_manager === "true" })
+      .filter(
+        (employee) =>
+          employee.is_manager === true || employee.is_manager === "true"
+      )
       .value();
     res.status(200).json(managers);
   } catch (err) {
@@ -497,7 +500,7 @@ server.post("/projects", authenticateToken, requireAdminRole, (req, res) => {
   res.status(201).json(project);
 });
 
-server.put("/projects/:id", authenticateToken, requireAdminRole, (req, res) => {
+server.put("/projects/:id", (req, res) => {
   const projectId = Number(req.params.id);
   const updatedProject = req.body;
 
