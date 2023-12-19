@@ -12,7 +12,144 @@
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAyODkxNTI1fQ.LgJavPqkDtuTzn9D5IBd96lWadWXVot5kAOL0nLZeA4"
     }
   ],
-  "employees": [],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Nguyen Hoang",
+      "email": "hoangngcd18786@fpt.edu.vn",
+      "code": "EBZ177",
+      "phone": "0935466639",
+      "identity": "0642000243763",
+      "dob": "2003-11-04",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Front-End Developer",
+      "manager": 0,
+      "skills": [
+        {
+          "name": "QAM",
+          "year": "4"
+        }
+      ],
+      "description": "",
+      "avatar": "",
+      "createdAt": "2023-12-19T13:49:41.198Z",
+      "updatedAt": "2023-12-19T13:49:41.198Z"
+    },
+    {
+      "id": 2,
+      "name": "Nguyen Minh Nhat",
+      "email": "nhatnmgcd17843@fpt.edu.vn",
+      "code": "EBZ177",
+      "phone": "0935799639",
+      "identity": "0642000243763",
+      "dob": "2000-02-17",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Front-End Developer",
+      "manager": 1,
+      "skills": [
+        {
+          "name": "QAM",
+          "year": "4"
+        },
+        {
+          "name": "Tester",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "",
+      "createdAt": "2023-12-19T13:51:25.883Z",
+      "updatedAt": "2023-12-19T13:51:25.883Z"
+    },
+    {
+      "id": 3,
+      "name": "Kieu Vy",
+      "email": "vyngdc23786@fpt.edu.vn",
+      "code": "EBZ177",
+      "phone": "0123456789",
+      "identity": "23654747486",
+      "dob": "2000-02-09",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Front-End Developer",
+      "manager": 1,
+      "skills": [
+        {
+          "name": "QAM",
+          "year": "4"
+        },
+        {
+          "name": "Developer",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "",
+      "createdAt": "2023-12-19T13:52:00.977Z",
+      "updatedAt": "2023-12-19T13:52:00.977Z"
+    },
+    {
+      "id": 4,
+      "name": "Nguyen Minh Hieu",
+      "email": "hoangngcd18786@fpt.edu.vn",
+      "code": "EBZ177",
+      "phone": "0935799639",
+      "identity": "0642000243763",
+      "dob": "2000-02-10",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Front-End Developer",
+      "manager": 3,
+      "skills": [
+        {
+          "name": "Tester",
+          "year": "4"
+        },
+        {
+          "name": "Manager",
+          "year": "3.5"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1702993987/n1n1tio6nkndygvgt5zy.jpg",
+      "createdAt": "2023-12-19T13:53:08.796Z",
+      "updatedAt": "2023-12-19T13:53:08.796Z"
+    },
+    {
+      "id": 5,
+      "name": "Nguyen Ba Nguyen",
+      "email": "nguyenbnngcd18786@fpt.edu.vn",
+      "code": "EBZ177",
+      "phone": "0935799639",
+      "identity": "0642000243763",
+      "dob": "2001-06-08",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Back-End Developer",
+      "manager": 3,
+      "skills": [
+        {
+          "name": "Developer",
+          "year": "4"
+        },
+        {
+          "name": "Tester",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "",
+      "createdAt": "2023-12-19T13:54:11.425Z",
+      "updatedAt": "2023-12-19T13:54:11.425Z"
+    }
+  ],
   "positions": [
     {
       "id": 1,
@@ -47,7 +184,157 @@
       "name": "Software Tester"
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project Jupiter ",
+      "manager": 5,
+      "employees": [
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:54:52.381Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:54:52.381Z",
+              "leaving_time": "2023-12-19T13:59:47.327Z"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:54:52.381Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-27 20:54:40",
+      "end_date": "2023-12-31 20:54:41",
+      "description": "Project Jupiter is a NoCode tool that will help users create their own web applications without any coding knowledge. It will allow them to quickly and easily design, build, and deploy custom web apps with drag-and-drop tools.",
+      "technical": [
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 7,
+          "name": "PHP"
+        }
+      ],
+      "createdAt": "2023-12-19T13:54:52.381Z",
+      "updatedAt": "2023-12-19T13:54:52.381Z"
+    },
+    {
+      "id": 2,
+      "name": "High Level optimization ",
+      "manager": 3,
+      "employees": [
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:57:16.680Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:57:16.680Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-20 20:55:33",
+      "end_date": "2023-12-31 20:55:35",
+      "description": "NoCode AI is a powerful tool that can be used to optimize high-level tasks without the need for coding. It enables users to quickly and easily create, deploy, and manage complex applications with minimal effort. This makes it ideal for businesses who want to reduce development costs while still achieving maximum efficiency. ",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        }
+      ],
+      "createdAt": "2023-12-19T13:57:16.680Z",
+      "updatedAt": "2023-12-19T13:57:16.680Z"
+    },
+    {
+      "id": 3,
+      "name": "Trojan Horse",
+      "manager": 3,
+      "employees": [
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:59:23.079Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:59:23.079Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-19T13:59:23.079Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Cancelled",
+      "start_date": "2023-12-21 20:59:01",
+      "end_date": "2024-01-06 20:59:04",
+      "description": "Using AppSheet, you can design the features of your Trojan Horse application according to your needs and preferences. You can add various functions such as data collection, authentication, encryption/decryption, malware detection/prevention etc., depending on the purpose of the application. Additionally, you can also customize the look & feel of your app by using themes or customizing existing templates available within AppSheet's library. ",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 4,
+          "name": "Ruby"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        }
+      ],
+      "createdAt": "2023-12-19T13:59:23.079Z",
+      "updatedAt": "2023-12-19T13:59:23.079Z"
+    }
+  ],
   "technicals": [
     {
       "id": 1,
