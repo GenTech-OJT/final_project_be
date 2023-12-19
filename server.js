@@ -298,6 +298,7 @@ server.post(
       const newEmploy = {
         id: maxId + 1,
         ...req.body,
+        manager: Number(req.body.manager),
         avatar: avatarUrl,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
@@ -359,7 +360,8 @@ server.put(
         const result = await cloudinary.uploader.upload(req.file.path);
         updatedEmploy.avatar = result.secure_url; // Cập nhật URL avatar
       }
-
+      
+      updatedEmploy.manager = Number(updatedEmploy.manager);
       updatedEmploy.updatedAt = new Date().toISOString();
 
       const updatedEmployInDb = router.db
