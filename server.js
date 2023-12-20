@@ -421,6 +421,21 @@ server.put(
         });
       }
 
+      // Kiểm tra xem nhân viên có phải là quản lý của nhân viên khác không
+      const isManager = router.db
+        .get("employees")
+        .find({ manager: employeeId })
+        .value();
+
+      if (isManager && updatedEmploy.is_manager === "false") {
+        return res.status(400).json({
+          error:
+            "Nhân viên đang là quản lý của nhân viên khác, không thể cập nhật trạng thái is_manager thành false",
+          status: "employee_in_manager",
+          employee_name: isManager.name,
+        });
+      }
+
       // Kiểm tra xem mã, email hoặc số điện thoại đã tồn tại chưa
       const existingCode = router.db
         .get("employees")
