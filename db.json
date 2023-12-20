@@ -8,11 +8,380 @@
       "verified": true,
       "role": "admin",
       "name": "Admin",
-      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDQ4MTM5LCJleHAiOjE3MDMwODQxMzl9.UwTUYybkbxLYyZfVOj95MC5vUOgmaiRudz4irOCFb5E",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDQ4MTM5fQ.hAeBDTsj4gaUzFTpiISPxjM0-2ZqYR0ciZgEUWIp4NU"
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDY3MDMyLCJleHAiOjE3MDMxMDMwMzJ9.Km6gPAVOWeomwBGfqgWrI3WzfvWR-ibSP5g6Wmticss",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDY3MDMyfQ.TzqVz9CNN4reEFIVy9YnFQitxr-X276YIaMghvikE7c"
     }
   ],
-  "employees": [],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Hoang Nguyen",
+      "email": "hoang@gmail.com",
+      "code": "E001",
+      "phone": "0935552021",
+      "identity": "0642000243763",
+      "dob": "1993-05-13",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Back-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Operating system",
+          "year": "4"
+        },
+        {
+          "name": "Problem solving",
+          "year": "5.5"
+        },
+        {
+          "name": "Management",
+          "year": "2"
+        },
+        {
+          "name": "Data analysis",
+          "year": "3"
+        },
+        {
+          "name": "Network configuration",
+          "year": "6"
+        }
+      ],
+      "description": "Hi, I'm Hoang. I'm a software engineer and problem solver who loves working on operating systems.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703086634/exio5c95vhlgcilve9vo.jpg",
+      "createdAt": "2023-12-20T10:12:30.404Z",
+      "updatedAt": "2023-12-20T15:44:02.235Z"
+    },
+    {
+      "id": 2,
+      "name": "Nguyen Minh Nhat",
+      "email": "nhat@gmail.com",
+      "code": "E002",
+      "phone": "0935552022",
+      "identity": "086202024321",
+      "dob": "1996-09-05",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Front-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Management",
+          "year": "8"
+        },
+        {
+          "name": "Network configuration",
+          "year": "2"
+        }
+      ],
+      "description": "I'm an IT professional with a focus on network configuration. ",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067260/shuhtagcqeubivlwhta6.png",
+      "createdAt": "2023-12-20T10:14:19.402Z",
+      "updatedAt": "2023-12-20T15:41:47.631Z"
+    },
+    {
+      "id": 3,
+      "name": "Nguyen Thi Kieu Vy",
+      "email": "vykieunguyen@gmail.com",
+      "code": "E003",
+      "phone": "0935552023",
+      "identity": "06438001299",
+      "dob": "1990-02-01",
+      "gender": "female",
+      "status": "inactive",
+      "is_manager": "true",
+      "position": "Project Manager",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Communication",
+          "year": "2"
+        },
+        {
+          "name": "Leadership",
+          "year": "1"
+        }
+      ],
+      "description": "My goal is to make a positive impact on the world around me by empowering people to take action and create meaningful change.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067330/gmxuqjcrpkpnffhma3bb.png",
+      "createdAt": "2023-12-20T10:15:29.683Z",
+      "updatedAt": "2023-12-20T15:50:18.883Z"
+    },
+    {
+      "id": 4,
+      "name": "Cao Vinh Nguyen",
+      "email": "vinhnguyen@gmail.com",
+      "code": "E004",
+      "phone": "0935552024",
+      "identity": "7767676734",
+      "dob": "2000-02-03",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Software Tester",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Testing",
+          "year": "2"
+        },
+        {
+          "name": "Data analysis",
+          "year": "3.5"
+        }
+      ],
+      "description": "I'm an analytical thinker and a data analyst. I love diving deep into data to uncover hidden patterns and insights.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067399/nlzoddgs1idkmkcewq3r.jpg",
+      "createdAt": "2023-12-20T10:16:38.327Z",
+      "updatedAt": "2023-12-20T15:51:21.714Z"
+    },
+    {
+      "id": 5,
+      "name": "Nguyen Vo Ba",
+      "email": "nguyenvo@gmail.com",
+      "code": "E005",
+      "phone": "0935552025",
+      "identity": "7767676735",
+      "dob": "1993-04-28",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Full Stack Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "FE",
+          "year": "1"
+        },
+        {
+          "name": "BE",
+          "year": "1.5"
+        }
+      ],
+      "description": "Tôi là Bá Nguyên. Tôi là FullStack dev",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067452/qbslugdna6osc3ilfhkc.jpg",
+      "createdAt": "2023-12-20T10:17:31.541Z",
+      "updatedAt": "2023-12-20T15:24:51.210Z"
+    },
+    {
+      "id": 6,
+      "name": "Hau Hoang Cong",
+      "email": "hau@gmail.com",
+      "code": "E006",
+      "phone": "0935552026",
+      "identity": "7767676736",
+      "dob": "1983-05-11",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Project Manager",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Management",
+          "year": "3"
+        },
+        {
+          "name": "Communication",
+          "year": "2"
+        }
+      ],
+      "description": "I'm Hau! I'm passionate about communication and how it can bring people together.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067506/ooatxzax0j048ol1kjol.jpg",
+      "createdAt": "2023-12-20T10:18:25.764Z",
+      "updatedAt": "2023-12-20T15:44:44.992Z"
+    },
+    {
+      "id": 7,
+      "name": "Ngo Tan Khoa",
+      "email": "khoa.ngo-ojt07@devplus.edu.vn",
+      "code": "E007",
+      "phone": "0935872066",
+      "identity": "064200698837",
+      "dob": "1996-08-22",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "UI/UX Designer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "UI Design",
+          "year": "2"
+        },
+        {
+          "name": "Data analysis",
+          "year": "5.5"
+        }
+      ],
+      "description": "I strive to make the world a better place by improving how we interact with technology.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067568/uqh3capc73dsuomupn6f.jpg",
+      "createdAt": "2023-12-20T10:19:27.693Z",
+      "updatedAt": "2023-12-20T15:50:08.478Z"
+    },
+    {
+      "id": 8,
+      "name": "Van Nguyen Huu Tung",
+      "email": "tung@gmail.com",
+      "code": "E008",
+      "phone": "0939988202",
+      "identity": "064200027632",
+      "dob": "1992-04-14",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Back-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Problem solving",
+          "year": "3"
+        }
+      ],
+      "description": "I strive to make the world a better place by improving how we interact with technology.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067613/apqguestmhzqxbtfxvre.jpg",
+      "createdAt": "2023-12-20T10:20:12.246Z",
+      "updatedAt": "2023-12-20T15:47:53.262Z"
+    },
+    {
+      "id": 9,
+      "name": "Nguyen Minh Toan",
+      "email": "nguyenminhtoan451999@gmail.com",
+      "code": "E009",
+      "phone": "0935552029",
+      "identity": "0643800791299",
+      "dob": "1999-11-25",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Full Stack Developer",
+      "manager": 2,
+      "skills": [
+        {
+          "name": "Data analysis",
+          "year": "2"
+        },
+        {
+          "name": "Management",
+          "year": "4"
+        }
+      ],
+      "description": "I'm always looking for ways to make things run more efficiently, whether it's coding a program or debugging an existing system.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067703/rh7u7kwjzrhm00abcfrl.jpg",
+      "createdAt": "2023-12-20T10:21:42.951Z",
+      "updatedAt": "2023-12-20T15:47:05.813Z"
+    },
+    {
+      "id": 10,
+      "name": "Phung Thuy Hai Ha",
+      "email": "haphungthi@gmail.com",
+      "code": "E0010",
+      "phone": "0935552010",
+      "identity": "0792000266763",
+      "dob": "2003-05-16",
+      "gender": "female",
+      "status": "inactive",
+      "is_manager": "false",
+      "position": "Data Analyst",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Management",
+          "year": "2"
+        },
+        {
+          "name": "UI design",
+          "year": "1"
+        }
+      ],
+      "description": "I'm able to provide valuable information that can be used to improve processes and operations. ",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
+      "createdAt": "2023-12-20T10:22:53.783Z",
+      "updatedAt": "2023-12-20T15:51:26.265Z"
+    },
+    {
+      "id": 11,
+      "name": "Lieu Nguyen",
+      "email": "lieuu@gmail.com",
+      "code": "E0012",
+      "phone": "0937852012",
+      "identity": "0642003443762",
+      "dob": "2002-04-16",
+      "gender": "female",
+      "status": "active",
+      "is_manager": "false",
+      "position": "DevOps Engineer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Coding",
+          "year": "4"
+        },
+        {
+          "name": "Shell Script",
+          "year": "2"
+        }
+      ],
+      "description": "My passion is finding creative solutions to complex problems and helping others do the same. ",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703068259/n4dghoja0irgscrjokee.jpg",
+      "createdAt": "2023-12-20T10:30:58.986Z",
+      "updatedAt": "2023-12-20T15:52:36.563Z"
+    },
+    {
+      "id": 12,
+      "name": "Nguyen Minh Hieu",
+      "email": "hoangngcd18786@fpt.edu.vn",
+      "code": "EBZ177",
+      "phone": "0935466639",
+      "identity": "0642000243799",
+      "dob": "2000-02-02",
+      "gender": "male",
+      "status": "inactive",
+      "is_manager": "false",
+      "position": "Software Tester",
+      "manager": 6,
+      "skills": [
+        {
+          "name": "Network configuration",
+          "year": "3"
+        }
+      ],
+      "description": "",
+      "avatar": "",
+      "createdAt": "2023-12-20T15:51:17.694Z",
+      "updatedAt": "2023-12-20T15:51:17.694Z"
+    },
+    {
+      "id": 13,
+      "name": "Tran Dinh Long",
+      "email": "longdngcd12308@fpt.edu.vn",
+      "code": "EBZ179",
+      "phone": "0935478243",
+      "identity": "0682000243763",
+      "dob": "2000-05-17",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Front-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Network configuration",
+          "year": "3"
+        },
+        {
+          "name": "UI design",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703087744/qzu8alzq9piip6uwuehy.jpg",
+      "createdAt": "2023-12-20T15:55:44.699Z",
+      "updatedAt": "2023-12-20T15:55:44.699Z"
+    }
+  ],
   "positions": [
     {
       "id": 1,
@@ -47,7 +416,381 @@
       "name": "Software Tester"
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "id": 1,
+      "name": "X Lab",
+      "manager": 2,
+      "employees": [
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:21.530Z",
+              "leaving_time": "2023-12-20T15:53:34.180Z"
+            },
+            {
+              "joining_time": "2023-12-20T15:53:39.768Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:21.530Z",
+              "leaving_time": "2023-12-20T15:53:27.927Z"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:21.530Z",
+              "leaving_time": "2023-12-20T15:53:27.927Z"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:27.927Z",
+              "leaving_time": "2023-12-20T15:53:34.180Z"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:27.927Z",
+              "leaving_time": "2023-12-20T15:53:34.180Z"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:34.180Z",
+              "leaving_time": "2023-12-20T15:53:39.768Z"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:34.180Z",
+              "leaving_time": "2023-12-20T15:53:39.768Z"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:39.768Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-21 22:53:09",
+      "end_date": "2023-12-31 22:53:10",
+      "description": "They may have been known earlier for their unofficial slogan “Don’t be evil,” but that doesn’t mean Google doesn’t have a secret lair. At the company’s secret “X” Lab, projects like the Self-Driving Car and Google Glass are built under the cloak and veil of secrecy deserved by its uber-mysterious name.",
+      "technical": [
+        {
+          "id": 4,
+          "name": "Ruby"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        },
+        {
+          "id": 7,
+          "name": "PHP"
+        }
+      ],
+      "createdAt": "2023-12-20T15:53:21.530Z",
+      "updatedAt": "2023-12-20T15:53:21.530Z"
+    },
+    {
+      "id": 2,
+      "name": "Code Talkers",
+      "manager": 13,
+      "employees": [
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:56:51.804Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:56:51.804Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:56:51.804Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-20 22:56:42",
+      "end_date": "2023-12-31 22:56:43",
+      "description": "This was the project name for the secret WWII program to recruit Cherokee, Creek, Choctow and other tribal members to transmit coded messages in Native American languages. It was also popularized in the Nicholas Cage classic of cinema, Windtalkers.",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        },
+        {
+          "id": 8,
+          "name": "Java"
+        }
+      ],
+      "createdAt": "2023-12-20T15:56:51.804Z",
+      "updatedAt": "2023-12-20T15:56:51.804Z"
+    },
+    {
+      "id": 3,
+      "name": "Project Blue Book",
+      "manager": 8,
+      "employees": [
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-11-21 22:57:01",
+      "end_date": "2024-12-31 22:57:04",
+      "description": "",
+      "technical": [
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 8,
+          "name": "Java"
+        }
+      ],
+      "createdAt": "2023-12-20T15:57:17.905Z",
+      "updatedAt": "2023-12-20T15:57:17.905Z"
+    },
+    {
+      "id": 4,
+      "name": "Apollo",
+      "manager": 6,
+      "employees": [
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:49.258Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:49.258Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2023-11-10 22:57:26",
+      "end_date": "2023-12-01 22:57:28",
+      "description": "",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 7,
+          "name": "PHP"
+        }
+      ],
+      "createdAt": "2023-12-20T15:57:49.258Z",
+      "updatedAt": "2023-12-20T15:57:49.258Z"
+    },
+    {
+      "id": 5,
+      "name": "Search Engine Bandits",
+      "manager": 2,
+      "employees": [
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:00:53.427Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:00:53.427Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:00:53.427Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-20 23:00:35",
+      "end_date": "2024-01-23 23:00:37",
+      "description": "Search Engine Bandits is a term used to describe individuals or entities that use unethical tactics to manipulate search engine rankings. This page explores the concept of Search Engine Bandits and their impact on coding practices.",
+      "technical": [
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        }
+      ],
+      "createdAt": "2023-12-20T16:00:53.427Z",
+      "updatedAt": "2023-12-20T16:00:53.427Z"
+    },
+    {
+      "id": 6,
+      "name": "Celestial Interface",
+      "manager": 2,
+      "employees": [
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:02:08.516Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:02:08.516Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:02:08.516Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2024-12-01 23:01:46",
+      "end_date": "2025-01-31 23:01:50",
+      "description": "Celestial Interface is an innovative user interface design concept that combines aesthetics with seamless functionality, creating an intuitive and visually appealing user experience. Explore the world of Celestial Interface and learn more about its coding and development process.",
+      "technical": [
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 7,
+          "name": "PHP"
+        },
+        {
+          "id": 8,
+          "name": "Java"
+        }
+      ],
+      "createdAt": "2023-12-20T16:02:08.516Z",
+      "updatedAt": "2023-12-20T16:02:08.516Z"
+    }
+  ],
   "technicals": [
     {
       "id": 1,
