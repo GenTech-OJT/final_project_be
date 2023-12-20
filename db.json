@@ -43,7 +43,7 @@
     },
     {
       "id": 2,
-      "name": "Minh Nhat",
+      "name": "Nguyen Minh Nhat",
       "email": "nhat@gmail.com",
       "code": "E002",
       "phone": "0935552022",
@@ -63,11 +63,11 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067260/shuhtagcqeubivlwhta6.png",
       "createdAt": "2023-12-20T10:14:19.402Z",
-      "updatedAt": "2023-12-20T10:14:19.402Z"
+      "updatedAt": "2023-12-20T14:55:03.655Z"
     },
     {
       "id": 3,
-      "name": "Kieu Vy",
+      "name": "Nguyen Thi Kieu Vy",
       "email": "vy@gmail.com",
       "code": "E003",
       "phone": "0935552023",
@@ -87,11 +87,11 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067330/gmxuqjcrpkpnffhma3bb.png",
       "createdAt": "2023-12-20T10:15:29.683Z",
-      "updatedAt": "2023-12-20T10:15:29.683Z"
+      "updatedAt": "2023-12-20T14:55:41.398Z"
     },
     {
       "id": 4,
-      "name": "Vinh Nguyen",
+      "name": "Cao Vinh Nguyen",
       "email": "vinhnguyen@gmail.com",
       "code": "E004",
       "phone": "0935552024",
@@ -111,11 +111,11 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067399/nlzoddgs1idkmkcewq3r.jpg",
       "createdAt": "2023-12-20T10:16:38.327Z",
-      "updatedAt": "2023-12-20T10:16:38.327Z"
+      "updatedAt": "2023-12-20T14:55:47.123Z"
     },
     {
       "id": 5,
-      "name": "Nguyen Vo",
+      "name": "Nguyen Vo Ba",
       "email": "nguyenvo@gmail.com",
       "code": "E005",
       "phone": "0935552025",
@@ -135,11 +135,11 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067452/qbslugdna6osc3ilfhkc.jpg",
       "createdAt": "2023-12-20T10:17:31.541Z",
-      "updatedAt": "2023-12-20T10:17:31.541Z"
+      "updatedAt": "2023-12-20T14:55:54.762Z"
     },
     {
       "id": 6,
-      "name": "Hau Hoang",
+      "name": "Hau Hoang Cong",
       "email": "hau@gmail.com",
       "code": "E006",
       "phone": "0935552026",
@@ -159,18 +159,18 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067506/ooatxzax0j048ol1kjol.jpg",
       "createdAt": "2023-12-20T10:18:25.764Z",
-      "updatedAt": "2023-12-20T10:18:46.192Z"
+      "updatedAt": "2023-12-20T14:55:32.613Z"
     },
     {
       "id": 7,
-      "name": "Ngo Khoa",
+      "name": "Ngo Tan Khoa",
       "email": "khoa.ngo-ojt07@devplus.edu.vn",
       "code": "E007",
       "phone": "0935552027",
       "identity": "7767676737",
       "dob": "1996-08-22",
       "gender": "male",
-      "status": "inactive",
+      "status": "active",
       "is_manager": "false",
       "position": "UI/UX Designer",
       "manager": null,
@@ -183,11 +183,11 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067568/uqh3capc73dsuomupn6f.jpg",
       "createdAt": "2023-12-20T10:19:27.693Z",
-      "updatedAt": "2023-12-20T10:50:41.399Z"
+      "updatedAt": "2023-12-20T14:55:24.745Z"
     },
     {
       "id": 8,
-      "name": "Huu Tung",
+      "name": "Van Nguyen Huu Tung",
       "email": "tung@gmail.com",
       "code": "E008",
       "phone": "0935552028",
@@ -207,11 +207,11 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067613/apqguestmhzqxbtfxvre.jpg",
       "createdAt": "2023-12-20T10:20:12.246Z",
-      "updatedAt": "2023-12-20T10:20:12.246Z"
+      "updatedAt": "2023-12-20T14:56:02.434Z"
     },
     {
       "id": 9,
-      "name": "Minh Toan",
+      "name": "Nguyen Minh Toan",
       "email": "nguyenminhtoan451999@gmail.com",
       "code": "E009",
       "phone": "0935552029",
@@ -239,18 +239,18 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067703/rh7u7kwjzrhm00abcfrl.jpg",
       "createdAt": "2023-12-20T10:21:42.951Z",
-      "updatedAt": "2023-12-20T10:51:11.742Z"
+      "updatedAt": "2023-12-20T14:56:09.496Z"
     },
     {
       "id": 10,
-      "name": "Hai Ha",
+      "name": "Phung Thuy Hai Ha",
       "email": "ha@gmail.com",
       "code": "E0010",
       "phone": "0935552010",
       "identity": "7767676710",
       "dob": "2003-05-16",
       "gender": "male",
-      "status": "inactive",
+      "status": "active",
       "is_manager": "false",
       "position": "Front-End Developer",
       "manager": null,
@@ -263,7 +263,7 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
       "createdAt": "2023-12-20T10:22:53.783Z",
-      "updatedAt": "2023-12-20T10:50:39.141Z"
+      "updatedAt": "2023-12-20T14:56:36.704Z"
     },
     {
       "id": 11,
