@@ -8,11 +8,288 @@
       "verified": true,
       "role": "admin",
       "name": "Admin",
-      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDQ4MTM5LCJleHAiOjE3MDMwODQxMzl9.UwTUYybkbxLYyZfVOj95MC5vUOgmaiRudz4irOCFb5E",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDQ4MTM5fQ.hAeBDTsj4gaUzFTpiISPxjM0-2ZqYR0ciZgEUWIp4NU"
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDY3MDMyLCJleHAiOjE3MDMxMDMwMzJ9.Km6gPAVOWeomwBGfqgWrI3WzfvWR-ibSP5g6Wmticss",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzAzMDY3MDMyfQ.TzqVz9CNN4reEFIVy9YnFQitxr-X276YIaMghvikE7c"
     }
   ],
-  "employees": [],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Hoang Nguyen",
+      "email": "hoang@gmail.com",
+      "code": "E001",
+      "phone": "0935552021",
+      "identity": "7767676730",
+      "dob": "1993-05-13",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Back-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "reading",
+          "year": "4"
+        },
+        {
+          "name": "BE",
+          "year": "4"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067151/h7zrn1bc1e2r347rgmps.png",
+      "createdAt": "2023-12-20T10:12:30.404Z",
+      "updatedAt": "2023-12-20T10:12:30.404Z"
+    },
+    {
+      "id": 2,
+      "name": "Minh Nhat",
+      "email": "nhat@gmail.com",
+      "code": "E002",
+      "phone": "0935552022",
+      "identity": "7767676732",
+      "dob": "1996-09-05",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Front-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "coding",
+          "year": "8"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067260/shuhtagcqeubivlwhta6.png",
+      "createdAt": "2023-12-20T10:14:19.402Z",
+      "updatedAt": "2023-12-20T10:14:19.402Z"
+    },
+    {
+      "id": 3,
+      "name": "Kieu Vy",
+      "email": "vy@gmail.com",
+      "code": "E003",
+      "phone": "0935552023",
+      "identity": "7767676733",
+      "dob": "1990-02-01",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Project Manager",
+      "manager": null,
+      "skills": [
+        {
+          "name": "FE",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067330/gmxuqjcrpkpnffhma3bb.png",
+      "createdAt": "2023-12-20T10:15:29.683Z",
+      "updatedAt": "2023-12-20T10:15:29.683Z"
+    },
+    {
+      "id": 4,
+      "name": "Vinh Nguyen",
+      "email": "vinhnguyen@gmail.com",
+      "code": "E004",
+      "phone": "0935552024",
+      "identity": "7767676734",
+      "dob": "2000-02-03",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Software Tester",
+      "manager": null,
+      "skills": [
+        {
+          "name": "speaking",
+          "year": "4"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067399/nlzoddgs1idkmkcewq3r.jpg",
+      "createdAt": "2023-12-20T10:16:38.327Z",
+      "updatedAt": "2023-12-20T10:16:38.327Z"
+    },
+    {
+      "id": 5,
+      "name": "Nguyen Vo",
+      "email": "nguyenvo@gmail.com",
+      "code": "E005",
+      "phone": "0935552025",
+      "identity": "7767676735",
+      "dob": "1993-04-28",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Full Stack Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "reading",
+          "year": "1"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067452/qbslugdna6osc3ilfhkc.jpg",
+      "createdAt": "2023-12-20T10:17:31.541Z",
+      "updatedAt": "2023-12-20T10:17:31.541Z"
+    },
+    {
+      "id": 6,
+      "name": "Hau Hoang",
+      "email": "hau@gmail.com",
+      "code": "E006",
+      "phone": "0935552026",
+      "identity": "7767676736",
+      "dob": "1983-05-11",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Project Manager",
+      "manager": null,
+      "skills": [
+        {
+          "name": "coding",
+          "year": "3"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067506/ooatxzax0j048ol1kjol.jpg",
+      "createdAt": "2023-12-20T10:18:25.764Z",
+      "updatedAt": "2023-12-20T10:18:46.192Z"
+    },
+    {
+      "id": 7,
+      "name": "Ngo Khoa",
+      "email": "khoa.ngo-ojt07@devplus.edu.vn",
+      "code": "E007",
+      "phone": "0935552027",
+      "identity": "7767676737",
+      "dob": "1996-08-22",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "UI/UX Designer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "reading",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067568/uqh3capc73dsuomupn6f.jpg",
+      "createdAt": "2023-12-20T10:19:27.693Z",
+      "updatedAt": "2023-12-20T10:19:27.693Z"
+    },
+    {
+      "id": 8,
+      "name": "Huu Tung",
+      "email": "tung@gmail.com",
+      "code": "E008",
+      "phone": "0935552028",
+      "identity": "7767676738",
+      "dob": "1992-04-14",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Back-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "BE",
+          "year": "3"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067613/apqguestmhzqxbtfxvre.jpg",
+      "createdAt": "2023-12-20T10:20:12.246Z",
+      "updatedAt": "2023-12-20T10:20:12.246Z"
+    },
+    {
+      "id": 9,
+      "name": "Minh Toan",
+      "email": "nguyenminhtoan451999@gmail.com",
+      "code": "E009",
+      "phone": "0935552029",
+      "identity": "7767676739",
+      "dob": "1999-11-25",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Full Stack Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "coding",
+          "year": "2"
+        },
+        {
+          "name": "BE",
+          "year": "4"
+        },
+        {
+          "name": "English",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067703/rh7u7kwjzrhm00abcfrl.jpg",
+      "createdAt": "2023-12-20T10:21:42.951Z",
+      "updatedAt": "2023-12-20T10:21:42.951Z"
+    },
+    {
+      "id": 10,
+      "name": "Hai Ha",
+      "email": "ha@gmail.com",
+      "code": "E0010",
+      "phone": "0935552010",
+      "identity": "7767676710",
+      "dob": "2003-05-16",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Front-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "football",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
+      "createdAt": "2023-12-20T10:22:53.783Z",
+      "updatedAt": "2023-12-20T10:22:53.783Z"
+    },
+    {
+      "id": 11,
+      "name": "Lieu Nguyen",
+      "email": "lieuu@gmail.com",
+      "code": "E0012",
+      "phone": "0935552012",
+      "identity": "7767676712",
+      "dob": "2002-04-16",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "false",
+      "position": "Front-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "reading",
+          "year": "4"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703068259/n4dghoja0irgscrjokee.jpg",
+      "createdAt": "2023-12-20T10:30:58.986Z",
+      "updatedAt": "2023-12-20T10:30:58.986Z"
+    }
+  ],
   "positions": [
     {
       "id": 1,
@@ -47,7 +324,222 @@
       "name": "Software Tester"
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Titan",
+      "manager": 6,
+      "employees": [
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:41:42.720Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:41:42.720Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-21 17:41:30",
+      "end_date": "2023-12-30 17:41:33",
+      "description": "Apple is mum, but Insiders report that the company is working on a car called “Titan,” slated to be road-ready in 2019. With a name that gigantic, buzz is already building about the features that may or may not rival Google’s self-driving cars.",
+      "technical": [
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        }
+      ],
+      "createdAt": "2023-12-20T10:41:42.720Z",
+      "updatedAt": "2023-12-20T10:41:42.720Z"
+    },
+    {
+      "id": 2,
+      "name": "Project Hanks",
+      "manager": 6,
+      "employees": [
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:42:14.764Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:42:14.764Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-21 17:41:59",
+      "end_date": "2023-12-21 17:42:01",
+      "description": "When Verizon Communications was looking to take over AOL, they needed to keep the deal secret and came up with a code name. According to the Telegraph, Project Hanks is the name they chose, which may not make sense until you remember that Tom Hanks starred in the movie You’ve Got Mail (1998), a romantic comedy about a relationship built on AOL’s famous mail notification.",
+      "technical": [
+        {
+          "id": 1,
+          "name": "C#"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        }
+      ],
+      "createdAt": "2023-12-20T10:42:14.764Z",
+      "updatedAt": "2023-12-20T10:42:14.764Z"
+    },
+    {
+      "id": 3,
+      "name": "Kodiak",
+      "manager": 3,
+      "employees": [
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:43:38.497Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:43:38.497Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-23 17:43:26",
+      "end_date": "2023-12-24 17:43:29",
+      "description": "Unlike some other companies that have a codename and then change it to something else when it comes to market, in 2000, Apple developed its first version of Mac OS X with the codename Kodiak. It’s since followed that theme with updates with other powerful creatures of the wild, such as Puma, Jaguar, Panther, Leopard, Snow Leopard and Lion.",
+      "technical": [
+        {
+          "id": 7,
+          "name": "PHP"
+        },
+        {
+          "id": 9,
+          "name": "TypeScript"
+        }
+      ],
+      "createdAt": "2023-12-20T10:43:38.497Z",
+      "updatedAt": "2023-12-20T10:43:38.497Z"
+    },
+    {
+      "id": 4,
+      "name": "Code Talkers",
+      "manager": 6,
+      "employees": [
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:44:15.865Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:44:15.865Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-25 17:44:02",
+      "end_date": "2023-12-26 17:44:05",
+      "description": "This was the project name for the secret WWII program to recruit Cherokee, Creek, Choctow and other tribal members to transmit coded messages in Native American languages. It was also popularized in the Nicholas Cage classic of cinema, Windtalkers.",
+      "technical": [
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 7,
+          "name": "PHP"
+        }
+      ],
+      "createdAt": "2023-12-20T10:44:15.865Z",
+      "updatedAt": "2023-12-20T10:44:15.865Z"
+    },
+    {
+      "id": 5,
+      "name": "Project Blue Book",
+      "manager": 6,
+      "employees": [
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:44:49.826Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:44:49.826Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:44:49.826Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Pending",
+      "start_date": "2023-12-28 17:44:37",
+      "end_date": "2023-12-29 17:44:39",
+      "description": "If you don’t already know, then you probably don’t have the clearance. But for the sake of disclosure, Project Blue Book was the code name for the US Air Force investigations into UFO sightings. But you didn’t hear that from us.",
+      "technical": [
+        {
+          "id": 1,
+          "name": "C#"
+        },
+        {
+          "id": 2,
+          "name": "C++"
+        }
+      ],
+      "createdAt": "2023-12-20T10:44:49.826Z",
+      "updatedAt": "2023-12-20T10:44:49.826Z"
+    }
+  ],
   "technicals": [
     {
       "id": 1,
