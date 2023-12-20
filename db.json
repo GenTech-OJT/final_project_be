@@ -32,10 +32,10 @@
           "year": "4"
         }
       ],
-      "description": "",
+      "description": "Tôi là Hoang Nguyen. Tôi là BE dev",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067151/h7zrn1bc1e2r347rgmps.png",
       "createdAt": "2023-12-20T10:12:30.404Z",
-      "updatedAt": "2023-12-20T15:11:03.068Z"
+      "updatedAt": "2023-12-20T15:23:51.497Z"
     },
     {
       "id": 2,
@@ -64,10 +64,10 @@
           "year": "2"
         }
       ],
-      "description": "",
+      "description": "Tôi là Minh Nhat. Một Front-End dev",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067260/shuhtagcqeubivlwhta6.png",
       "createdAt": "2023-12-20T10:14:19.402Z",
-      "updatedAt": "2023-12-20T15:06:39.602Z"
+      "updatedAt": "2023-12-20T15:23:42.303Z"
     },
     {
       "id": 3,
@@ -88,10 +88,10 @@
           "year": "2"
         }
       ],
-      "description": "",
+      "description": "Tôi là Vy. Tôi là project manager",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067330/gmxuqjcrpkpnffhma3bb.png",
       "createdAt": "2023-12-20T10:15:29.683Z",
-      "updatedAt": "2023-12-20T15:12:27.107Z"
+      "updatedAt": "2023-12-20T15:24:07.605Z"
     },
     {
       "id": 4,
@@ -112,10 +112,10 @@
           "year": "2"
         }
       ],
-      "description": "",
+      "description": "Tôi là Vĩnh Nguyên. Tôi là software tester",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067399/nlzoddgs1idkmkcewq3r.jpg",
       "createdAt": "2023-12-20T10:16:38.327Z",
-      "updatedAt": "2023-12-20T15:08:19.382Z"
+      "updatedAt": "2023-12-20T15:24:29.838Z"
     },
     {
       "id": 5,
@@ -140,10 +140,10 @@
           "year": "1.5"
         }
       ],
-      "description": "",
+      "description": "Tôi là Bá Nguyên. Tôi là FullStack dev",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067452/qbslugdna6osc3ilfhkc.jpg",
       "createdAt": "2023-12-20T10:17:31.541Z",
-      "updatedAt": "2023-12-20T15:08:34.866Z"
+      "updatedAt": "2023-12-20T15:24:51.210Z"
     },
     {
       "id": 6,
@@ -160,7 +160,7 @@
       "manager": null,
       "skills": [
         {
-          "name": "coding",
+          "name": "Management",
           "year": "3"
         },
         {
@@ -168,10 +168,10 @@
           "year": "2"
         }
       ],
-      "description": "",
+      "description": "Tôi là Hoang Cong. Tôi là project manager",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067506/ooatxzax0j048ol1kjol.jpg",
       "createdAt": "2023-12-20T10:18:25.764Z",
-      "updatedAt": "2023-12-20T15:08:50.674Z"
+      "updatedAt": "2023-12-20T15:25:33.857Z"
     },
     {
       "id": 7,
@@ -190,12 +190,16 @@
         {
           "name": "Design",
           "year": "2"
+        },
+        {
+          "name": "UIUX",
+          "year": "2"
         }
       ],
-      "description": "",
+      "description": "Tôi là Ngô Tấn Khoa. Tôi là UI/UX Designer",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067568/uqh3capc73dsuomupn6f.jpg",
       "createdAt": "2023-12-20T10:19:27.693Z",
-      "updatedAt": "2023-12-20T15:08:00.894Z"
+      "updatedAt": "2023-12-20T15:26:17.635Z"
     },
     {
       "id": 8,
@@ -216,10 +220,10 @@
           "year": "3"
         }
       ],
-      "description": "",
+      "description": "Tôi là Huu Tung. Tôi là BE dev",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067613/apqguestmhzqxbtfxvre.jpg",
       "createdAt": "2023-12-20T10:20:12.246Z",
-      "updatedAt": "2023-12-20T14:56:02.434Z"
+      "updatedAt": "2023-12-20T15:26:40.410Z"
     },
     {
       "id": 9,
@@ -236,7 +240,7 @@
       "manager": null,
       "skills": [
         {
-          "name": "coding",
+          "name": "FE",
           "year": "2"
         },
         {
@@ -248,10 +252,10 @@
           "year": "2"
         }
       ],
-      "description": "",
+      "description": "Tôi là Minh Toan. Tôi là Full Stack dev",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067703/rh7u7kwjzrhm00abcfrl.jpg",
       "createdAt": "2023-12-20T10:21:42.951Z",
-      "updatedAt": "2023-12-20T15:05:49.181Z"
+      "updatedAt": "2023-12-20T15:27:02.251Z"
     },
     {
       "id": 10,
@@ -272,11 +276,7 @@
           "year": "2"
         },
         {
-          "name": "UI",
-          "year": "3"
-        },
-        {
-          "name": "UX",
+          "name": "UIUX",
           "year": "3"
         },
         {
@@ -284,10 +284,10 @@
           "year": "1"
         }
       ],
-      "description": "",
+      "description": "Tôi là Hai Ha. Tôi là FE dev",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
       "createdAt": "2023-12-20T10:22:53.783Z",
-      "updatedAt": "2023-12-20T15:14:33.416Z"
+      "updatedAt": "2023-12-20T15:27:33.806Z"
     },
     {
       "id": 11,
@@ -312,10 +312,10 @@
           "year": "2"
         }
       ],
-      "description": "",
+      "description": "Tôi là Lieu Nguyen. Tôi là DevOps Engineer",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703068259/n4dghoja0irgscrjokee.jpg",
       "createdAt": "2023-12-20T10:30:58.986Z",
-      "updatedAt": "2023-12-20T15:12:38.931Z"
+      "updatedAt": "2023-12-20T15:29:01.192Z"
     }
   ],
   "positions": [
