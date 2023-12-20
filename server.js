@@ -253,7 +253,7 @@ server.get("/employees/:id", (req, res) => {
       const { employees, ...projectWithoutEmployees } = project;
       const employeeInProject = employees.find((e) => e.id === employeeId);
       const periods = employeeInProject ? employeeInProject.periods : [];
-      return { ...projectWithoutEmployees, periods };
+      return { ...projectWithoutEmployees, periods, role: [employee.position] };
     })
     .value();
 
@@ -261,12 +261,32 @@ server.get("/employees/:id", (req, res) => {
   const managedProjects = router.db
     .get("projects")
     .filter((project) => project.manager === employeeId)
+    .map((project) => {
+      return { ...project, role: ["Project Manager"] };
+    })
     .value();
 
   // Kết hợp hai mảng dự án lại
   const allProjects = [...projects, ...managedProjects];
 
-  const employeeWithProjects = { ...employee, projects: allProjects, manager };
+  // Loại bỏ các dự án trùng lặp và thêm vai trò tương ứng
+  const uniqueProjects = allProjects.reduce((acc, project) => {
+    const existingProject = acc.find((p) => p.id === project.id);
+    if (existingProject) {
+      existingProject.role = [
+        ...new Set([...existingProject.role, ...project.role]),
+      ];
+    } else {
+      acc.push(project);
+    }
+    return acc;
+  }, []);
+
+  const employeeWithProjects = {
+    ...employee,
+    projects: uniqueProjects,
+    manager,
+  };
 
   res.status(200).json(employeeWithProjects);
 });
@@ -365,7 +385,8 @@ server.get("/managers", (req, res) => {
       .get("employees")
       .filter(
         (employee) =>
-          employee.is_manager === true || employee.is_manager === "true"
+          (employee.is_manager === true || employee.is_manager === "true") &&
+          employee.status === "active"
       )
       .value();
     res.status(200).json(managers);
@@ -752,7 +773,22 @@ server.get(
         .map((e) => {
           // Kiểm tra xem employee.id có tồn tại không
           if (e.id) {
-            return db.get("employees").find({ id: e.id }).value();
+            const employeeDetail = db
+              .get("employees")
+              .find({ id: e.id })
+              .value();
+            // Tạo một bản sao của employeeDetail
+            const employeeDetailCopy = { ...employeeDetail };
+            // Reset role array
+            employeeDetailCopy.role = [];
+            // Kiểm tra xem nhân viên có phải là manager của dự án hay không
+            if (project.manager === e.id) {
+              // Đặt vai trò là "Project Manager"
+              employeeDetailCopy.role.push("Project Manager");
+            }
+            // Đặt vai trò là vị trí hiện tại của nhân viên
+            employeeDetailCopy.role.push(employeeDetail.position);
+            return employeeDetailCopy;
           } else {
             console.log("Employee without id found in project:", project);
             return null;
@@ -761,18 +797,20 @@ server.get(
         .filter((e) => e !== null); // Loại bỏ nhân viên không có id
 
       // Thêm dữ liệu của nhân viên đang được truyền id vào
-      projectCopy.currentEmployee = employee;
+      // Thêm dữ liệu của nhân viên đang được truyền id vào
+      projectCopy.currentEmployee = { ...employee };
+      // Reset role array
+      projectCopy.currentEmployee.role = [];
+      // Kiểm tra xem nhân viên có phải là manager của dự án hay không
+      if (project.manager === employeeId) {
+        // Đặt vai trò là "Project Manager"
+        projectCopy.currentEmployee.role.push("Project Manager");
+      }
+      // Đặt vai trò là vị trí hiện tại của nhân viên
+      projectCopy.currentEmployee.role.push(employee.position);
 
       return projectCopy;
     });
-
-    // Search
-    if (req.query.q) {
-      const searchTerm = req.query.q.toLowerCase();
-      projects = projects.filter((project) =>
-        project.name.toLowerCase().includes(searchTerm)
-      );
-    }
 
     res.json(projects);
   }
