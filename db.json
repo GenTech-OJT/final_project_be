@@ -278,12 +278,16 @@
         {
           "name": "UX",
           "year": "3"
+        },
+        {
+          "name": "Coding",
+          "year": "1"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
       "createdAt": "2023-12-20T10:22:53.783Z",
-      "updatedAt": "2023-12-20T15:07:33.887Z"
+      "updatedAt": "2023-12-20T15:14:33.416Z"
     },
     {
       "id": 11,
