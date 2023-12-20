@@ -19,7 +19,7 @@
       "email": "hoang@gmail.com",
       "code": "E001",
       "phone": "0935552021",
-      "identity": "7767676730",
+      "identity": "0642000243763",
       "dob": "1993-05-13",
       "gender": "male",
       "status": "active",
@@ -28,14 +28,30 @@
       "manager": null,
       "skills": [
         {
-          "name": "BE",
+          "name": "Operating system",
           "year": "4"
+        },
+        {
+          "name": "Problem solving",
+          "year": "5.5"
+        },
+        {
+          "name": "Management",
+          "year": "2"
+        },
+        {
+          "name": "Data analysis",
+          "year": "3"
+        },
+        {
+          "name": "Network configuration",
+          "year": "6"
         }
       ],
-      "description": "Tôi là Hoang Nguyen. Tôi là BE dev",
-      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067151/h7zrn1bc1e2r347rgmps.png",
+      "description": "Hi, I'm Hoang. I'm a software engineer and problem solver who loves working on operating systems.",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703086634/exio5c95vhlgcilve9vo.jpg",
       "createdAt": "2023-12-20T10:12:30.404Z",
-      "updatedAt": "2023-12-20T15:23:51.497Z"
+      "updatedAt": "2023-12-20T15:44:02.235Z"
     },
     {
       "id": 2,
@@ -43,42 +59,38 @@
       "email": "nhat@gmail.com",
       "code": "E002",
       "phone": "0935552022",
-      "identity": "7767676732",
+      "identity": "086202024321",
       "dob": "1996-09-05",
       "gender": "male",
       "status": "active",
-      "is_manager": "false",
+      "is_manager": "true",
       "position": "Front-End Developer",
       "manager": null,
       "skills": [
         {
-          "name": "coding",
+          "name": "Management",
           "year": "8"
         },
         {
-          "name": "UX",
-          "year": "2"
-        },
-        {
-          "name": "UI",
+          "name": "Network configuration",
           "year": "2"
         }
       ],
-      "description": "Tôi là Minh Nhat. Một Front-End dev",
+      "description": "I'm an IT professional with a focus on network configuration. ",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067260/shuhtagcqeubivlwhta6.png",
       "createdAt": "2023-12-20T10:14:19.402Z",
-      "updatedAt": "2023-12-20T15:23:42.303Z"
+      "updatedAt": "2023-12-20T15:41:47.631Z"
     },
     {
       "id": 3,
       "name": "Nguyen Thi Kieu Vy",
-      "email": "vy@gmail.com",
+      "email": "vykieunguyen@gmail.com",
       "code": "E003",
       "phone": "0935552023",
-      "identity": "7767676733",
+      "identity": "06438001299",
       "dob": "1990-02-01",
       "gender": "female",
-      "status": "active",
+      "status": "inactive",
       "is_manager": "true",
       "position": "Project Manager",
       "manager": null,
@@ -86,12 +98,16 @@
         {
           "name": "Communication",
           "year": "2"
+        },
+        {
+          "name": "Leadership",
+          "year": "1"
         }
       ],
-      "description": "Tôi là Vy. Tôi là project manager",
+      "description": "My goal is to make a positive impact on the world around me by empowering people to take action and create meaningful change.",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067330/gmxuqjcrpkpnffhma3bb.png",
       "createdAt": "2023-12-20T10:15:29.683Z",
-      "updatedAt": "2023-12-20T15:24:07.605Z"
+      "updatedAt": "2023-12-20T15:50:18.883Z"
     },
     {
       "id": 4,
@@ -110,12 +126,16 @@
         {
           "name": "Testing",
           "year": "2"
+        },
+        {
+          "name": "Data analysis",
+          "year": "3.5"
         }
       ],
-      "description": "Tôi là Vĩnh Nguyên. Tôi là software tester",
+      "description": "I'm an analytical thinker and a data analyst. I love diving deep into data to uncover hidden patterns and insights.",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067399/nlzoddgs1idkmkcewq3r.jpg",
       "createdAt": "2023-12-20T10:16:38.327Z",
-      "updatedAt": "2023-12-20T15:24:29.838Z"
+      "updatedAt": "2023-12-20T15:51:21.714Z"
     },
     {
       "id": 5,
@@ -168,18 +188,18 @@
           "year": "2"
         }
       ],
-      "description": "Tôi là Hoang Cong. Tôi là project manager",
+      "description": "I'm Hau! I'm passionate about communication and how it can bring people together.",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067506/ooatxzax0j048ol1kjol.jpg",
       "createdAt": "2023-12-20T10:18:25.764Z",
-      "updatedAt": "2023-12-20T15:25:33.857Z"
+      "updatedAt": "2023-12-20T15:44:44.992Z"
     },
     {
       "id": 7,
       "name": "Ngo Tan Khoa",
       "email": "khoa.ngo-ojt07@devplus.edu.vn",
       "code": "E007",
-      "phone": "0935552027",
-      "identity": "7767676737",
+      "phone": "0935872066",
+      "identity": "064200698837",
       "dob": "1996-08-22",
       "gender": "male",
       "status": "active",
@@ -188,42 +208,42 @@
       "manager": null,
       "skills": [
         {
-          "name": "Design",
+          "name": "UI Design",
           "year": "2"
         },
         {
-          "name": "UIUX",
-          "year": "2"
+          "name": "Data analysis",
+          "year": "5.5"
         }
       ],
-      "description": "Tôi là Ngô Tấn Khoa. Tôi là UI/UX Designer",
+      "description": "I strive to make the world a better place by improving how we interact with technology.",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067568/uqh3capc73dsuomupn6f.jpg",
       "createdAt": "2023-12-20T10:19:27.693Z",
-      "updatedAt": "2023-12-20T15:26:17.635Z"
+      "updatedAt": "2023-12-20T15:50:08.478Z"
     },
     {
       "id": 8,
       "name": "Van Nguyen Huu Tung",
       "email": "tung@gmail.com",
       "code": "E008",
-      "phone": "0935552028",
-      "identity": "7767676738",
+      "phone": "0939988202",
+      "identity": "064200027632",
       "dob": "1992-04-14",
       "gender": "male",
       "status": "active",
-      "is_manager": "false",
+      "is_manager": "true",
       "position": "Back-End Developer",
       "manager": null,
       "skills": [
         {
-          "name": "BE",
+          "name": "Problem solving",
           "year": "3"
         }
       ],
-      "description": "Tôi là Huu Tung. Tôi là BE dev",
+      "description": "I strive to make the world a better place by improving how we interact with technology.",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067613/apqguestmhzqxbtfxvre.jpg",
       "createdAt": "2023-12-20T10:20:12.246Z",
-      "updatedAt": "2023-12-20T15:26:40.410Z"
+      "updatedAt": "2023-12-20T15:47:53.262Z"
     },
     {
       "id": 9,
@@ -231,71 +251,63 @@
       "email": "nguyenminhtoan451999@gmail.com",
       "code": "E009",
       "phone": "0935552029",
-      "identity": "7767676739",
+      "identity": "0643800791299",
       "dob": "1999-11-25",
       "gender": "male",
       "status": "active",
       "is_manager": "false",
       "position": "Full Stack Developer",
-      "manager": null,
+      "manager": 2,
       "skills": [
         {
-          "name": "FE",
+          "name": "Data analysis",
           "year": "2"
         },
         {
-          "name": "BE",
+          "name": "Management",
           "year": "4"
-        },
-        {
-          "name": "English",
-          "year": "2"
         }
       ],
-      "description": "Tôi là Minh Toan. Tôi là Full Stack dev",
+      "description": "I'm always looking for ways to make things run more efficiently, whether it's coding a program or debugging an existing system.",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067703/rh7u7kwjzrhm00abcfrl.jpg",
       "createdAt": "2023-12-20T10:21:42.951Z",
-      "updatedAt": "2023-12-20T15:27:02.251Z"
+      "updatedAt": "2023-12-20T15:47:05.813Z"
     },
     {
       "id": 10,
       "name": "Phung Thuy Hai Ha",
-      "email": "ha@gmail.com",
+      "email": "haphungthi@gmail.com",
       "code": "E0010",
       "phone": "0935552010",
-      "identity": "7767676710",
+      "identity": "0792000266763",
       "dob": "2003-05-16",
       "gender": "female",
-      "status": "active",
+      "status": "inactive",
       "is_manager": "false",
-      "position": "Front-End Developer",
+      "position": "Data Analyst",
       "manager": null,
       "skills": [
         {
-          "name": "Communication",
+          "name": "Management",
           "year": "2"
         },
         {
-          "name": "UIUX",
-          "year": "3"
-        },
-        {
-          "name": "Coding",
+          "name": "UI design",
           "year": "1"
         }
       ],
-      "description": "Tôi là Hai Ha. Tôi là FE dev",
+      "description": "I'm able to provide valuable information that can be used to improve processes and operations. ",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
       "createdAt": "2023-12-20T10:22:53.783Z",
-      "updatedAt": "2023-12-20T15:27:33.806Z"
+      "updatedAt": "2023-12-20T15:51:26.265Z"
     },
     {
       "id": 11,
       "name": "Lieu Nguyen",
       "email": "lieuu@gmail.com",
       "code": "E0012",
-      "phone": "0935552012",
-      "identity": "7767676712",
+      "phone": "0937852012",
+      "identity": "0642003443762",
       "dob": "2002-04-16",
       "gender": "female",
       "status": "active",
@@ -312,10 +324,62 @@
           "year": "2"
         }
       ],
-      "description": "Tôi là Lieu Nguyen. Tôi là DevOps Engineer",
+      "description": "My passion is finding creative solutions to complex problems and helping others do the same. ",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703068259/n4dghoja0irgscrjokee.jpg",
       "createdAt": "2023-12-20T10:30:58.986Z",
-      "updatedAt": "2023-12-20T15:29:01.192Z"
+      "updatedAt": "2023-12-20T15:52:36.563Z"
+    },
+    {
+      "id": 12,
+      "name": "Nguyen Minh Hieu",
+      "email": "hoangngcd18786@fpt.edu.vn",
+      "code": "EBZ177",
+      "phone": "0935466639",
+      "identity": "0642000243799",
+      "dob": "2000-02-02",
+      "gender": "male",
+      "status": "inactive",
+      "is_manager": "false",
+      "position": "Software Tester",
+      "manager": 6,
+      "skills": [
+        {
+          "name": "Network configuration",
+          "year": "3"
+        }
+      ],
+      "description": "",
+      "avatar": "",
+      "createdAt": "2023-12-20T15:51:17.694Z",
+      "updatedAt": "2023-12-20T15:51:17.694Z"
+    },
+    {
+      "id": 13,
+      "name": "Tran Dinh Long",
+      "email": "longdngcd12308@fpt.edu.vn",
+      "code": "EBZ179",
+      "phone": "0935478243",
+      "identity": "0682000243763",
+      "dob": "2000-05-17",
+      "gender": "male",
+      "status": "active",
+      "is_manager": "true",
+      "position": "Front-End Developer",
+      "manager": null,
+      "skills": [
+        {
+          "name": "Network configuration",
+          "year": "3"
+        },
+        {
+          "name": "UI design",
+          "year": "2"
+        }
+      ],
+      "description": "",
+      "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703087744/qzu8alzq9piip6uwuehy.jpg",
+      "createdAt": "2023-12-20T15:55:44.699Z",
+      "updatedAt": "2023-12-20T15:55:44.699Z"
     }
   ],
   "positions": [
@@ -355,24 +419,37 @@
   "projects": [
     {
       "id": 1,
-      "name": "Titan",
-      "manager": 6,
+      "name": "X Lab",
+      "manager": 2,
       "employees": [
         {
-          "id": 3,
+          "id": 2,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:41:42.720Z",
-              "leaving_time": "2023-12-20T10:59:52.088Z"
+              "joining_time": "2023-12-20T15:53:21.530Z",
+              "leaving_time": "2023-12-20T15:53:34.180Z"
+            },
+            {
+              "joining_time": "2023-12-20T15:53:39.768Z",
+              "leaving_time": null
             }
           ]
         },
         {
-          "id": 4,
+          "id": 3,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:41:42.720Z",
-              "leaving_time": "2023-12-20T10:59:52.088Z"
+              "joining_time": "2023-12-20T15:53:21.530Z",
+              "leaving_time": "2023-12-20T15:53:27.927Z"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:21.530Z",
+              "leaving_time": "2023-12-20T15:53:27.927Z"
             }
           ]
         },
@@ -380,8 +457,8 @@
           "id": 7,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:56:00.335Z",
-              "leaving_time": "2023-12-20T10:59:52.088Z"
+              "joining_time": "2023-12-20T15:53:27.927Z",
+              "leaving_time": "2023-12-20T15:53:34.180Z"
             }
           ]
         },
@@ -389,35 +466,264 @@
           "id": 8,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:56:00.335Z",
-              "leaving_time": null
+              "joining_time": "2023-12-20T15:53:27.927Z",
+              "leaving_time": "2023-12-20T15:53:34.180Z"
             }
           ]
         },
         {
-          "id": 9,
+          "id": 4,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:56:00.335Z",
-              "leaving_time": null
+              "joining_time": "2023-12-20T15:53:34.180Z",
+              "leaving_time": "2023-12-20T15:53:39.768Z"
             }
           ]
         },
         {
-          "id": 10,
+          "id": 6,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:56:00.335Z",
+              "joining_time": "2023-12-20T15:53:34.180Z",
+              "leaving_time": "2023-12-20T15:53:39.768Z"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:53:39.768Z",
               "leaving_time": null
             }
           ]
         }
       ],
       "status": "Pending",
-      "start_date": "2023-12-21 17:41:30",
-      "end_date": "2023-12-30 17:41:33",
-      "description": "Apple is mum, but Insiders report that the company is working on a car called “Titan,” slated to be road-ready in 2019. With a name that gigantic, buzz is already building about the features that may or may not rival Google’s self-driving cars.",
+      "start_date": "2023-12-21 22:53:09",
+      "end_date": "2023-12-31 22:53:10",
+      "description": "They may have been known earlier for their unofficial slogan “Don’t be evil,” but that doesn’t mean Google doesn’t have a secret lair. At the company’s secret “X” Lab, projects like the Self-Driving Car and Google Glass are built under the cloak and veil of secrecy deserved by its uber-mysterious name.",
       "technical": [
+        {
+          "id": 4,
+          "name": "Ruby"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        },
+        {
+          "id": 7,
+          "name": "PHP"
+        }
+      ],
+      "createdAt": "2023-12-20T15:53:21.530Z",
+      "updatedAt": "2023-12-20T15:53:21.530Z"
+    },
+    {
+      "id": 2,
+      "name": "Code Talkers",
+      "manager": 13,
+      "employees": [
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:56:51.804Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:56:51.804Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:56:51.804Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-20 22:56:42",
+      "end_date": "2023-12-31 22:56:43",
+      "description": "This was the project name for the secret WWII program to recruit Cherokee, Creek, Choctow and other tribal members to transmit coded messages in Native American languages. It was also popularized in the Nicholas Cage classic of cinema, Windtalkers.",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 6,
+          "name": "JavaScript"
+        },
+        {
+          "id": 8,
+          "name": "Java"
+        }
+      ],
+      "createdAt": "2023-12-20T15:56:51.804Z",
+      "updatedAt": "2023-12-20T15:56:51.804Z"
+    },
+    {
+      "id": 3,
+      "name": "Project Blue Book",
+      "manager": 8,
+      "employees": [
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:17.905Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-11-21 22:57:01",
+      "end_date": "2024-12-31 22:57:04",
+      "description": "",
+      "technical": [
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 8,
+          "name": "Java"
+        }
+      ],
+      "createdAt": "2023-12-20T15:57:17.905Z",
+      "updatedAt": "2023-12-20T15:57:17.905Z"
+    },
+    {
+      "id": 4,
+      "name": "Apollo",
+      "manager": 6,
+      "employees": [
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:49.258Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T15:57:49.258Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "Done",
+      "start_date": "2023-11-10 22:57:26",
+      "end_date": "2023-12-01 22:57:28",
+      "description": "",
+      "technical": [
+        {
+          "id": 2,
+          "name": "C++"
+        },
+        {
+          "id": 5,
+          "name": "SQL Server"
+        },
+        {
+          "id": 7,
+          "name": "PHP"
+        }
+      ],
+      "createdAt": "2023-12-20T15:57:49.258Z",
+      "updatedAt": "2023-12-20T15:57:49.258Z"
+    },
+    {
+      "id": 5,
+      "name": "Search Engine Bandits",
+      "manager": 2,
+      "employees": [
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:00:53.427Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:00:53.427Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T16:00:53.427Z",
+              "leaving_time": null
+            }
+          ]
+        }
+      ],
+      "status": "In Progress",
+      "start_date": "2023-12-20 23:00:35",
+      "end_date": "2024-01-23 23:00:37",
+      "description": "Search Engine Bandits is a term used to describe individuals or entities that use unethical tactics to manipulate search engine rankings. This page explores the concept of Search Engine Bandits and their impact on coding practices.",
+      "technical": [
+        {
+          "id": 3,
+          "name": "Python"
+        },
         {
           "id": 5,
           "name": "SQL Server"
@@ -427,19 +733,19 @@
           "name": "JavaScript"
         }
       ],
-      "createdAt": "2023-12-20T10:41:42.720Z",
-      "updatedAt": "2023-12-20T10:41:42.720Z"
+      "createdAt": "2023-12-20T16:00:53.427Z",
+      "updatedAt": "2023-12-20T16:00:53.427Z"
     },
     {
-      "id": 2,
-      "name": "Project Hanks",
-      "manager": 6,
+      "id": 6,
+      "name": "Celestial Interface",
+      "manager": 2,
       "employees": [
         {
-          "id": 4,
+          "id": 2,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:42:14.764Z",
+              "joining_time": "2023-12-20T16:02:08.516Z",
               "leaving_time": null
             }
           ]
@@ -448,34 +754,7 @@
           "id": 5,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:42:14.764Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:53:57.656Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:59:34.511Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:59:34.511Z",
+              "joining_time": "2023-12-20T16:02:08.516Z",
               "leaving_time": null
             }
           ]
@@ -484,241 +763,32 @@
           "id": 8,
           "periods": [
             {
-              "joining_time": "2023-12-20T10:59:34.511Z",
+              "joining_time": "2023-12-20T16:02:08.516Z",
               "leaving_time": null
             }
           ]
         }
       ],
       "status": "Pending",
-      "start_date": "2023-12-21 17:41:59",
-      "end_date": "2023-12-21 17:42:01",
-      "description": "When Verizon Communications was looking to take over AOL, they needed to keep the deal secret and came up with a code name. According to the Telegraph, Project Hanks is the name they chose, which may not make sense until you remember that Tom Hanks starred in the movie You’ve Got Mail (1998), a romantic comedy about a relationship built on AOL’s famous mail notification.",
+      "start_date": "2024-12-01 23:01:46",
+      "end_date": "2025-01-31 23:01:50",
+      "description": "Celestial Interface is an innovative user interface design concept that combines aesthetics with seamless functionality, creating an intuitive and visually appealing user experience. Explore the world of Celestial Interface and learn more about its coding and development process.",
       "technical": [
-        {
-          "id": 1,
-          "name": "C#"
-        },
-        {
-          "id": 6,
-          "name": "JavaScript"
-        }
-      ],
-      "createdAt": "2023-12-20T10:42:14.764Z",
-      "updatedAt": "2023-12-20T10:42:14.764Z"
-    },
-    {
-      "id": 3,
-      "name": "Kodiak",
-      "manager": 3,
-      "employees": [
-        {
-          "id": 4,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:43:38.497Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:43:38.497Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T13:41:25.530Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T13:41:25.530Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T13:41:25.530Z",
-              "leaving_time": null
-            }
-          ]
-        }
-      ],
-      "status": "Pending",
-      "start_date": "2023-12-23 17:43:26",
-      "end_date": "2023-12-24 17:43:29",
-      "description": "Unlike some other companies that have a codename and then change it to something else when it comes to market, in 2000, Apple developed its first version of Mac OS X with the codename Kodiak. It’s since followed that theme with updates with other powerful creatures of the wild, such as Puma, Jaguar, Panther, Leopard, Snow Leopard and Lion.",
-      "technical": [
-        {
-          "id": 7,
-          "name": "PHP"
-        },
-        {
-          "id": 9,
-          "name": "TypeScript"
-        }
-      ],
-      "createdAt": "2023-12-20T10:43:38.497Z",
-      "updatedAt": "2023-12-20T10:43:38.497Z"
-    },
-    {
-      "id": 4,
-      "name": "Code Talkers",
-      "manager": 6,
-      "employees": [
-        {
-          "id": 6,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:44:15.865Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 9,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:44:15.865Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T13:04:55.190Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T13:04:55.190Z",
-              "leaving_time": null
-            }
-          ]
-        },
         {
           "id": 5,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T13:04:55.190Z",
-              "leaving_time": null
-            }
-          ]
-        }
-      ],
-      "status": "Pending",
-      "start_date": "2023-12-25 17:44:02",
-      "end_date": "2023-12-26 17:44:05",
-      "description": "This was the project name for the secret WWII program to recruit Cherokee, Creek, Choctow and other tribal members to transmit coded messages in Native American languages. It was also popularized in the Nicholas Cage classic of cinema, Windtalkers.",
-      "technical": [
-        {
-          "id": 3,
-          "name": "Python"
+          "name": "SQL Server"
         },
         {
           "id": 7,
           "name": "PHP"
-        }
-      ],
-      "createdAt": "2023-12-20T10:44:15.865Z",
-      "updatedAt": "2023-12-20T10:44:15.865Z"
-    },
-    {
-      "id": 5,
-      "name": "Project Blue Book",
-      "manager": 6,
-      "employees": [
-        {
-          "id": 2,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:44:49.826Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:44:49.826Z",
-              "leaving_time": "2023-12-20T10:54:18.062Z"
-            }
-          ]
         },
         {
           "id": 8,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:44:49.826Z",
-              "leaving_time": null
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:53:26.209Z",
-              "leaving_time": "2023-12-20T10:54:18.062Z"
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T10:53:26.209Z",
-              "leaving_time": "2023-12-20T13:46:20.879Z"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "periods": [
-            {
-              "joining_time": "2023-12-20T13:56:22.351Z",
-              "leaving_time": null
-            }
-          ]
+          "name": "Java"
         }
       ],
-      "status": "Pending",
-      "start_date": "2023-12-28 17:44:37",
-      "end_date": "2023-12-29 17:44:39",
-      "description": "If you don’t already know, then you probably don’t have the clearance. But for the sake of disclosure, Project Blue Book was the code name for the US Air Force investigations into UFO sightings. But you didn’t hear that from us.",
-      "technical": [
-        {
-          "id": 1,
-          "name": "C#"
-        },
-        {
-          "id": 2,
-          "name": "C++"
-        }
-      ],
-      "createdAt": "2023-12-20T10:44:49.826Z",
-      "updatedAt": "2023-12-20T10:44:49.826Z"
+      "createdAt": "2023-12-20T16:02:08.516Z",
+      "updatedAt": "2023-12-20T16:02:08.516Z"
     }
   ],
   "technicals": [
