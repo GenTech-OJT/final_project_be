@@ -232,42 +232,44 @@ server.get("/employees", authenticateToken, requireAdminRole, (req, res) => {
 });
 
 // Lấy thông tin chi tiết nhaan vieen
-server.get(
-  "/employees/:id",
-  // authenticateToken,
-  // requireAdminRole,
-  (req, res) => {
-    const employeeId = Number(req.params.id);
+server.get("/employees/:id", (req, res) => {
+  const employeeId = Number(req.params.id);
 
-    const employee = router.db
-      .get("employees")
-      .find({ id: employeeId })
-      .value();
+  const employee = router.db.get("employees").find({ id: employeeId }).value();
 
-    if (!employee) {
-      return res.status(404).json({ error: "Nhân viên không tồn tại" });
-    }
-
-    // Tìm thông tin chi tiết của manager
-    const manager =
-      router.db.get("employees").find({ id: employee.manager }).value() ?? null;
-
-    const projects = router.db
-      .get("projects")
-      .filter((project) => project.employees.some((e) => e.id === employeeId))
-      .map((project) => {
-        const { employees, ...projectWithoutEmployees } = project;
-        const employeeInProject = employees.find((e) => e.id === employeeId);
-        const periods = employeeInProject ? employeeInProject.periods : [];
-        return { ...projectWithoutEmployees, periods };
-      })
-      .value();
-
-    const employeeWithProjects = { ...employee, projects, manager };
-
-    res.status(200).json(employeeWithProjects);
+  if (!employee) {
+    return res.status(404).json({ error: "Nhân viên không tồn tại" });
   }
-);
+
+  // Tìm thông tin chi tiết của manager
+  const manager =
+    router.db.get("employees").find({ id: employee.manager }).value() ?? null;
+
+  // Tìm các dự án mà nhân viên đang tham gia
+  const projects = router.db
+    .get("projects")
+    .filter((project) => project.employees.some((e) => e.id === employeeId))
+    .map((project) => {
+      const { employees, ...projectWithoutEmployees } = project;
+      const employeeInProject = employees.find((e) => e.id === employeeId);
+      const periods = employeeInProject ? employeeInProject.periods : [];
+      return { ...projectWithoutEmployees, periods };
+    })
+    .value();
+
+  // Tìm các dự án mà nhân viên đang quản lý
+  const managedProjects = router.db
+    .get("projects")
+    .filter((project) => project.manager === employeeId)
+    .value();
+
+  // Kết hợp hai mảng dự án lại
+  const allProjects = [...projects, ...managedProjects];
+
+  const employeeWithProjects = { ...employee, projects: allProjects, manager };
+
+  res.status(200).json(employeeWithProjects);
+});
 
 cloudinary.config({
   cloud_name: "dadt9qw4k",
