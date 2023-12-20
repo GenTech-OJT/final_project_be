@@ -773,7 +773,26 @@ server.get(
         .map((e) => {
           // Kiểm tra xem employee.id có tồn tại không
           if (e.id) {
-            return db.get("employees").find({ id: e.id }).value();
+            const employeeDetail = db
+              .get("employees")
+              .find({ id: e.id })
+              .value();
+            // Kiểm tra xem nhân viên có phải là manager và cũng là nhân viên của dự án hay không
+            if (
+              project.manager === e.id &&
+              project.employees.some((emp) => emp.id === e.id)
+            ) {
+              // Kiểm tra xem vị trí của nhân viên có phải là "Project Manager" hay không
+              if (employeeDetail.position === "Project Manager") {
+                employeeDetail.role = ["Project Manager"];
+              } else {
+                employeeDetail.role = [
+                  "Project Manager",
+                  employeeDetail.position,
+                ];
+              }
+            }
+            return employeeDetail;
           } else {
             console.log("Employee without id found in project:", project);
             return null;
