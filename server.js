@@ -777,22 +777,17 @@ server.get(
               .get("employees")
               .find({ id: e.id })
               .value();
-            // Kiểm tra xem nhân viên có phải là manager và cũng là nhân viên của dự án hay không
-            if (
-              project.manager === e.id &&
-              project.employees.some((emp) => emp.id === e.id)
-            ) {
-              // Kiểm tra xem vị trí của nhân viên có phải là "Project Manager" hay không
-              if (employeeDetail.position === "Project Manager") {
-                employeeDetail.role = ["Project Manager"];
-              } else {
-                employeeDetail.role = [
-                  "Project Manager",
-                  employeeDetail.position,
-                ];
-              }
+            // Tạo một bản sao của employeeDetail
+            const employeeDetailCopy = { ...employeeDetail };
+            // Kiểm tra xem nhân viên có phải là manager của dự án hay không
+            if (project.manager === e.id) {
+              // Đặt vai trò là "Project Manager"
+              employeeDetailCopy.role = ["Project Manager"];
+            } else {
+              // Đặt vai trò là vị trí hiện tại của nhân viên
+              employeeDetailCopy.role = [employeeDetail.position];
             }
-            return employeeDetail;
+            return employeeDetailCopy;
           } else {
             console.log("Employee without id found in project:", project);
             return null;
