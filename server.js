@@ -417,6 +417,7 @@ server.put(
           error:
             "Nhân viên đang tham gia vào một dự án, không thể cập nhật trạng thái thành không hoạt động",
           status: "employee_in_project",
+          project_name: project.name,
         });
       }
 
