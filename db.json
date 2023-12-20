@@ -170,7 +170,7 @@
       "identity": "7767676737",
       "dob": "1996-08-22",
       "gender": "male",
-      "status": "active",
+      "status": "inactive",
       "is_manager": "false",
       "position": "UI/UX Designer",
       "manager": null,
@@ -183,7 +183,7 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067568/uqh3capc73dsuomupn6f.jpg",
       "createdAt": "2023-12-20T10:19:27.693Z",
-      "updatedAt": "2023-12-20T10:19:27.693Z"
+      "updatedAt": "2023-12-20T10:50:41.399Z"
     },
     {
       "id": 8,
@@ -220,7 +220,7 @@
       "gender": "male",
       "status": "active",
       "is_manager": "false",
-      "position": "Full Stack Developer",
+      "position": "Data Analyst",
       "manager": null,
       "skills": [
         {
@@ -239,7 +239,7 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067703/rh7u7kwjzrhm00abcfrl.jpg",
       "createdAt": "2023-12-20T10:21:42.951Z",
-      "updatedAt": "2023-12-20T10:21:42.951Z"
+      "updatedAt": "2023-12-20T10:51:11.742Z"
     },
     {
       "id": 10,
@@ -250,7 +250,7 @@
       "identity": "7767676710",
       "dob": "2003-05-16",
       "gender": "male",
-      "status": "active",
+      "status": "inactive",
       "is_manager": "false",
       "position": "Front-End Developer",
       "manager": null,
@@ -263,7 +263,7 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
       "createdAt": "2023-12-20T10:22:53.783Z",
-      "updatedAt": "2023-12-20T10:22:53.783Z"
+      "updatedAt": "2023-12-20T10:50:39.141Z"
     },
     {
       "id": 11,
@@ -335,7 +335,7 @@
           "periods": [
             {
               "joining_time": "2023-12-20T10:41:42.720Z",
-              "leaving_time": null
+              "leaving_time": "2023-12-20T10:59:52.088Z"
             }
           ]
         },
@@ -344,6 +344,42 @@
           "periods": [
             {
               "joining_time": "2023-12-20T10:41:42.720Z",
+              "leaving_time": "2023-12-20T10:59:52.088Z"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:56:00.335Z",
+              "leaving_time": "2023-12-20T10:59:52.088Z"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:56:00.335Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:56:00.335Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:56:00.335Z",
               "leaving_time": null
             }
           ]
@@ -388,6 +424,42 @@
               "leaving_time": null
             }
           ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:53:57.656Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:59:34.511Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:59:34.511Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:59:34.511Z",
+              "leaving_time": null
+            }
+          ]
         }
       ],
       "status": "Pending",
@@ -426,6 +498,33 @@
           "periods": [
             {
               "joining_time": "2023-12-20T10:43:38.497Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T13:41:25.530Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T13:41:25.530Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T13:41:25.530Z",
               "leaving_time": null
             }
           ]
@@ -470,6 +569,33 @@
               "leaving_time": null
             }
           ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T13:04:55.190Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T13:04:55.190Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T13:04:55.190Z",
+              "leaving_time": null
+            }
+          ]
         }
       ],
       "status": "Pending",
@@ -508,7 +634,7 @@
           "periods": [
             {
               "joining_time": "2023-12-20T10:44:49.826Z",
-              "leaving_time": null
+              "leaving_time": "2023-12-20T10:54:18.062Z"
             }
           ]
         },
@@ -517,6 +643,33 @@
           "periods": [
             {
               "joining_time": "2023-12-20T10:44:49.826Z",
+              "leaving_time": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:53:26.209Z",
+              "leaving_time": "2023-12-20T10:54:18.062Z"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T10:53:26.209Z",
+              "leaving_time": "2023-12-20T13:46:20.879Z"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "periods": [
+            {
+              "joining_time": "2023-12-20T13:56:22.351Z",
               "leaving_time": null
             }
           ]
