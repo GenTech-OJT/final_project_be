@@ -402,6 +402,24 @@ server.put(
         return res.status(404).json({ error: "Nhân viên không tồn tại" });
       }
 
+      // Kiểm tra xem nhân viên có đang tham gia vào một dự án nào không
+      const project =
+        router.db.get("projects").find({ manager: employeeId }).value() ||
+        router.db
+          .get("projects")
+          .find((project) =>
+            project.employees.some((emp) => emp.id === employeeId)
+          )
+          .value();
+
+      if (project && updatedEmploy.status === "inactive") {
+        return res.status(400).json({
+          error:
+            "Nhân viên đang tham gia vào một dự án, không thể cập nhật trạng thái thành không hoạt động",
+          status: "employee_in_project",
+        });
+      }
+
       // Kiểm tra xem mã, email hoặc số điện thoại đã tồn tại chưa
       const existingCode = router.db
         .get("employees")
