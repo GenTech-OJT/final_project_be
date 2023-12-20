@@ -385,7 +385,8 @@ server.get("/managers", (req, res) => {
       .get("employees")
       .filter(
         (employee) =>
-          employee.is_manager === true || employee.is_manager === "true"
+          (employee.is_manager === true || employee.is_manager === "true") &&
+          employee.status === "active"
       )
       .value();
     res.status(200).json(managers);
