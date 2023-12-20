@@ -253,7 +253,7 @@ server.get("/employees/:id", (req, res) => {
       const { employees, ...projectWithoutEmployees } = project;
       const employeeInProject = employees.find((e) => e.id === employeeId);
       const periods = employeeInProject ? employeeInProject.periods : [];
-      return { ...projectWithoutEmployees, periods };
+      return { ...projectWithoutEmployees, periods, role: [employee.position] };
     })
     .value();
 
@@ -261,12 +261,32 @@ server.get("/employees/:id", (req, res) => {
   const managedProjects = router.db
     .get("projects")
     .filter((project) => project.manager === employeeId)
+    .map((project) => {
+      return { ...project, role: ["Project Manager"] };
+    })
     .value();
 
   // Kết hợp hai mảng dự án lại
   const allProjects = [...projects, ...managedProjects];
 
-  const employeeWithProjects = { ...employee, projects: allProjects, manager };
+  // Loại bỏ các dự án trùng lặp và thêm vai trò tương ứng
+  const uniqueProjects = allProjects.reduce((acc, project) => {
+    const existingProject = acc.find((p) => p.id === project.id);
+    if (existingProject) {
+      existingProject.role = [
+        ...new Set([...existingProject.role, ...project.role]),
+      ];
+    } else {
+      acc.push(project);
+    }
+    return acc;
+  }, []);
+
+  const employeeWithProjects = {
+    ...employee,
+    projects: uniqueProjects,
+    manager,
+  };
 
   res.status(200).json(employeeWithProjects);
 });
