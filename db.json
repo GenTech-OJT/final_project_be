@@ -28,10 +28,6 @@
       "manager": null,
       "skills": [
         {
-          "name": "reading",
-          "year": "4"
-        },
-        {
           "name": "BE",
           "year": "4"
         }
@@ -39,7 +35,7 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067151/h7zrn1bc1e2r347rgmps.png",
       "createdAt": "2023-12-20T10:12:30.404Z",
-      "updatedAt": "2023-12-20T10:12:30.404Z"
+      "updatedAt": "2023-12-20T15:11:03.068Z"
     },
     {
       "id": 2,
@@ -58,12 +54,20 @@
         {
           "name": "coding",
           "year": "8"
+        },
+        {
+          "name": "UX",
+          "year": "2"
+        },
+        {
+          "name": "UI",
+          "year": "2"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067260/shuhtagcqeubivlwhta6.png",
       "createdAt": "2023-12-20T10:14:19.402Z",
-      "updatedAt": "2023-12-20T14:55:03.655Z"
+      "updatedAt": "2023-12-20T15:06:39.602Z"
     },
     {
       "id": 3,
@@ -73,21 +77,21 @@
       "phone": "0935552023",
       "identity": "7767676733",
       "dob": "1990-02-01",
-      "gender": "male",
+      "gender": "female",
       "status": "active",
       "is_manager": "true",
       "position": "Project Manager",
       "manager": null,
       "skills": [
         {
-          "name": "FE",
+          "name": "Communication",
           "year": "2"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067330/gmxuqjcrpkpnffhma3bb.png",
       "createdAt": "2023-12-20T10:15:29.683Z",
-      "updatedAt": "2023-12-20T14:55:41.398Z"
+      "updatedAt": "2023-12-20T15:12:27.107Z"
     },
     {
       "id": 4,
@@ -104,14 +108,14 @@
       "manager": null,
       "skills": [
         {
-          "name": "speaking",
-          "year": "4"
+          "name": "Testing",
+          "year": "2"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067399/nlzoddgs1idkmkcewq3r.jpg",
       "createdAt": "2023-12-20T10:16:38.327Z",
-      "updatedAt": "2023-12-20T14:55:47.123Z"
+      "updatedAt": "2023-12-20T15:08:19.382Z"
     },
     {
       "id": 5,
@@ -128,14 +132,18 @@
       "manager": null,
       "skills": [
         {
-          "name": "reading",
+          "name": "FE",
           "year": "1"
+        },
+        {
+          "name": "BE",
+          "year": "1.5"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067452/qbslugdna6osc3ilfhkc.jpg",
       "createdAt": "2023-12-20T10:17:31.541Z",
-      "updatedAt": "2023-12-20T14:55:54.762Z"
+      "updatedAt": "2023-12-20T15:08:34.866Z"
     },
     {
       "id": 6,
@@ -154,12 +162,16 @@
         {
           "name": "coding",
           "year": "3"
+        },
+        {
+          "name": "Communication",
+          "year": "2"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067506/ooatxzax0j048ol1kjol.jpg",
       "createdAt": "2023-12-20T10:18:25.764Z",
-      "updatedAt": "2023-12-20T14:55:32.613Z"
+      "updatedAt": "2023-12-20T15:08:50.674Z"
     },
     {
       "id": 7,
@@ -176,14 +188,14 @@
       "manager": null,
       "skills": [
         {
-          "name": "reading",
+          "name": "Design",
           "year": "2"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067568/uqh3capc73dsuomupn6f.jpg",
       "createdAt": "2023-12-20T10:19:27.693Z",
-      "updatedAt": "2023-12-20T14:55:24.745Z"
+      "updatedAt": "2023-12-20T15:08:00.894Z"
     },
     {
       "id": 8,
@@ -220,7 +232,7 @@
       "gender": "male",
       "status": "active",
       "is_manager": "false",
-      "position": "Data Analyst",
+      "position": "Full Stack Developer",
       "manager": null,
       "skills": [
         {
@@ -239,7 +251,7 @@
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067703/rh7u7kwjzrhm00abcfrl.jpg",
       "createdAt": "2023-12-20T10:21:42.951Z",
-      "updatedAt": "2023-12-20T14:56:09.496Z"
+      "updatedAt": "2023-12-20T15:05:49.181Z"
     },
     {
       "id": 10,
@@ -249,21 +261,29 @@
       "phone": "0935552010",
       "identity": "7767676710",
       "dob": "2003-05-16",
-      "gender": "male",
+      "gender": "female",
       "status": "active",
       "is_manager": "false",
       "position": "Front-End Developer",
       "manager": null,
       "skills": [
         {
-          "name": "football",
+          "name": "Communication",
           "year": "2"
+        },
+        {
+          "name": "UI",
+          "year": "3"
+        },
+        {
+          "name": "UX",
+          "year": "3"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703067774/wnthdtwqc8zqqqydgvbj.png",
       "createdAt": "2023-12-20T10:22:53.783Z",
-      "updatedAt": "2023-12-20T14:56:36.704Z"
+      "updatedAt": "2023-12-20T15:07:33.887Z"
     },
     {
       "id": 11,
@@ -273,21 +293,25 @@
       "phone": "0935552012",
       "identity": "7767676712",
       "dob": "2002-04-16",
-      "gender": "male",
+      "gender": "female",
       "status": "active",
       "is_manager": "false",
-      "position": "Front-End Developer",
+      "position": "DevOps Engineer",
       "manager": null,
       "skills": [
         {
-          "name": "reading",
+          "name": "Coding",
           "year": "4"
+        },
+        {
+          "name": "Shell Script",
+          "year": "2"
         }
       ],
       "description": "",
       "avatar": "https://res.cloudinary.com/dadt9qw4k/image/upload/v1703068259/n4dghoja0irgscrjokee.jpg",
       "createdAt": "2023-12-20T10:30:58.986Z",
-      "updatedAt": "2023-12-20T10:30:58.986Z"
+      "updatedAt": "2023-12-20T15:12:38.931Z"
     }
   ],
   "positions": [
