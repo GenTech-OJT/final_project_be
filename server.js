@@ -249,10 +249,8 @@ server.get(
     }
 
     // Tìm thông tin chi tiết của manager
-    const manager = router.db
-      .get("employees")
-      .find({ id: employee.manager })
-      .value() ?? null;
+    const manager =
+      router.db.get("employees").find({ id: employee.manager }).value() ?? null;
 
     const projects = router.db
       .get("projects")
@@ -384,7 +382,7 @@ server.put(
   }
 );
 
-// Xóa một nhaan vien
+// Xoá một nhân viên
 server.delete(
   "/employees/:id",
   authenticateToken,
@@ -401,6 +399,44 @@ server.delete(
       return res.status(404).json({ error: "Nhân viên không tồn tại" });
     }
 
+    // Tìm và cập nhật các dự án mà nhân viên này đang tham gia
+    const projects = router.db.get("projects").value();
+    for (let i = 0; i < projects.length; i++) {
+      const project = projects[i];
+
+      // Nếu nhân viên này là quản lý của dự án, không cho phép xóa
+      if (project.manager === employeeId) {
+        return res.status(400).json({
+          error: `Không thể xóa nhân viên vì đang là quản lý của dự án ${project.name}`,
+          project_name: project.name,
+          status: "required_manager",
+        });
+      }
+
+      // Nếu nhân viên này là duy nhất trong danh sách nhân viên của dự án, không cho phép xóa
+      if (
+        project.employees.length === 1 &&
+        project.employees[0].id === employeeId
+      ) {
+        return res.status(400).json({
+          error: `Không thể xóa nhân viên vì đang là nhân viên duy nhất của dự án ${project.name}`,
+          project_name: project.name,
+          status: "required_employee",
+        });
+      }
+
+      // Xóa nhân viên khỏi danh sách nhân viên của dự án
+      project.employees = project.employees.filter((e) => e.id !== employeeId);
+
+      // Cập nhật dự án trong cơ sở dữ liệu
+      router.db
+        .get("projects")
+        .find({ id: project.id })
+        .assign(project)
+        .write();
+    }
+
+    // Xóa nhân viên khỏi cơ sở dữ liệu
     router.db.get("employees").remove({ id: employeeId }).write();
 
     res.status(200).json({ message: "Nhân viên đã được xóa" });
