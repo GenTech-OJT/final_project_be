@@ -290,6 +290,48 @@ server.post(
         avatarUrl = result.secure_url;
       }
 
+      // Kiểm tra xem mã, email hoặc số điện thoại đã tồn tại chưa
+      const existingCode = router.db
+        .get("employees")
+        .find({ code: req.body.code })
+        .value();
+      if (existingCode) {
+        return res
+          .status(400)
+          .json({ error: "Mã đã tồn tại", status: "code_exists" });
+      }
+
+      const existingEmail = router.db
+        .get("employees")
+        .find({ email: req.body.email })
+        .value();
+      if (existingEmail) {
+        return res
+          .status(400)
+          .json({ error: "Email đã tồn tại", status: "email_exists" });
+      }
+
+      const existingPhone = router.db
+        .get("employees")
+        .find({ phone: req.body.phone })
+        .value();
+      if (existingPhone) {
+        return res
+          .status(400)
+          .json({ error: "Số điện thoại đã tồn tại", status: "phone_exists" });
+      }
+
+      const existingIdentity = router.db
+        .get("employees")
+        .find({ identity: req.body.identity })
+        .value();
+      if (existingIdentity) {
+        return res.status(400).json({
+          error: "CCCD đã tồn tại",
+          status: "identity_exists",
+        });
+      }
+
       // Tìm ID lớn nhất hiện tại
       const maxId = Math.max(
         ...router.db
@@ -360,6 +402,48 @@ server.put(
         return res.status(404).json({ error: "Nhân viên không tồn tại" });
       }
 
+      // Kiểm tra xem mã, email hoặc số điện thoại đã tồn tại chưa
+      const existingCode = router.db
+        .get("employees")
+        .find({ code: updatedEmploy.code })
+        .value();
+
+      if (existingCode && existingCode.id !== employeeId) {
+        return res
+          .status(400)
+          .json({ error: "Mã đã tồn tại", status: "code_exists" });
+      }
+
+      const existingEmail = router.db
+        .get("employees")
+        .find({ email: updatedEmploy.email })
+        .value();
+      if (existingEmail && existingEmail.id !== employeeId) {
+        return res
+          .status(400)
+          .json({ error: "Email đã tồn tại", status: "email_exists" });
+      }
+
+      const existingPhone = router.db
+        .get("employees")
+        .find({ phone: updatedEmploy.phone })
+        .value();
+      if (existingPhone && existingPhone.id !== employeeId) {
+        return res
+          .status(400)
+          .json({ error: "Số điện thoại đã tồn tại", status: "phone_exists" });
+      }
+
+      const existingIdentity = router.db
+        .get("employees")
+        .find({ identity: updatedEmploy.identity })
+        .value();
+      if (existingIdentity && existingIdentity.id !== employeeId) {
+        return res
+          .status(400)
+          .json({ error: "CCCD đã tồn tại", status: "identity_exists" });
+      }
+
       if (req.file) {
         const result = await cloudinary.uploader.upload(req.file.path);
         updatedEmploy.avatar = result.secure_url; // Cập nhật URL avatar
@@ -376,7 +460,6 @@ server.put(
 
       res.status(200).json(updatedEmployInDb);
     } catch (err) {
-      console.log(err);
       res.status(500).send(err);
     }
   }
