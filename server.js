@@ -779,14 +779,15 @@ server.get(
               .value();
             // Tạo một bản sao của employeeDetail
             const employeeDetailCopy = { ...employeeDetail };
+            // Reset role array
+            employeeDetailCopy.role = [];
             // Kiểm tra xem nhân viên có phải là manager của dự án hay không
             if (project.manager === e.id) {
               // Đặt vai trò là "Project Manager"
-              employeeDetailCopy.role = ["Project Manager"];
-            } else {
-              // Đặt vai trò là vị trí hiện tại của nhân viên
-              employeeDetailCopy.role = [employeeDetail.position];
+              employeeDetailCopy.role.push("Project Manager");
             }
+            // Đặt vai trò là vị trí hiện tại của nhân viên
+            employeeDetailCopy.role.push(employeeDetail.position);
             return employeeDetailCopy;
           } else {
             console.log("Employee without id found in project:", project);
@@ -796,18 +797,20 @@ server.get(
         .filter((e) => e !== null); // Loại bỏ nhân viên không có id
 
       // Thêm dữ liệu của nhân viên đang được truyền id vào
-      projectCopy.currentEmployee = employee;
+      // Thêm dữ liệu của nhân viên đang được truyền id vào
+      projectCopy.currentEmployee = { ...employee };
+      // Reset role array
+      projectCopy.currentEmployee.role = [];
+      // Kiểm tra xem nhân viên có phải là manager của dự án hay không
+      if (project.manager === employeeId) {
+        // Đặt vai trò là "Project Manager"
+        projectCopy.currentEmployee.role.push("Project Manager");
+      }
+      // Đặt vai trò là vị trí hiện tại của nhân viên
+      projectCopy.currentEmployee.role.push(employee.position);
 
       return projectCopy;
     });
-
-    // Search
-    if (req.query.q) {
-      const searchTerm = req.query.q.toLowerCase();
-      projects = projects.filter((project) =>
-        project.name.toLowerCase().includes(searchTerm)
-      );
-    }
 
     res.json(projects);
   }
